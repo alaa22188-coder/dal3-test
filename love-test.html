@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 🎯 التايتل والدسكربشن المحسنين بالكامل للسيو ونسبة النقر (CTR) لعام 2026 -->
+    <title>اختبار مقياس الحب 2026 - هل أنت واقع بالحب الحقيقي أم مجرد إعجاب؟</title>
+    <meta name="description" content="جرّبي اختبار مقياس الحب التفاعلي المسلي؛ 15 سؤالاً عشوائياً متغيراً من بين 30 سؤالاً مميزاً لتهيئة تجربة فريدة! اكتشفي هل أنتِ واقعة في الحب العميق فوراً وبدقة.">
+    <meta name="keywords" content="مقياس الحب, اختبار الحب, هل أنت واقع بالحب, كويز نسبة الحب, اختبارات شخصية عاطفية للبنات">
+    
+    <!-- الكانونيكال المحدث لصفحة مقياس الحب -->
+    <link rel="canonical" href="https://alaa22188-coder.github.io/dal3-test/love-test.html">
+
+    <!-- أكواد الأوبن جراف لمشاركة احترافية على منصات التواصل -->
+    <meta property="og:locale" content="ar_AR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="اختبار مقياس الحب التفاعلي 2026: هل أنتِ واقعة في الحب الحقيقي؟">
+    <meta property="og:description" content="ادخلي اختبار مقياس الحب واكتشفي طبيعة مشاعركِ؛ هل هو حب حقيقي جارف، عاطفة متوازنة، أم مجرد إعجاب عابر؟ 15 سؤالاً شيقاً في انتظاركِ!">
+    <meta property="og:url" content="https://alaa22188-coder.github.io/dal3-test/love-test.html">
+    <meta property="og:site_name" content="مقياس الدلع">
+    <meta property="og:image" content="https://alaa22188-coder.github.io/dal3-test/quiz-share.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <style>
+        /* إعدادات خطوط النظام السريعة والمريحة جداً للعين (تمنع CLS) */
+        :root {
+            --bg-color: #f8fafc;
+            --primary-color: #db2777;
+            --secondary-color: #0f172a;
+            --text-muted: #334155;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+            --segment-active: #f472b6;
+            --segment-inactive: #cbd5e1;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--secondary-color);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            line-height: 1.8;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* الهيدر */
+        header {
+            background-color: var(--card-bg);
+            border-bottom: 1px solid var(--border-color);
+            padding: 16px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo a {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin-right: 16px;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        /* الحاوية الرئيسية */
+        main {
+            flex: 1;
+            max-width: 700px;
+            width: 100%;
+            margin: 24px auto;
+            padding: 0 16px;
+        }
+
+        /* حاوية الاختبار */
+        .quiz-container {
+            background-color: var(--card-bg);
+            padding: 32px 24px;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+            text-align: center;
+            margin-bottom: 24px;
+            min-height: 320px;
+        }
+
+        /* شريط التقدم */
+        .progress-bar-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 6px;
+            margin-bottom: 32px;
+        }
+
+        .progress-segment {
+            flex: 1;
+            height: 8px;
+            background-color: var(--segment-inactive);
+            border-radius: 4px;
+        }
+
+        .progress-segment.active {
+            background-color: var(--segment-active);
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            color: var(--secondary-color);
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            color: var(--secondary-color);
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            color: var(--secondary-color);
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        .quiz-container p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            margin-bottom: 24px;
+        }
+
+        /* أزرار مريحة للموبايل */
+        .btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 14px 28px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 12px;
+            cursor: pointer;
+            width: 100%;
+            min-height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        .btn-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin-top: 24px;
+        }
+
+        .btn-answer {
+            background-color: var(--bg-color);
+            color: var(--secondary-color);
+            border: 1px solid var(--border-color);
+            text-align: right;
+            justify-content: flex-start;
+            padding: 16px;
+            height: auto;
+        }
+
+        .btn-answer:hover,
+        .btn-answer:active {
+            background-color: #f1f5f9;
+            border-color: #cbd5e1;
+        }
+
+        /* أزرار مشاركة التواصل الاجتماعي */
+        .share-section {
+            margin-top: 24px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .share-section p {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--secondary-color);
+        }
+
+        .share-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .share-btn {
+            padding: 10px 16px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: opacity 0.2s;
+            min-height: 40px;
+        }
+
+        .share-btn:hover {
+            opacity: 0.9;
+        }
+
+        .share-fb {
+            background-color: #1877f2;
+        }
+
+        .share-wa {
+            background-color: #25d366;
+        }
+
+        .share-tw {
+            background-color: #000000;
+        }
+
+        /* قسم السيو والمحتوى النصي */
+        .seo-content {
+            background-color: var(--card-bg);
+            padding: 32px 24px;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 24px;
+        }
+
+        .seo-content h2 {
+            font-size: 1.4rem;
+            color: var(--primary-color);
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+
+        .seo-content p {
+            color: var(--text-muted);
+            margin-bottom: 16px;
+            font-size: 1.05rem;
+        }
+
+        .seo-content ul {
+            margin-right: 24px;
+            margin-bottom: 16px;
+            color: var(--text-muted);
+        }
+
+        .seo-content ul li {
+            margin-bottom: 8px;
+        }
+
+        /* قسم معلومات المطور الشخصية لتعزيز الـ E-E-A-T */
+        .developer-bio-section {
+            background-color: var(--card-bg);
+            padding: 32px 24px;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 24px;
+        }
+
+        .developer-bio-section p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            margin-bottom: 16px;
+        }
+
+        .developer-social-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .developer-social-links a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-size: 1.05rem;
+            font-weight: 700;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 2px;
+        }
+
+        .developer-social-links a:hover {
+            color: var(--primary-color);
+            border-bottom-color: var(--secondary-color);
+        }
+
+        /* الفوتر */
+        footer {
+            background-color: var(--secondary-color);
+            color: #94a3b8;
+            padding: 32px 20px;
+            text-align: center;
+            font-size: 0.95rem;
+            margin-top: auto;
+        }
+
+        .footer-links {
+            margin-bottom: 16px;
+        }
+
+        .footer-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            margin: 0 12px;
+            display: inline-block;
+            min-height: 44px;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .hide {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="https://alaa22188-coder.github.io/dal3-test/">مقياس الدلع</a>
+            </div>
+            <nav class="nav-links">
+                <a href="https://alaa22188-coder.github.io/dal3-test/">الرئيسية</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="quiz-container">
+            <div id="progress-bar" class="progress-bar-container hide">
+                <!-- جافا سكريبت ستولد 15 قطعة هنا -->
+            </div>
+
+            <!-- 1. شاشة الترحيب -->
+            <div id="welcome-screen" class="screen">
+                <h1>هل أنت واقع بالحب | اختبار مقياس الحب التفاعلي</h1>
+                <p>هل تعيشين قصة حب حقيقية وجارفة تخطف أنفاسكِ؟ أم هي عاطفة عقلانية هادئة ومتزنة؟ أم مجرد إعجاب عابر وانبهار مؤقت بالطرف الآخر؟ اكتشفي حقيقة مشاعركِ ومكانكِ الدقيق على مقياس الحب الآن بالإجابة على 15 سؤالاً مسلياً تُختار عشوائياً في كل مرة من بين 30 سؤالاً فريداً لتجربة تحليلية متجددة وصادقة!</p>
+                <button id="start-btn" class="btn">ابدئي اختبار مقياس الحب الآن</button>
+
+                <div class="share-section">
+                    <p>شاركي الاختبار واكتشفي مشاعر صديقاتكِ 👥</p>
+                    <div class="share-buttons">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://alaa22188-coder.github.io/dal3-test/love-test.html" target="_blank" rel="noopener" class="share-btn share-fb">فيسبوك</a>
+                        <a href="https://api.whatsapp.com/send?text=هل%20أنتِ%20واقعة%20بالحب%20حقاً؟%20جربي%20اختبار%20مقياس%20الحب%20التفاعلي%20واكتشفي%20طبيعة%20مشاعركِ%20💘%20https://alaa22188-coder.github.io/dal3-test/love-test.html" target="_blank" rel="noopener" class="share-btn share-wa">واتساب</a>
+                        <a href="https://twitter.com/intent/tweet?url=https://alaa22188-coder.github.io/dal3-test/love-test.html&text=اختبار%20مقياس%20الحب%20التفاعلي:%20اكتشفي%20هل%20أنتِ%20واقعة%20في%20الحب%20الحقيقي%20أم%20مجرد%20إعجاب؟" target="_blank" rel="noopener" class="share-btn share-tw">تويتر X</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. شاشة الأسئلة -->
+            <div id="question-screen" class="screen hide">
+                <h2 id="question-text">السؤال سيظهر هنا؟</h2>
+                <div id="answer-buttons" class="btn-grid">
+                    <!-- الأزرار ستتولد تلقائياً هنا -->
+                </div>
+            </div>
+
+            <!-- 3. شاشة النتيجة -->
+            <div id="result-screen" class="screen hide">
+                <h2>النتيجة النهائية للاختبار</h2>
+                <p id="result-text">تحميل النتيجة...</p>
+                <button id="restart-btn" class="btn">إعادة خوض الاختبار 🔄</button>
+
+                <div class="share-section">
+                    <p>تحدّي صديقاتكِ بنتيجتكِ واكتشفي درجة الحب لديهن! 🥳</p>
+                    <div class="share-buttons">
+                        <a id="share-fb-result" href="#" target="_blank" rel="noopener" class="share-btn share-fb">انشري النتيجة</a>
+                        <a id="share-wa-result" href="#" target="_blank" rel="noopener" class="share-btn share-wa">أرسليها بالواتساب</a>
+                        <a id="share-tw-result" href="#" target="_blank" rel="noopener" class="share-btn share-tw">تغريدة بالنتيجة</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- قسم محتوى السيو المكتوب بعناية لمحركات البحث -->
+        <article class="seo-content">
+            <h2>ما هو اختبار مقياس الحب وكيف يكشف حقيقة مشاعركِ؟</h2>
+            <p>يُعتبر <strong>اختبار مقياس الحب</strong> أو كويز "هل أنت واقع بالحب" أداة نفسية عاطفية ترفيهية مميزة، تهدف إلى مساعدة الأفراد في التمييز بين حالات التعلق العاطفي المختلفة. يعاني الكثيرون من خلط المشاعر بين الإعجاب السطحي المؤقت وبين الحب العميق المستدام، وهنا يأتي دور هذا الاختبار لتقديم مراجعة ذاتية مبسطة.</p>
+            <p>يعتمد الكويز على فرز 15 سؤالاً ذكياً من بين بنك أسئلة منوع يحتوي على 30 سؤالاً سيكولوجياً مدروساً، وتتغير الأسئلة عشوائياً في كل مرة تعيدين فيها التحدي لضمان مصداقية أكبر وتجربة خوض ممتعة وشيقة تليق بزوار منصتنا.</p>
+
+            <h2>درجات التحليل العاطفي على مقياس الحب</h2>
+            <p>من خلال طريقة احتساب النقاط التراكمية، يتم تصنيف المشاعر إلى ثلاثة مستويات حيوية:</p>
+            <ul>
+                <li><strong>الحب الجارف والأعمق (الهيام):</strong> عاطفة قوية تسيطر على العقل والوجدان، حيث يصبح الطرف الآخر جزءاً أساسياً لا يتجزأ من خطط المستقبل والحياة اليومية.</li>
+                <li><strong>الحب المتوازن والواعي:</strong> مشاعر ناضجة مبنية على الاحترام المتبادل والتفاهم والراحة، تجمع بين عاطفة القلب وثبات العقل.</li>
+                <li><strong>الإعجاب العابر والانبهار البسيط:</strong> حالة من الانجذاب الخارجي أو المؤقت، تعتمد على الانبهار بالصفات الظاهرة، وقد تتلاشى مع مرور الوقت أو عند غياب التواصل المباشر.</li>
+            </ul>
+
+            <h2>لماذا تتميز اختبارات موقع مقياس الدلع؟</h2>
+            <p>تم تصميم وبرمجة كافة أدواتنا التفاعلية لتوفر أعلى سرعة تصفح ممكنة مع تفادي مشاكل اهتزاز العناصر (CLS) لضمان توافق تام مع الهواتف الذكية. تظهر النتائج فورياً بمجرد اختيار الإجابة الأخيرة، مع التزامنا التام بحماية خصوصيتكِ المطلقة حيث تُعالج البيانات محلياً دون حفظها على الخوادم.</p>
+        </article>
+		   <section class="internal-links-section">
+            <h3>إختبارات قد تهمك أيضاً 🌟</h3>
+            <div class="links-grid">
+                <a href="https://alaa22188-coder.github.io/dal3-test/diva.html">← اختبار الديفا للبنات</a>
+                <a href="https://alaa22188-coder.github.io/dal3-test/jealousy-scale.html">← اختبار مقياس الغيرة</a>
+                <a href="https://alaa22188-coder.github.io/dal3-test/personality-strength-scale.html">← اختبار قوة الشخصية</a>
+				<a href="https://alaa22188-coder.github.io/dal3-test/brainrot-quiz.html">← اختبار التعفن الدماغي</a>
+				<a href="https://alaa22188-coder.github.io/dal3-test/spiritual-beauty.html">← اختبار الجمال الروحي</a>
+				<a href="https://alaa22188-coder.github.io/dal3-test/neuroticism-scale-test.html">← اختبار مقياس العصبية</a>
+            </div>
+        </section>
+		
+        <section class="developer-bio-section">
+            <h3>عن مطور الموقع 🛠️</h3>
+            <p>أهلاً بكِ! أنا علاء الزقزوق مطور ومصمم تطبيقات ويب متخصص في بناء أدوات تفاعلية واختبارات سلوكية ذكية وخفيفة الوزن . أهتم بتقديم أفضل تجربة مستخدم ممكنة تجمع بين دقة النتائج البرمجية وسرعة التصفح الفائقة على كافة الأجهزة.</p>
+            <div class="developer-social-links">
+                <a href="https://github.com/alaa22188-coder/" target="_blank" rel="noopener">← حساب GitHub الشخصي</a>
+                <a href="https://www.youtube.com/@alaa22188" target="_blank" rel="noopener">← youtube</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="privacy-and-contact.html">سياسة الخصوصية والاتصال</a>
+            <a href="copyright.html">حقوق النشر</a>
+        </div>
+        <p>&copy; 2026 مقياس الدلع. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script>
+        const allQuestions = [
+            { question: "عندما تستيقظين من النوم صباحاً، ما هو أول شيء يتبادر إلى ذهنكِ؟", answers: [{ text: "تفقد هاتفي فوراً لرؤية رسالة منه أو التفكير فيه تلقائياً", score: 3 }, { text: "تذكره بلطف مع التخطيط لمهام يومي وعملي بشكل عادي", score: 2 }, { text: "التركيز على روتيني الصباحي وأموري الشخصية دون تفكير عاطفي", score: 1 }] },
+            { question: "إذا استمعتِ إلى أغنية رومانسية هادئة بالصدفة:", answers: [{ text: "تتخيلين ملامحه فوراً وتعيشين كلمات الأغنية كأنها كُتبت لكما", score: 3 }, { text: "تتذكرين مواقف جميلة جمعتكم وتبتسمين بثقة", score: 2 }, { text: "تستمتعين باللحن والموسيقى كأغنية جميلة دون إسقاطها على شخص", score: 1 }] },
+            { question: "يرن هاتفكِ وتجدين اتصالاً منه بعد غياب عدة ساعات:", answers: [{ text: "يدق قلبي بسرعة وأشعر بفرحة عارمة تملأ روحي", score: 3 }, { text: "أشعر بالسعادة والراحة لأني سأطمئن عليه وأدردش معه", score: 2 }, { text: "أجيب بشكل عادي وطبيعي كما أجيب على أي صديق مقرب", score: 1 }] },
+            { question: "عندما تخططين لأهدافكِ المستقبلية أو عطلتكِ القادمة بعد خمس سنوات:", answers: [{ text: "هو محور أساسي وثابت في كل خطوة وفكرة للمستقبل", score: 3 }, { text: "أتمنى وجوده معي طالما أن الأمور تسير بشكل متوافق ومتوازن", score: 2 }, { text: "أركز على طموحاتي المهنية والشخصية الفردية أولاً والظروف تحكم", score: 1 }] },
+            { question: "رأيتِ فيه عيباً في تصرفاته أو طبعاً لا يعجبكِ كثيراً، كيف تتقبلينه؟", answers: [{ text: "أتقبله بالكامل وأرى عيوبه جزءاً من شخصيته التي أحبها وأتحملها", score: 3 }, { text: "أتناقش معه بهدوء لمحاولة تعديل هذا السلوك حباً فيه", score: 2 }, { text: "ينتابني النفور السريع وأعيد التفكير في جدوى العلاقة بأكملها", score: 1 }] },
+            { question: "إذا مررتِ بيوم سيء جداً وشعرتِ برغبة عارمة في البكاء أو الشكوى:", answers: [{ text: "هو الشخص الأول والوحيد الذي أريد الارتماء في أحضانه والحديث معه", score: 3 }, { text: "قد أتحدث معه أو مع صديقتي المقربة حسب من يتوفر أولاً", score: 2 }, { text: "أفضل العزلة والنوم بمفردي حتى ينتهي المزاج السيء دون إزعاج أحد", score: 1 }] },
+            { question: "هل تشعرين بالرغبة في معرفة كل تفاصيل يومه الصغيرة (ماذا أكل، كيف نام)؟", answers: [{ text: "نعم بشغف شديد، فكل تفاصيله تهمني وتفرحني سماعها", score: 3 }, { text: "يهمني معرفة الخطوط العريضة ليومه والاطمئنان العام عليه", score: 2 }, { text: "لا، أترك له مساحته الشخصية الكاملة ولا أحب التفاصيل المملة", score: 1 }] },
+            { question: "عندما يتحدث أمامكِ عن شخص آخر يبدي إعجابه بذكائه أو أسلوبه:", answers: [{ text: "أشعر بغيرة طفيفة ممتزجة برغبة في أن أكون الأفضل في عينيه دائماً", score: 3 }, { text: "أشاركه الرأي وأتناقش معه بعقلانية وثقة بنفسي", score: 2 }, { text: "لا أهتم للموضوع إطلاقاً فلكل شخص إعجابه الخاص", score: 1 }] },
+            { question: "ما مقدار تضحيتكِ بوقتكِ أو راحتكِ من أجل إسعاده في موقف صعب؟", answers: [{ text: "مستعدة للتضحية بالكثير دون تردد طالما أن ذلك يريحه ويسعده", score: 3 }, { text: "أساعده وأضحي بحدود معقولة لا تضر سلامتي أو مستقبلي", score: 2 }, { text: "راحتي ومصلحتي الشخصية تأتي أولاً في كل الظروف والعلاقات", score: 1 }] },
+            { question: "إذا تواجدتِ في مكان رائع ومبهج بدونه (كحفل أو نزهة فاخرة)؟", answers: [{ text: "أقول في نفسي 'ليته كان معي هنا لكتملت فرحتي الحقيقية'", score: 3 }, { text: "أستمتع بوقتي الحالي وألتقط له صوراً لأشاركها معه لاحقاً", score: 2 }, { text: "أندمج في الحفل وأنسى التفكير في أي شيء آخر تماماً", score: 1 }] },
+            { question: "هل تجدين نفسكِ تقلدين بعض كلماته، حركاته، أو أسلوبه في الكلام دون وعي؟", answers: [{ text: "نعم، لاحظت ولاحظ المحيطون بي أنني أصبحت أشبهه في تفاصيل كثيرة", score: 3 }, { text: "أحياناً وبشكل بسيط جداً يقتصر على الكلمات الدارجة بيننا", score: 2 }, { text: "مستحيل، أنا متمسكة بشخصيتي المستقلة تماماً وأسلوبي الخاص", score: 1 }] },
+            { question: "عندما تلمحين غرضاً في متجر يحبه أو يتمنى اقتناءه:", answers: [{ text: "أفكر فوراً في شرائه له كهدية مفاجئة ليرتسم الفرح على وجهه", score: 3 }, { text: "أتذكره بلطف وأبتسم وقد أخبره عبر رسالة أنني رأيته", score: 2 }, { text: "أمر بجانبه عادي دون أن يثير تصرفاً عاطفياً في داخلي", score: 1 }] },
+            { question: "ما هو شعوركِ الداخلي إذا تخيلتِ فجأة حياتكِ بدونه أو لو غاب للأبد؟", answers: [{ text: "أشعر بانقباض شديد في قلبي وظلمة في الفكرة ولا أتحمل التخيل", score: 3 }, { text: "سأحزن كثيراً وأتألم، لكن الحياة ستستمر وسأتجاوز الأمر بالوقت", score: 2 }, { text: "أمر طبيعي، فالأشخاص يروحون ويأتون ولا أحد يقف عليه الكون", score: 1 }] },
+            { question: "عندما يتحدث، هل تجدين نفسكِ تنظرين إلى عينيه وتفاصيل وجهه بتركيز شديد؟", answers: [{ text: "نعم، أسرح في ملامحه ونبرة صوته وكأنني أستمع بكل حواسي", score: 3 }, { text: "أنظر إليه كاحترام متبادل وإنصات ذكي وواعٍ لحديثه", score: 2 }, { text: "أتصفح هاتفي أو أنظر حولي وأستمع إليه كخلفية عادية", score: 1 }] },
+            { question: "كلمة واحدة تختصر طبيعة وجوده في حياتكِ الحالية:", answers: [{ text: "نبض الروح والأمان الحقيقي والبهجة التي غيرتني", score: 3 }, { text: "الشريك المناسب والمتوازن والصديق الغالي", score: 2 }, { text: "شخص لطيف ومنجذبة إليه في الوقت الحالي", score: 1 }] },
+            { question: "إذا أخطأ في حقكِ واعتذر بصدق، كم يستغرقكِ الوقت لكي تصفحي عنه؟", answers: [{ text: "بمجرد رؤية أسفه يلين قلبي فوراً وأسامحه حباً فيه", score: 3 }, { text: "أعاتبه بوضوح حتى يطيب خاطري ثم أقبل اعتذاره المتوازن", score: 2 }, { text: "آخذ موقفاً صارماً وأقاطعه لفترة طويلة لأعلمه درساً حازماً", score: 1 }] },
+            { question: "هل تشعرين بالرغبة في أن يصبح أصدقاؤكِ وعائلتكِ يحبونه بقدر حبكِ له؟", answers: [{ text: "نعم جداً، وأحاول دائماً إبراز محاسنه ومزاياه أمامهم ليفخروا به", score: 3 }, { text: "أتمنى أن يتقبلوه ويحترموه، فهذا يكفي لبناء علاقات مستقرة", score: 2 }, { text: "لا يهمني رأي الآخرين فيه، فالعلاقة تخصني أنا بمفردي أولاً", score: 1 }] },
+            { question: "عندما يمدح مظهركِ أو فستانكِ الجديد، كيف يكون تأثير كلمته؟", answers: [{ text: "تطير روحي فرحاً وتصبح كلمته هي الوحيدة الهامة بين الجميع", score: 3 }, { text: "أشعر بالخجل والسرور والامتنان لذوقه ولطفه العاطفي", score: 2 }, { text: "أثق في أناقتي مسبقاً وكلمته إضافة عادية ومجاملة لطيفة", score: 1 }] },
+            { question: "لو عرض عليكِ فرصة عمل مذهلة في مدينة أخرى، هل ستؤثر مشاعركِ عليه في القرار؟", answers: [{ text: "بالتأكيد، سأناقش الأمر معه أولاً وقد أرفضها إذا كانت ستبعدني عنه", score: 3 }, { text: "سأبحث عن حل وسط يضمن بقاء علاقتنا وتطوري المهني معاً", score: 2 }, { text: "سأقبلها فوراً دون تردد، فمستقبلي المهني أهم من أي علاقة عاطفية", score: 1 }] },
+            { question: "عندما يمرض أو يتألم، كيف تكون حالتكِ النفسية؟", answers: [{ text: "أشعر بالحزن الشديد كأن الألم في جسدي وأقلق عليه بجنون", score: 3 }, { text: "أطمئن عليه باستمرار وأقدم له النصائح الطبية وادعو له بالشفاء", score: 2 }, { text: "أتمنى له الشفاء وأعلم أنه سيتحسن بمفرده أو بالذهاب للطبيب", score: 1 }] },
+            { question: "هل تذكرين التواريخ الدقيقة لأول لقاء، أول كلمة، أو أول اتصال بينكما؟", answers: [{ text: "نعم، محفورة في ذاكرتي بكل تفاصيلها وساعاتها ومكانها", score: 3 }, { text: "أذكر المناسبات والتواريخ الهامة الكبرى فقط دون التفاصيل الدقيقة", score: 2 }, { text: "لا أهتم بحفظ التواريخ والماضي، فأنا أعيش اللحظة الحالية فقط", score: 1 }] },
+            { question: "عندما تبتعدان لعدة أيام بسبب السفر أو الانشغال، ما هو حجم اشتياقكِ؟", answers: [{ text: "أشعر بفراغ قاتل وشوق مستمر ورغبة في محادثته كل ساعة", score: 3 }, { text: "أشتاق إليه بلطف ونتواصل في أوقات الفراغ للاطمئنان المتبادل", score: 2 }, { text: "أنشغل بأموري ويومي ولا أشعر بالاشتياق المزعج أو الفراغ", score: 1 }] },
+            { question: "إذا رأيتِ صورة قديمة له وهو طفل صغير، ما هي ردة فعلكِ؟", answers: [{ text: "ينتابني حنان جارف وأشعر برغبة في حمايته وأتأمل تفاصيله بحب", score: 3 }, { text: "أراها صورة لطيفة جداً وأمازحه بابتسامة عن شكله القديم", score: 2 }, { text: "صورة عادية كباقي صور الأطفال القديمة ولا تثير عاطفتي", score: 1 }] },
+            { question: "هل تشعرين بالراحة والأمان الكامل في حضوره وكأنكِ على طبيعتكِ تماماً؟", answers: [{ text: "نعم، أخلع كل الأقنعة معه وأتصرف بعفوية مطلقة وثقة عميقة", score: 3 }, { text: "بدرجة كبيرة جداً، طالما أن الحدود والاحترام محفوظ بيننا", score: 2 }, { text: "أتحفظ كثيراً في كلامي وتصرفاتي لأحافظ على صورتي المثالية أمامه", score: 1 }] },
+            { question: "عندما يحدث خلاف أو نقاش حاد بينكما، ما هو هدفكِ الأساسي؟", answers: [{ text: "إنهاء الخلاف ومراضاته وحماية علاقتنا من أي شرخ بحب", score: 3 }, { text: "الوصول لحل منطقي يرضي الطرفين بالعدل والتفاهم الواعي", score: 2 }, { text: "إثبات أنني على حق والانتصار في النقاش وفرض رأيي بقوة", score: 1 }] },
+            { question: "هل تجدين نفسكِ مهتمة بهواياته أو مجاله (ككرة القدم أو القراءة) لأجله؟", answers: [{ text: "نعم، أتابع وأقرأ عن هواياته لأجده موضوعاً للنقاش والتقارب معه", score: 3 }, { text: "أشجعه على هواياته دون أن أحاول ممارستها أو إجبار نفسي عليها", score: 2 }, { text: "لا تهمني هواياته مطلقاً فلكل منا عالمه الخاص المستقل", score: 1 }] },
+            { question: "إذا أرسل لكِ رسالة نصية قصيرة وغير متوقعة في منتصف اليوم:", answers: [{ text: "يتغير مزاجي للأفضل فوراً وأبتسم تلقائياً أمام شاشة الهاتف", score: 3 }, { text: "أفرح بلطف وأرد عليه بروح جميلة في أقرب فرصة فراغ", score: 2 }, { text: "أقرأها بشكل عادي وأؤجل الرد حتى أنتهي من كافة أعمالي", score: 1 }] },
+            { question: "ما هو شعوركِ تجاه عائلته والمقربين منه؟", answers: [{ text: "أحبهم وأحترمهم جداً لأنهم جزء منه وأسعى لكسب ودهم بصدق", score: 3 }, { text: "أتعامل معهم بحدود اللياقة والأدب الاجتماعي والاحترام المتبادل", score: 2 }, { text: "لا تهمني عائلته ولا أود الاختلاط بهم لراحة بالي الشخصية", score: 1 }] },
+            { question: "هل تشعرين بأن وجوده في حياتكِ جعلكِ شخصاً أفضل وأكثر تفاؤلاً؟", answers: [{ text: "نعم بالـتأكيد، فتح لي آفاقاً من السعادة والسلام وحب الحياة", score: 3 }, { text: "أضاف لي توازناً ورفقة جميلة ومفيدة في طريقي الحالي", score: 2 }, { text: "لم يتغير شيء في شخصيتي، فأنا كما أنا مسبقاً وبدونه", score: 1 }] },
+            { question: "أخيراً، كيف تعرفين الحب الحقيقي من وجهة نظركِ؟", answers: [{ text: "هو الاندماج الكامل، والتضحية، وأن يصبح الطرف الآخر توأم الروح", score: 3 }, { text: "هو المودة والرحمة والأمان والتفاهم الذكي المبني على الاحترام", score: 2 }, { text: "هو مجرد مشاعر مؤقتة وانجذاب كيميائي تحكمه المصالح والظروف", score: 1 }] }]
+        ;
+
+        let questions = [];
+        const welcomeScreen = document.getElementById('welcome-screen');
+        const questionScreen = document.getElementById('question-screen');
+        const resultScreen = document.getElementById('result-screen');
+        const progressBar = document.getElementById('progress-bar');
+        const startButton = document.getElementById('start-btn');
+        const restartButton = document.getElementById('restart-btn');
+        const questionText = document.getElementById('question-text');
+        const answerButtonsContainer = document.getElementById('answer-buttons');
+        const resultText = document.getElementById('result-text');
+        const shareFbResult = document.getElementById('share-fb-result');
+        const shareWaResult = document.getElementById('share-wa-result');
+        const shareTwResult = document.getElementById('share-tw-result');
+
+        let currentQuestionIndex = 0;
+        let totalScore = 0;
+
+        startButton.addEventListener('click', startQuiz);
+        restartButton.addEventListener('click', startQuiz);
+
+        function getRandomQuestions() {
+            let shuffled = [...allQuestions];
+            for (let i = shuffled.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+            }
+            return shuffled.slice(0, 15);
+        }
+
+        function buildProgressBar() {
+            progressBar.innerHTML = '';
+            for (let i = 0; i < questions.length; i++) {
+                const segment = document.createElement('div');
+                segment.classList.add('progress-segment');
+                progressBar.appendChild(segment);
+            }
+        }
+
+        function updateProgressBar() {
+            const segments = document.querySelectorAll('.progress-segment');
+            segments.forEach((segment, index) => {
+                if (index <= currentQuestionIndex) {
+                    segment.classList.add('active');
+                } else {                    
+                    segment.classList.remove('active');
+                }
+            });
+        }
+
+        function startQuiz() {
+            totalScore = 0;
+            currentQuestionIndex = 0;
+            questions = getRandomQuestions();
+            welcomeScreen.classList.add('hide');
+            resultScreen.classList.add('hide');
+            questionScreen.classList.remove('hide');
+            progressBar.classList.remove('hide');
+            buildProgressBar();
+            showQuestion();
+        }
+
+        function showQuestion() {
+            answerButtonsContainer.innerHTML = '';
+            updateProgressBar();
+            let currentQuestion = questions[currentQuestionIndex];
+            questionText.innerText = `سؤال ${currentQuestionIndex + 1} من 15: ${currentQuestion.question}`;
+
+            currentQuestion.answers.forEach(answer => {
+                const button = document.createElement('button');
+                button.innerText = answer.text;
+                button.classList.add('btn', 'btn-answer');
+                button.dataset.score = answer.score;
+                button.addEventListener('click', selectAnswer);
+                answerButtonsContainer.appendChild(button);
+            });
+        }
+
+        function selectAnswer(e) {
+            const selectedButton = e.target.closest('button');
+            const score = parseInt(selectedButton.dataset.score);
+            totalScore += score;
+            currentQuestionIndex++;
+
+            if (currentQuestionIndex < questions.length) {
+                showQuestion();
+            } else {
+                showResult();
+            }
+        }
+
+        function showResult() {
+            questionScreen.classList.add('hide');
+            progressBar.classList.add('hide');
+            resultScreen.classList.remove('hide');
+
+            let resultMessage = "";
+            let shareSummary = "";
+
+            if (totalScore >= 38) {
+                resultMessage = `تحليلكِ النهائي: أنتِ واقعة في الحب الجارف والحقيقي بنسبة 100%! 💘🔥 \n مبروك! مشاعركِ ليست مجرد إعجاب سطحي، بل هي عاطفة عميقة وصادقة تسيطر على وجدانكِ بالكامل. هذا الشخص يمثل لكِ نبض الروح والأمان، وتفاصيله محفورة في قلبكِ. حب جارف يحمل شغف البدايات وعمق العلاقات الحقيقية المستدامة.`;
+                shareSummary = "طلعت واقعة في الحب الجارف والحقيقي بنسبة 100%! 💘🔥 جربي اختبار مقياس الحب واكتشفي مشاعركِ فوراً:";
+            } else if (totalScore >= 26) {
+                resultMessage = `تحليلكِ النهائي: حبكِ متوازن، ناضج وواعي جداً! 🌸✨ \n عاطفتكِ رائعة وصحية للغاية. أنتِ تحبين هذا الشخص بصدق وتثمنين وجوده، لكنكِ تمتلكين وعياً عقلياً يضمن حماية مصلحتكِ وشخصيتكِ المستقلة دون ذوبان مفرط. علاقتكِ مبنية على المودة والرحمة والاحترام المتبادل وهو سر العلاقات الناجحة.`;
+                shareSummary = "حبي متوازن، ناضج وواعي يجمع بين القلب والعقل! 🌸✨ جربي كويز مقياس الحب:";
+            } else {
+                resultMessage = `تحليلكِ النهائي: مشاعركِ مجرد إعجاب عابر وانباهار مؤقت! 😎🧊 \n تحليلكِ يشير إلى أن المشاعر الحالية لم تصل بعد إلى مرحلة الحب العميق. هو مجرد انجذاب خفيف أو انبهار بصفات خارجية وتوافق مؤقت. بالرك طويل ومستقلة تماماً في عواطفكِ، والوقت والمواقف القادمة هي وحدها التي ستحكم على هذه المشاعر.`;
+                shareSummary = "طلعت مشاعري مجرد إعجاب عابر وانبهار مؤقت! 😎🧊 جربي اختبار مقياس الحب:";
+            }
+
+            resultText.innerText = resultMessage;
+            const pageUrl = encodeURIComponent("https://alaa22188-coder.github.io/dal3-test/love-test.html");
+            const encodedText = encodeURIComponent(shareSummary);
+
+            shareFbResult.href = `https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`;
+            shareWaResult.href = `https://api.whatsapp.com/send?text=${encodedText}%20${pageUrl}`;
+            shareTwResult.href = `https://twitter.com/intent/tweet?url=${pageUrl}&text=${encodedText}`;
+        }
+    </script>
+</body>
+</html>

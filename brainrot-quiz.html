@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>اختبار مقياس التعفن الدماغي - كويز تعفن الدماغ Brain Rot</title>
+    <meta name="description" content="جرّب اختبار مقياس التعفن الدماغي التفاعلي؛ حيث تظهر لك 15 سؤالاً مسلياً ودقيقاً لقياس مدى إدمانك للميمز والمصطلحات الشائعة على الإنترنت. اكتشف نسبة تعفن دماغك فوراً!">
+    <meta name="keywords" content="اختبار مقياس التعفن الدماغي, كويز Brain Rot, اختبار ميمز الإنترنت, تحليل الشخصية الرقمية">
+    <link rel="canonical" href="https://alaa22188-coder.github.io/dal3-test/brainrot-quiz.html">
+
+    <meta property="og:locale" content="ar_AR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="اختبار مقياس التعفن الدماغي التفاعلي 2026: ما هي نسبة تعفن دماغك؟">
+    <meta property="og:description" content="ادخل اختبار مقياس التعفن الدماغي واكتشف هل دماغك سليم تماماً أم غارق في الميمز والـ Brain Rot بنسبة 100%؟ 15 سؤالاً ممتعاً في انتظارك!">
+    <meta property="og:url" content="https://alaa22188-coder.github.io/dal3-test/brainrot-quiz.html">
+    <meta property="og:site_name" content="مقياس التعفن الدماغي">
+    <meta property="og:image" content="https://alaa22188-coder.github.io/dal3-test/quiz-share.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <style>
+        /* إعدادات خطوط النظام السريعة والمريحة جداً للعين (تمنع CLS) */
+        :root {
+            --bg-color: #f8fafc;
+            --primary-color: #db2777;
+            --secondary-color: #0f172a;
+            --text-muted: #334155;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+            --segment-active: #f472b6;
+            --segment-inactive: #cbd5e1;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--secondary-color);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            line-height: 1.8;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* الهيدر */
+        header {
+            background-color: var(--card-bg);
+            border-bottom: 1px solid var(--border-color);
+            padding: 16px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo a {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin-right: 16px;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        /* الحاوية الرئيسية */
+        main {
+            flex: 1;
+            max-width: 700px;
+            width: 100%;
+            margin: 24px auto;
+            padding: 0 16px;
+        }
+
+        /* حاوية مساحة الإعلان المحجوزة مسبقاً (تحمي من اهتزاز الـ CLS للبيج سبيد) */
+        .ad-slot-container {
+            min-height: 280px;
+            margin: 0 auto 24px auto;
+            text-align: center;
+            background-color: #f1f5f9;
+            border: 1px dashed var(--border-color);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #94a3b8;
+            font-size: 0.9rem;
+            font-weight: 600;
+            overflow: hidden;
+        }
+
+        /* حاوية الاختبار */
+        .quiz-container {
+            background-color: var(--card-bg);
+            padding: 32px 24px;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+            text-align: center;
+            margin-bottom: 24px;
+            min-height: 320px;
+        }
+
+        /* شريط التقدم */
+        .progress-bar-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 6px;
+            margin-bottom: 32px;
+        }
+
+        .progress-segment {
+            flex: 1;
+            height: 8px;
+            background-color: var(--segment-inactive);
+            border-radius: 4px;
+        }
+
+        .progress-segment.active {
+            background-color: var(--segment-active);
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            color: var(--secondary-color);
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            color: var(--secondary-color);
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            color: var(--secondary-color);
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        .quiz-container p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            margin-bottom: 24px;
+        }
+
+        /* أزرار مريحة للموبايل */
+        .btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 14px 28px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 12px;
+            cursor: pointer;
+            width: 100%;
+            min-height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        .btn-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin-top: 24px;
+        }
+
+        .btn-answer {
+            background-color: var(--bg-color);
+            color: var(--secondary-color);
+            border: 1px solid var(--border-color);
+            text-align: right;
+            justify-content: flex-start;
+            padding: 16px;
+            height: auto;
+        }
+
+        .btn-answer:hover,
+        .btn-answer:active {
+            background-color: #f1f5f9;
+            border-color: #cbd5e1;
+        }
+
+        /* أزرار مشاركة التواصل الاجتماعي المحسنة السريعة */
+        .share-section {
+            margin-top: 24px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .share-section p {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--secondary-color);
+        }
+
+        .share-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .share-btn {
+            padding: 10px 16px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: opacity 0.2s;
+            min-height: 40px;
+        }
+
+        .share-btn:hover {
+            opacity: 0.9;
+        }
+
+        .share-fb {
+            background-color: #1877f2;
+        }
+
+        .share-wa {
+            background-color: #25d366;
+        }
+
+        .share-tw {
+            background-color: #000000;
+        }
+
+        /* قسم السيو والمحتوى النصي */
+        .seo-content {
+            background-color: var(--card-bg);
+            padding: 32px 24px;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 24px;
+        }
+
+        .seo-content h2 {
+            font-size: 1.4rem;
+            color: var(--primary-color);
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+
+        .seo-content p {
+            color: var(--text-muted);
+            margin-bottom: 16px;
+            font-size: 1.05rem;
+        }
+
+        .seo-content ul {
+            margin-right: 24px;
+            margin-bottom: 16px;
+            color: var(--text-muted);
+        }
+
+        .seo-content ul li {
+            margin-bottom: 8px;
+        }
+
+        /* 🔗 قسم الروابط الداخلية */
+        .internal-links-section {
+            background-color: var(--card-bg);
+            padding: 32px 24px;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 24px;
+        }
+
+        .links-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .links-grid a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 600;
+            padding: 4px 0;
+            display: inline-block;
+        }
+
+        .links-grid a:hover {
+            text-decoration: underline;
+            color: var(--secondary-color);
+        }
+
+        /* 🧑‍💻 قسم معلومات المطور الشخصية لتعزيز الـ E-E-A-T */
+        .developer-bio-section {
+            background-color: var(--card-bg);
+            padding: 32px 24px;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 24px;
+        }
+
+        .developer-bio-section p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            margin-bottom: 16px;
+        }
+
+        .developer-social-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .developer-social-links a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-size: 1.05rem;
+            font-weight: 700;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 2px;
+        }
+
+        .developer-social-links a:hover {
+            color: var(--primary-color);
+            border-bottom-color: var(--secondary-color);
+        }
+
+        /* الفوتر */
+        footer {
+            background-color: var(--secondary-color);
+            color: #94a3b8;
+            padding: 32px 20px;
+            text-align: center;
+            font-size: 0.95rem;
+            margin-top: auto;
+        }
+
+        .footer-links {
+            margin-bottom: 16px;
+        }
+
+        .footer-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            margin: 0 12px;
+            display: inline-block;
+            min-height: 44px;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .hide {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="https://alaa22188-coder.github.io/dal3-test/">مقياس الدلع</a>
+            </div>
+            <nav class="nav-links">
+                <a href="https://alaa22188-coder.github.io/dal3-test/">الرئيسية</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="quiz-container">
+            <div id="progress-bar" class="progress-bar-container hide">
+                </div>
+
+            <div id="welcome-screen" class="screen">
+                <h1>اختبار مقياس التعفن الدماغي (Brain Rot Quiz)</h1>
+                <p>هل تقضي معظم وقتك في تصفح تيك توك وريلز ومتابعة آخر صيحات الـ Memes الغريبة والمصطلحات المريبة؟ أم أن عقلك لا يزال سليماً ونقياً وبعيداً عن لوثات الإنترنت؟ اكتشف الآن طبيعة حالتك الذهنية ونسبة تعفن دماغك الرقمي عبر الإجابة على 15 سؤالاً نفسياً وسلوكياً مسلياً ودقيقاً للغاية!</p>
+                <button id="start-btn" class="btn">ابدأ الاختبار الآن</button>
+
+                <div class="share-section">
+                    <p>شارك الاختبار مع أصدقائك 👥</p>
+                    <div class="share-buttons">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://alaa22188-coder.github.io/dal3-test/brainrot-quiz.html" target="_blank" rel="noopener" class="share-btn share-fb">فيسبوك</a>
+                        <a href="https://api.whatsapp.com/send?text=اكتشف%20نسبة%20تعفن%20دماغك%20الرقمي%20مع%20هذا%20الاختبار%20التفاعلي%20المسلي%20🧠🔥%20https://alaa22188-coder.github.io/dal3-test/brainrot-quiz.html" target="_blank" rel="noopener" class="share-btn share-wa">واتساب</a>
+                        <a href="https://twitter.com/intent/tweet?url=https://alaa22188-coder.github.io/dal3-test/brainrot-quiz.html&text=اختبار%20مقياس%20التعفن%20الدماغي%20التفاعلي:%20اكتشف%20نسبة%20Brain%20Rot%20في%20عقلك" target="_blank" rel="noopener" class="share-btn share-tw">تويتر X</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="question-screen" class="screen hide">
+                <h2 id="question-text">السؤال سيظهر هنا؟</h2>
+                <div id="answer-buttons" class="btn-grid">
+                    </div>
+            </div>
+
+            <div id="result-screen" class="screen hide">
+                <h2>النتيجة النهائية للاختبار</h2>
+                <p id="result-text">تحميل النتيجة...</p>
+                <button id="restart-btn" class="btn">إعادة خوض الاختبار 🔄</button>
+
+                <div class="share-section">
+                    <p>تحدّ أصدقاءك بنتيجتك واكتشف من منكم الأكثر تعفناً! 🥳</p>
+                    <div class="share-buttons">
+                        <a id="share-fb-result" href="#" target="_blank" rel="noopener" class="share-btn share-fb">انشر النتيجة</a>
+                        <a id="share-wa-result" href="#" target="_blank" rel="noopener" class="share-btn share-wa">أرسلها بالواتساب</a>
+                        <a id="share-tw-result" href="#" target="_blank" rel="noopener" class="share-btn share-tw">تغريدة بالنتيجة</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <article class="seo-content">
+            <h2>ما هو اختبار مقياس الدلع وما الفائدة من تحليله؟</h2>
+            <p>يُعد <strong>اختبار مقياس الدلع</strong> واحداً من الاختبارات الترفيهية والنفسية السلوكية الشائعة التي تبحث في نمط الاستجابة العاطفية واليومية للمرأة. يعتمد هذا التحليل المبتكر على قياس ردود أفعالكِ الافتراضية تجاه مواقف حياتية مختلفة، مثل كيفية التعامل مع الأزمات المفاجئة، اهتمامكِ بالتفاصيل الجمالية الرفيعة، ونظرتكِ الشخصية لأسلوب الراحة والعمل.</p>
+            <p>يتميز نظام الكويز المتطور لدينا بامتلاكه قاعدة بيانات مكونة من 30 سؤالاً منوعاً، تُفرز وتُختار منها 15 سؤالاً عشوائياً ذكياً في كل مرة تخوضين فيها التحدي، لتجربة استثنائية مليئة بالتشويق والتنوع مع صديقاتكِ.</p>
+
+            <h2>كيف يتم حساب نسبة الدلال في الشخصية?</h2>
+            <p>يرتكز الاختبار على مصفوفة أسئلة مدروسة تقسم أنماط الشخصية إلى ثلاثة محاور رئيسية:</p>
+            <ul>
+                <li><strong>الشخصية الدلوعة (الرقيقة جداً):</strong> وهي الشخصية التي تميل إلى الرفاهية العالية، وتفضل الاعتماد على الآخرين بحب، وتتأثر بالمواقف سريعاً.</li>
+                <li><strong>الشخصية المتوازنة:</strong> تجمع بين الدلال والأنوثة الطاغية في أوقات الراحة، ولكنها تتحول إلى شخصية حاسمة وعملية في أوقات الشدائد والأعمال.</li>
+                <li><strong>الشخصية الجادة (العملية):</strong> شخصية قوية، تمتاز بالاستقلالية الكاملة، تفضل الحلول المباشرة، ولا تلتفت كثيراً للرفاهية المفرطة.</li>
+            </ul>
+
+            <h2>لماذا تُفضل اختبارات منصة مقياس الدلع؟</h2>
+            <p>في منصة <strong>مقياس الدلع</strong>، نحرص على تقديم تجربة مستخدم سريعة وخفيفة جداً متوافقة مع الهواتف المحمولة. اختباراتنا تفاعلية بالكامل ولا تتطلب انتظار أوقات تحميل طويلة، كما تمنحكِ تحليلاً فورياً دقيقاً مبنياً على نقاط حقيقية لكل إجابة تختارينها، مع مراعاة الخصوصية الكاملة حيث لا يتم حفظ أي بيانات شخصية على خوادمنا.</p>
+        </article>
+		   <section class="internal-links-section">
+            <h3>إختبارات قد تهمك أيضاً 🌟</h3>
+            <div class="links-grid">
+                <a href="https://alaa22188-coder.github.io/dal3-test/diva.html">← اختبار الديفا للبنات</a>
+                <a href="https://alaa22188-coder.github.io/dal3-test/jealousy-scale.html">← اختبار مقياس الغيرة</a>
+                <a href="https://alaa22188-coder.github.io/dal3-test/personality-strength-scale.html">← اختبار قوة الشخصية</a>
+				<a href="https://alaa22188-coder.github.io/dal3-test/spiritual-beauty.html">← اختبار الجمال الروحي</a>
+				<a href="https://alaa22188-coder.github.io/dal3-test/love-test.html">← اختبار هل انت واقع بالحب</a>
+				<a href="https://alaa22188-coder.github.io/dal3-test/neuroticism-scale-test.html">← اختبار مقياس العصبية</a>
+            </div>
+        </section>
+
+        <section class="developer-bio-section">
+            <h3>عن مطور الموقع 🛠️</h3>
+            <p>أهلاً بكِ! أنا علاء الزقزوق مطور ومصمم تطبيقات ويب متخصص في بناء أدوات تفاعلية واختبارات سلوكية ذكية وخفيفة الوزن . أهتم بتقديم أفضل تجربة مستخدم ممكنة تجمع بين دقة النتائج البرمجية وسرعة التصفح الفائقة على كافة الأجهزة.</p>
+            <div class="developer-social-links">
+                <a href="https://github.com/alaa22188-coder/" target="_blank" rel="noopener">← حساب GitHub الشخصي</a>
+                <a href="https://www.youtube.com/@alaa22188" target="_blank" rel="noopener">← youtube</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="privacy-and-contact.html">سياسة الخصوصية والاتصال</a>
+            <a href="copyright.html">حقوق النشر</a>
+        </div>
+        <p>&copy; 2026 مقياس الدلع. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script>
+        // بنك الأسئلة الشامل (الأسئلة القديمة + الـ 30 سؤالاً الجديدة المقسمة والموزعة)
+        const allQuestions = [
+            // --- المجموعة الأولى: ميمز ومصطلحات وثقافة الإنترنت (القديمة) ---
+            { 
+                question: "عندما ترى موقفاً مضحكاً في حياتك الواقعية، ما هي الكلمة الأولى التي تقفز إلى ذهنك؟", 
+                answers: [
+                    { text: "سكيبيدي (Skibidi) أو سيجما (Sigma)", score: 4 }, 
+                    { text: "موقف ميمز شهير خطر ببالي", score: 2 }, 
+                    { text: "أضحك بشكل طبيعي دون مصطلحات إنترنت", score: 0 }
+                ] 
+            },
+            { 
+                question: "إذا قال لك أحدهم مصطلح 'Skibidi Toilet'، ما هي ردة فعلك الفورية؟", 
+                answers: [
+                    { text: "أبدأ بغناء الأغنية تلقائياً في عقلي أو بصوت عالي", score: 4 }, 
+                    { text: "أعرفه جيداً وأبتسم على ميمز الطفولة هذه", score: 2 }, 
+                    { text: "أشعر بالانزعاج أو لا أفهم ما الذي يعنيه هذا أصلاً", score: 0 }
+                ] 
+            },
+            { 
+                question: "ما معنى كلمة 'Rizz' بالنسبة لك في المحادثات؟", 
+                answers: [
+                    { text: "الكاريزما والقدرة الأسطورية على جذب الآخرين وسحرهم", score: 4 }, 
+                    { text: "مجرّد مصطلح إنترنت شائع أسمعه كثيراً مؤخراً", score: 2 }, 
+                    { text: "لا أستخدمها وأفضل الكلمات واللغة العربية الفصحى أو العامية الرصينة", score: 0 }
+                ] 
+            },
+            { 
+                question: "عندما تجلس مع عائلتك أو أصدقائك، هل تجد نفسك تستخدم مصطلحات التيك توك دون وعي؟", 
+                answers: [
+                    { text: "نعم دائماً، ولا يفهمون ما أقوله في أغلب الأحيان", score: 4 }, 
+                    { text: "أحياناً على سبيل المزاح مع أصدقائي المقربين فقط", score: 2 }, 
+                    { text: "أبداً، أتحدث بجدية وبطريقة طبيعية تماماً", score: 0 }
+                ] 
+            },
+            { 
+                question: "ما هو الميم (Meme) المفضل لديك حالياً؟", 
+                answers: [
+                    { text: "الميمز العشوائية السريعة جداً التي لا معنى لها (Surreal)", score: 4 }, 
+                    { text: "الميمز الكوميدية التقليدية التي تعبر عن مواقف يومية حقيقية", score: 2 }, 
+                    { text: "لا أهتم بالميمز ولا أتابع هذه السخافات الرقمية", score: 0 }
+                ] 
+            },
+            { 
+                question: "هل سبق لك وأن قمت بتحدي أو رقصة تريند مشهور في غرفتك لوحدك؟", 
+                answers: [
+                    { text: "نعم، أحفظ الحركات وأكررها باستمرار بشغف", score: 4 }, 
+                    { text: "مرة أو مرتين على سبيل الفضول والتسلية فقط", score: 2 }, 
+                    { text: "لا، لم ولن أفعل ذلك مطلقاً", score: 0 }
+                ] 
+            },
+            { 
+                question: "عندما ترى شخصاً يتصرف بثقة مفرطة، هل تصفه في سرّك بأنه 'Sigma Male'؟", 
+                answers: [
+                    { text: "نعم، مع تشغيل موسيقى السيجما الشهيرة في مخيلتي", score: 4 }, 
+                    { text: "أحياناً كنوع من التهكم والضحك الإلكتروني", score: 2 }, 
+                    { text: "أصفه بالثقة أو الغرور العادي دون مصطلحات إنترنت", score: 0 }
+                ] 
+            },
+            { 
+                question: "كلمة 'Gooning' أو 'Mewing' بالنسبة لك هي:", 
+                answers: [
+                    { text: "تمارين ومصطلحات يومية أمارسها أو أتابع ترينداتها بقوة", score: 4 }, 
+                    { text: "سمعت عنها عابراً في بعض الفيديوهات الساخرة", score: 2 }, 
+                    { text: "لا أعرف ما هي ولا تهمني هذه الطلاسم الرقمية", score: 0 }
+                ] 
+            },
+            { 
+                question: "أخيراً، كيف تقيم نفسك في معرفة تريندات هذا الأسبوع؟", 
+                answers: [
+                    { text: "موسوعة متحركة! أعرف التريند قبل أن ينتشر ويصبح مشهوراً", score: 4 }, 
+                    { text: "أعرف التريندات الكبيرة والمشهورة فقط التي يتحدث عنها الجميع", score: 2 }, 
+                    { text: "خارج التغطية تماماً ولا علم لي بما يحدث في مستنقع التريندات", score: 0 }
+                ] 
+            },
+
+            // --- أولاً: التركيز، الإدراك، والذاكرة (10 أسئلة جديدة) ---
+            {
+                question: "هل تجد صعوبة في قراءة مقال طويل أو كتاب دون تفقد هاتفك؟",
+                answers: [{ text: "نعم، أجد صعوبة بالغة وتشتت مستمر", score: 4 }, { text: "أحياناً، بحسب الشغف بالموضوع", score: 2 }, { text: "لا، أركز تماماً حتى النهاية", score: 0 }]
+            },
+            {
+                question: "هل تنسى السبب الذي دفعك لفتح تطبيق معين بمجرد دخوله؟",
+                answers: [{ text: "نعم، يتكرر هذا معي طوال اليوم", score: 4 }, { text: "أحياناً يحدث بشكل عابر", score: 2 }, { text: "لا، أدخل بهدف واضح دائماً", score: 0 }]
+            },
+            {
+                question: "هل تشعر بصعوبة في تذكر تفاصيل بسيطة حدثت معك في نفس اليوم؟",
+                answers: [{ text: "نعم، أشعر أن ذاكرتي قصيرة جداً", score: 4 }, { text: "أحياناً تسقط مني بعض التفاصيل", score: 2 }, { text: "لا، ذاكرتي قوية ومسترجعة لأحداث يومي", score: 0 }]
+            },
+            {
+                question: "هل تعاني من 'ضباب دماغي' وتشعر وكأن عقلك يعمل ببطء؟",
+                answers: [{ text: "نعم، بشكل شبه دائم ومنهك", score: 4 }, { text: "بين الحين والآخر عند التعب", score: 2 }, { text: "أبداً، ذهني حاضر ونشيط باستمرار", score: 0 }]
+            },
+            {
+                question: "هل تجد صعوبة في التركيز على مهمة واحدة لأكثر من 15 دقيقة؟",
+                answers: [{ text: "نعم، عقلي يطلب التشتت فوراً", score: 4 }, { text: "حسب أهمية وثقل المهمة", score: 2 }, { text: "لا، أستطيع العمل لساعات بتركيز", score: 0 }]
+            },
+            {
+                question: "هل تجد صعوبة في تذكر المهام التي خططت لإنجازها اليوم؟",
+                answers: [{ text: "نعم، أنساها تماماً بدون تدوين", score: 4 }, { text: "أحياناً تفوتني بعض المهام", score: 2 }, { text: "لا، أتذكر خطتي اليومية بوضوح", score: 0 }]
+            },
+            {
+                question: "هل تتشتت أفكارك بسرعة أثناء التحدث مع شخص آخر؟",
+                answers: [{ text: "نعم، أسرح كثيراً أثناء الحوار الواقعي", score: 4 }, { text: "نادراً أو مع الشخصيات المملة فقط", score: 2 }, { text: "لا، أنصت وأركز بكل اهتمام", score: 0 }]
+            },
+            {
+                question: "هل تشعر أنك تفقد تدريجياً القدرة على التفكير العميق والتحليلي؟",
+                answers: [{ text: "نعم، أفضل الحلول السطحية والجاهزة دائماً", score: 4 }, { text: "أشعر بذلك بشكل طفيف مؤخراً", score: 2 }, { text: "لا، ما زلت أمارس التفكير العميق بحرية", score: 0 }]
+            },
+            {
+                question: "هل تكرر قراءة الفقرة نفسها عدة مرات لاستيعابها أثناء القراءة؟",
+                answers: [{ text: "نعم، عيني تقرأ وعقلي في مكان آخر", score: 4 }, { text: "يحدث هذا فقط عندما أكون مجهداً", score: 2 }, { text: "لا، أستوعب الكلام من القراءة الأولى", score: 0 }]
+            },
+            {
+                question: "هل تواجه صعوبة في تذكر مواعيدك أو اجتماعاتك المهمة دون تذكير هاتفي؟",
+                answers: [{ text: "نعم، أعتمد على الهاتف كلياً وإلا ضاعت", score: 4 }, { text: "أحياناً أنسى المواعيد الثانوية فقط", score: 2 }, { text: "لا، عقلي ينظم مواعيدي بدقة تامة", score: 0 }]
+            },
+
+            // --- ثانياً: عادات استهلاك الشاشات (10 أسئلة جديدة + دمج القديمة المتشابهة) ---
+            {
+                question: "هل تبدأ يومك بتفقد هاتفك قبل حتى أن تنهض من السرير؟",
+                answers: [{ text: "نعم، أقضي أول نصف ساعة مستيقظاً عليه", score: 4 }, { text: "ألقي نظرة سريعة على الإشعارات فقط", score: 2 }, { text: "لا، لا ألمسه إلا بعد مغادرة السرير", score: 0 }]
+            },
+            {
+                question: "هل تتصفح وسائل التواصل الاجتماعي بشكل 'لاإرادي' ودون هدف؟",
+                answers: [{ text: "نعم، أجد الهاتف في يدي فجأة دون وعي", score: 4 }, { text: "قليلاً عندما أشعر بالملل الشديد", score: 2 }, { text: "لا، أفتح التطبيقات بهدف وتوقيت محددين", score: 0 }]
+            },
+            {
+                question: "كم ساعة تقضيها يومياً في مشاهدة مقاطع الفيديو القصيرة (Reels/TikToks/Shorts)؟",
+                answers: [{ text: "أكثر من 3 إلى 5 ساعات وأفقد الإحساس بالوقت تماماً", score: 4 }, { text: "من ساعة إلى ساعتين تقريباً", score: 2 }, { text: "أقل من ساعة أو لا أتابعها نهائياً", score: 0 }]
+            },
+            {
+                question: "هل تشعر بالقلق أو التوتر إذا نسيت هاتفك في مكان ما؟",
+                answers: [{ text: "نعم، أشعر بذعر شديد ونقص حاد", score: 4 }, { text: "توتر خفيف ريثما أستعيده", score: 2 }, { text: "لا، الأمر طبيعي جداً ومريح أحياناً", score: 0 }]
+            },
+            {
+                question: "هل تستخدم الهاتف أثناء تناول وجبات الطعام بشكل مستمر؟",
+                answers: [{ text: "نعم، لا يمكنني الأكل بدون شاشة أمامي", score: 4 }, { text: "أحياناً وليس مع كل الوجبات", score: 2 }, { text: "لا، أستمتع بطعامي وبالحديث مع من معي", score: 0 }]
+            },
+            {
+                question: "هل تشعر بالحاجة لمشاهدة مقاطع فيديو سريعة أثناء الانتظار أو في أوقات الفراغ؟",
+                answers: [{ text: "نعم، لا أتحمل البقاء دقيقة واحدة بدون تصفح", score: 4 }, { text: "أحياناً لملء أوقات الانتظار الطويلة جداً", score: 2 }, { text: "لا، أستغل الوقت بالتدبر، التفكير أو الاسترخاء", score: 0 }]
+            },
+            {
+                question: "هل تعتمد على 'النسخ واللصق' أو استخدام الذكاء الاصطناعي في صياغة الرسائل السهلة لتوفير الجهد؟",
+                answers: [{ text: "نعم كلياً، تبلدت رغبتي في كتابة أي نص بنفسي", score: 4 }, { text: "في الأمور الرسمية والعملية فقط لاختصار الوقت", score: 2 }, { text: "لا، أصيغ كلماتي ورسائلي بنفسي بأسلوبي الخاص", score: 0 }]
+            },
+            {
+                question: "هل تجد صعوبة في النوم ليلاً بسبب التمرير المستمر في الهاتف؟",
+                answers: [{ text: "نعم، أسهر لساعات متأخرة بسببه دون وعي", score: 4 }, { text: "أحياناً يأخذني الوقت قليلاً قبل النوم", score: 2 }, { text: "لا، أترك هاتفي بعيداً بمجرد الذهاب للنوم", score: 0 }]
+            },
+            {
+                question: "هل تشاهد الفيديوهات أو تستمع للملفات الصوتية بسرعة مضاعفة (1.5x / 2x) لتوفير الوقت؟",
+                answers: [{ text: "نعم دائماً، السرعة الطبيعية تصيبني بالجنون والملل", score: 4 }, { text: "فقط عندما يكون المحتوى طويلاً أو مملاً جداً", score: 2 }, { text: "لا، أستمع بالسرعة العادية الطبيعية باستمتاع", score: 0 }]
+            },
+            {
+                question: "هل تستيقظ ليلاً لمجرد تفقد الإشعارات؟",
+                answers: [{ text: "نعم، أتحقق منه كلما تقلبت في الفراش", score: 4 }, { text: "نادراً، إذا كنت أنتظر رسالة بالغة الأهمية", score: 2 }, { text: "لا، الهاتف في وضع الصامت والنوم مقدس لدي", score: 0 }]
+            },
+
+            // --- ثالثاً: الصحة النفسية والاجتماعية الرقمية (10 أسئلة جديدة + دمج القديمة) ---
+            {
+                question: "هل تشعر بالتعب والإرهاق الذهني في نهاية اليوم رغم عدم قيامك بمجهود بدني؟",
+                answers: [{ text: "نعم، أشعر أن عقلي مستنزف ومجهد للغاية", score: 4 }, { text: "أحياناً، بحسب كثافة العمل والضغط الرقمي", score: 2 }, { text: "لا، طاقتي الذهنية جيدة ومتوازنة", score: 0 }]
+            },
+            {
+                question: "هل تشعر بالإحباط أو تقلبات المزاج دون سبب واضح بعد استخدام الشاشات؟",
+                answers: [{ text: "نعم، أشعر بضيق وهبوط مفاجئ في المعنويات", score: 4 }, { text: "في بعض الأيام عند متابعة أخبار سيئة", score: 2 }, { text: "لا، مزاجي مستقر وبعيد عن تأثيرات المنصات", score: 0 }]
+            },
+            {
+                question: "هل تفضل التفاعل الافتراضي عبر الإنترنت على التجمعات والتواصل الواقعي؟",
+                answers: [{ text: "نعم، أجد راحة أكبر خلف الشاشة مقارنة بالواقع", score: 4 }, { text: "أوازن بينهما بشكل مرن ومقبول", score: 2 }, { text: "لا، الجلسات الواقعية واللقاءات الحية هي الأفضل لي", score: 0 }]
+            },
+            {
+                question: "هل تشعر بالملل بسرعة شديدة عندما لا تكون متصلاً بالإنترنت؟",
+                answers: [{ text: "نعم، الحياة تبدو رمادية ومملة بدونه", score: 4 }, { text: "قليلاً، ثم أجد بديلاً واقعياً كالقراءة أو الرياضة", score: 2 }, { text: "لا، أستمتع بالهدوء التام والابتعاد عن الشبكة", score: 0 }]
+            },
+            {
+                question: "هل تجد صعوبة في إيجاد مواضيع للنقاش العميق مع من حولك في الواقع؟",
+                answers: [{ text: "نعم، اهتماماتي كلها أصبحت تريندات وميمز رقمية", score: 4 }, { text: "أحياناً يقل الشغف بالحوار بحسب الأشخاص", score: 2 }, { text: "لا، لدي مخزون ثقافي وحياتي غني للنقاش الجاد", score: 0 }]
+            },
+            {
+                question: "هل تشعر بالذنب أو تضييع الوقت بعد الانتهاء من استخدام الهاتف لفترة طويلة؟",
+                answers: [{ text: "نعم، تأكلني الحسرة على الساعات التي ضاعت في التمرير", score: 4 }, { text: "أحياناً أشعر بذلك إذا أثرت على جدولي اليومي", score: 2 }, { text: "لا، أتحكم بوقتي وأشعر بالرضا عن استهلاكي", score: 0 }]
+            },
+            {
+                question: "هل تؤجل مهامك الأساسية (دراسة، عمل) بسبب الانشغال بالمحتوى الرقمي؟",
+                answers: [{ text: "نعم، التسويف الرقمي أصبح يدمر التزاماتي", score: 4 }, { text: "أحياناً أؤجل المهام البسيطة والغير عاجلة", score: 2 }, { text: "لا، أقوم بواجباتي أولاً بأول بدقة صرامة", score: 0 }]
+            },
+            {
+                question: "هل انخفض مستوى إنجازك أو إبداعك في العمل أو الدراسة مؤخراً بسب الهاتف؟",
+                answers: [{ text: "نعم، إنتاجيتي وإبداعي في هبوط مستمر وملحوظ", score: 4 }, { text: "تراجع طفيف ومؤقت أحاول السيطرة عليه", score: 2 }, { text: "لا، مستواي متصاعد وممتاز ومستقر تماماً", score: 0 }]
+            },
+            {
+                question: "هل تعاني من آلام في الرقبة أو العينين بسبب الانحناء المستمر على الشاشات؟",
+                answers: [{ text: "نعم، بشكل يومي ومؤلم جداً (إجهاد رقمي)", score: 4 }, { text: "أحياناً عند الإفراط في الاستخدام المتقطع", score: 2 }, { text: "لا، أحافظ على وضعية جلوس صحية وفترات راحة", score: 0 }]
+            },
+            {
+                question: "هل تجد صعوبة في إبعاد أفكار معينة أو 'تريندات' شاهدتها على الإنترنت من رأسك؟",
+                answers: [{ text: "نعم، تظل الأغاني أو اللقطات تكرر في عقلي كالحلقة المفرغة", score: 4 }, { text: "تأخذ بعض الوقت ثم تتبخر تلقائياً", score: 2 }, { text: "لا، أنسى ما أشاهده فوراً بمجرد إغلاق الشاشة", score: 0 }]
+            }
+        ];
+
+        // مصفوفة الأسئلة النشطة في الجولة الحالية
+        let questions = [];
+
+        const welcomeScreen = document.getElementById('welcome-screen');
+        const questionScreen = document.getElementById('question-screen');
+        const resultScreen = document.getElementById('result-screen');
+        const progressBar = document.getElementById('progress-bar');
+
+        const startButton = document.getElementById('start-btn');
+        const restartButton = document.getElementById('restart-btn');
+        const questionText = document.getElementById('question-text');
+        const answerButtonsContainer = document.getElementById('answer-buttons');
+        const resultText = document.getElementById('result-text');
+
+        const shareFbResult = document.getElementById('share-fb-result');
+        const shareWaResult = document.getElementById('share-wa-result');
+        const shareTwResult = document.getElementById('share-tw-result');
+
+        let currentQuestionIndex = 0;
+        let totalScore = 0;
+
+        startButton.addEventListener('click', startQuiz);
+        restartButton.addEventListener('click', startQuiz);
+
+        // دالة لخلط بنك الأسئلة الشامل بالكامل واختيار 15 سؤالاً عشوائياً مختلفاً في كل مرة
+        function getRandomQuestions() {
+            let shuffled = [...allQuestions];
+            for (let i = shuffled.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+            }
+            return shuffled.slice(0, 15);
+        }
+
+        function buildProgressBar() {
+            progressBar.innerHTML = '';
+            for (let i = 0; i < questions.length; i++) {
+                const segment = document.createElement('div');
+                segment.classList.add('progress-segment');
+                progressBar.appendChild(segment);
+            }
+        }
+
+        function updateProgressBar() {
+            const segments = document.querySelectorAll('.progress-segment');
+            segments.forEach((segment, index) => {
+                if (index <= currentQuestionIndex) {
+                    segment.classList.add('active');
+                } else {
+                    segment.classList.remove('active');
+                }
+            });
+        }
+
+        function startQuiz() {
+            totalScore = 0;
+            currentQuestionIndex = 0;
+            questions = getRandomQuestions();
+
+            welcomeScreen.classList.add('hide');
+            resultScreen.classList.add('hide');
+            questionScreen.classList.remove('hide');
+            progressBar.classList.remove('hide');
+
+            buildProgressBar();
+            showQuestion();
+        }
+
+        function showQuestion() {
+            answerButtonsContainer.innerHTML = '';
+            updateProgressBar();
+
+            let currentQuestion = questions[currentQuestionIndex];
+            questionText.innerText = `سؤال ${currentQuestionIndex + 1} من 15: ${currentQuestion.question}`;
+
+            currentQuestion.answers.forEach(answer => {
+                const button = document.createElement('button');
+                button.innerText = answer.text;
+                button.classList.add('btn', 'btn-answer');
+                button.dataset.score = answer.score;
+                button.addEventListener('click', selectAnswer);
+                answerButtonsContainer.appendChild(button);
+            });
+        }
+
+        function selectAnswer(e) {
+            const selectedButton = e.target.closest('button');
+            const score = parseInt(selectedButton.dataset.score);
+            totalScore += score;
+
+            currentQuestionIndex++;
+
+            if (currentQuestionIndex < questions.length) {
+                showQuestion();
+            } else {
+                showResult();
+            }
+        }
+
+        function showResult() {
+            questionScreen.classList.add('hide');
+            progressBar.classList.add('hide');
+            resultScreen.classList.remove('hide');
+
+            let resultMessage = "";
+            let shareSummary = "";
+
+            // الحساب الدقيق بناء على 15 سؤالاً (الحد الأقصى للنقاط = 60 نقطة)
+            if (totalScore <= 20) {
+                resultMessage = `تحليلك النهائي: وضعك ممتاز وعقلك سليم تماماً! (النقاط: ${totalScore} من 60) 💎 \n قدراتك الإدراكية سليمة تماماً وتحكمك في استخدام الشاشات يقع ضمن الحدود الطبيعية والمقبولة. أنت شخص واعي، وقدرتك على الانتباه العميق في أعلى مستوياتها ومحصن من لوثات السوشيال ميديا!`;
+                shareSummary = `طلعت نتيجتي عقل سليم ونقي ومحصن بالكامل من تشتت الإنترنت! (نقاطي: ${totalScore}/60) 💪 جرب التحدي واكتشف نتيجتك:`;
+            } else if (totalScore <= 40) {
+                resultMessage = `تحليلك النهائي: مستوى متوسط وتشتت رقمي ملحوظ! (النقاط: ${totalScore} من 60) 🌐 \n يعاني عقلك حالياً من التشتت الرقمي المفرط وبدايات متقدمة من "تعفن الدماغ الرقمي" (Brain Rot). يتشتت انتباهك سريعاً بسبب المنصات؛ ويُنصح بشدة بوضع حدود يومية صارمة لاستخدام الشاشات لاستعادة صفاء ذهنك!`;
+                shareSummary = `طلعت نتيجتي مستوى متوسط وبدايات تشتت رقمي (نقاطي: ${totalScore}/60) 🌸 اختبر عقلك ومدى إدمانك للشاشات الآن:`;
+            } else {
+                resultMessage = `تحليلك النهائي: تعفن دماغي حاد وغرق كامل في التشتت! (النقاط: ${totalScore} من 60) 🧠🔥 \n تحذير! أنت غارق بالكامل في مستنقع التشتت الرقمي والإدمان العشوائي للمحتوى السريع، وهذا يؤثر سلباً بشكل مباشر على أدائك اليومي، ذاكرتك، وصحتك النفسية والعقلية. تحتاج فوراً إلى "ديتوكس رقمي" (Digital Detox) حاد وإغلاق الشاشات والعودة للحياة الواقعية!`;
+                shareSummary = `تحذير: طلعت نتيجتي تعفن دماغي حاد وغرق تام في التشتت الرقمي! (نقاطي: ${totalScore}/60) 🧠🔥 اختبر نفسك فوراً:`;
+            }
+
+            resultText.innerText = resultMessage;
+
+            const pageUrl = encodeURIComponent("https://alaa22188-coder.github.io/dal3-test/brainrot-quiz.html");
+            const encodedText = encodeURIComponent(shareSummary);
+
+            if (shareFbResult) shareFbResult.href = `https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`;
+            if (shareWaResult) shareWaResult.href = `https://api.whatsapp.com/send?text=${encodedText}%20${pageUrl}`;
+            if (shareTwResult) shareTwResult.href = `https://twitter.com/intent/tweet?url=${pageUrl}&text=${encodedText}`;
+        }
+    </script>
+
+    <script>
+        /*
+        let adsenseLoaded = false;
+        function loadAdSense() {
+            if (adsenseLoaded) return;
+            adsenseLoaded = true;
+
+            let script = document.createElement('script');
+            script.async = true;
+            script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX";
+            script.crossOrigin = "anonymous";
+            document.head.appendChild(script);
+        }
+
+        window.addEventListener('scroll', loadAdSense, { passive: true });
+        window.addEventListener('touchmove', loadAdSense, { passive: true });
+        window.addEventListener('mouseover', loadAdSense, { passive: true }); 
+        */
+    </script>
+</body>
+</html>

@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>اختبار الديفا 2026 - مقياس الطاقة الأنثوية والكاريزما</title>
+    <meta name="description" content="جرّبي اختبار الديفا التفاعلي الممتع؛ 15 سؤالاً عشوائياً متغيراً من بين 30 سؤالاً مميزاً لتهيئة تجربة فريدة! اكتشفي نسبة الكاريزما، الثقة بالنفس والطاقة الأنثوية لديكِ فوراً.">
+    <meta name="keywords" content="اختبار الديفا, مقياس الكاريزما, اختبار شخصية للبنات, طاقة أنوثة, كويز الثقة بالنفس تفاعلي">
+    
+    <link rel="canonical" href="https://alaa22188-coder.github.io/dal3-test/diva.html">
+
+    <meta property="og:locale" content="ar_AR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="اختبار الديفا التفاعلي 2026: اكتشفي حجم الكاريزما والثقة في شخصيتك">
+    <meta property="og:description" content="ادخلي اختبار الديفا واكتشفي هل تمتلكين كاريزما القيادة الكاملة أم طاقة متوازنة وهادئة؟ 15 سؤالاً مسلياً في انتظارك!">
+    <meta property="og:url" content="https://alaa22188-coder.github.io/dal3-test/diva.html">
+    <meta property="og:site_name" content="مقياس الدلع">
+    <meta property="og:image" content="https://alaa22188-coder.github.io/dal3-test/quiz-share.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <style>
+        /* إعدادات خطوط النظام السريعة والمريحة جداً للعين (تمنع CLS) */
+        :root {
+            --bg-color: #f8fafc;
+            --primary-color: #db2777;
+            --secondary-color: #0f172a;
+            --text-muted: #334155;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+            --segment-active: #f472b6;
+            --segment-inactive: #cbd5e1;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--secondary-color);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            line-height: 1.8;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* الهيدر */
+        header {
+            background-color: var(--card-bg);
+            border-bottom: 1px solid var(--border-color);
+            padding: 16px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo a {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin-right: 16px;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        /* الحاوية الرئيسية */
+        main {
+            flex: 1;
+            max-width: 700px;
+            width: 100%;
+            margin: 24px auto;
+            padding: 0 16px;
+        }
+
+        /* حاوية مساحة الإعلان المحجوزة مسبقاً (تحمي من اهتزاز الـ CLS للبيج سبيد) */
+        .ad-slot-container {
+            min-height: 280px;
+            margin: 0 auto 24px auto;
+            text-align: center;
+            background-color: #f1f5f9;
+            border: 1px dashed var(--border-color);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #94a3b8;
+            font-size: 0.9rem;
+            font-weight: 600;
+            overflow: hidden;
+        }
+
+        /* حاوية الاختبار */
+        .quiz-container {
+            background-color: var(--card-bg);
+            padding: 32px 24px;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+            text-align: center;
+            margin-bottom: 24px;
+            min-height: 320px;
+        }
+
+        /* شريط التقدم */
+        .progress-bar-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 6px;
+            margin-bottom: 32px;
+        }
+
+        .progress-segment {
+            flex: 1;
+            height: 8px;
+            background-color: var(--segment-inactive);
+            border-radius: 4px;
+        }
+
+        .progress-segment.active {
+            background-color: var(--segment-active);
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            color: var(--secondary-color);
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            color: var(--secondary-color);
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            color: var(--secondary-color);
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        .quiz-container p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            margin-bottom: 24px;
+        }
+
+        /* أزرار مريحة للموبايل */
+        .btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 14px 28px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 12px;
+            cursor: pointer;
+            width: 100%;
+            min-height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        .btn-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin-top: 24px;
+        }
+
+        .btn-answer {
+            background-color: var(--bg-color);
+            color: var(--secondary-color);
+            border: 1px solid var(--border-color);
+            text-align: right;
+            justify-content: flex-start;
+            padding: 16px;
+            height: auto;
+        }
+
+        .btn-answer:hover,
+        .btn-answer:active {
+            background-color: #f1f5f9;
+            border-color: #cbd5e1;
+        }
+
+        /* أزرار مشاركة التواصل الاجتماعي المحسنة السريعة */
+        .share-section {
+            margin-top: 24px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .share-section p {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--secondary-color);
+        }
+
+        .share-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .share-btn {
+            padding: 10px 16px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: opacity 0.2s;
+            min-height: 40px;
+        }
+
+        .share-btn:hover {
+            opacity: 0.9;
+        }
+
+        .share-fb {
+            background-color: #1877f2;
+        }
+
+        .share-wa {
+            background-color: #25d366;
+        }
+
+        .share-tw {
+            background-color: #000000;
+        }
+
+        /* قسم السيو والمحتوى النصي */
+        .seo-content {
+            background-color: var(--card-bg);
+            padding: 32px 24px;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 24px;
+        }
+
+        .seo-content h2 {
+            font-size: 1.4rem;
+            color: var(--primary-color);
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+
+        .seo-content p {
+            color: var(--text-muted);
+            margin-bottom: 16px;
+            font-size: 1.05rem;
+        }
+
+        .seo-content ul {
+            margin-right: 24px;
+            margin-bottom: 16px;
+            color: var(--text-muted);
+        }
+
+        .seo-content ul li {
+            margin-bottom: 8px;
+        }
+
+        /* 🔗 قسم الروابط الداخلية */
+        .internal-links-section {
+            background-color: var(--card-bg);
+            padding: 32px 24px;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 24px;
+        }
+
+        .links-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .links-grid a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 600;
+            padding: 4px 0;
+            display: inline-block;
+        }
+
+        .links-grid a:hover {
+            text-decoration: underline;
+            color: var(--secondary-color);
+        }
+
+        /* 🧑‍💻 قسم معلومات المطور الشخصية لتعزيز الـ E-E-A-T */
+        .developer-bio-section {
+            background-color: var(--card-bg);
+            padding: 32px 24px;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 24px;
+        }
+
+        .developer-bio-section p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            margin-bottom: 16px;
+        }
+
+        .developer-social-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .developer-social-links a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-size: 1.05rem;
+            font-weight: 700;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 2px;
+        }
+
+        .developer-social-links a:hover {
+            color: var(--primary-color);
+            border-bottom-color: var(--secondary-color);
+        }
+
+        /* الفوتر */
+        footer {
+            background-color: var(--secondary-color);
+            color: #94a3b8;
+            padding: 32px 20px;
+            text-align: center;
+            font-size: 0.95rem;
+            margin-top: auto;
+        }
+
+        .footer-links {
+            margin-bottom: 16px;
+        }
+
+        .footer-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            margin: 0 12px;
+            display: inline-block;
+            min-height: 44px;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .hide {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="https://alaa22188-coder.github.io/dal3-test/">مقياس الدلع</a>
+            </div>
+            <nav class="nav-links">
+                <a href="https://alaa22188-coder.github.io/dal3-test/">الرئيسية</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="quiz-container">
+            <div id="progress-bar" class="progress-bar-container hide">
+                </div>
+
+            <div id="welcome-screen" class="screen">
+                <h1>اختبار الديفا ومقياس الأنوثة والكاريزما</h1>
+                <p>هل تمتلكين كاريزما طاغية، ثقة بالنفس عالية، وحضوراً لا يمكن تجاهله كـ "ديفا" حقيقية؟ أم أن طاقتكِ تميل إلى التوازن والهدوء والعملية؟ اكتشفي نمط صفاتكِ وسلوككِ اليومي الآن عبر الإجابة على 15 سؤالاً مسلياً تُختار عشوائياً في كل مرة من بين 30 سؤالاً فريداً لضمان تجربة ممتعة ومتجددة دائماً!</p>
+                <button id="start-btn" class="btn">ابدئي اختبار الديفا الآن</button>
+
+                <div class="share-section">
+                    <p>شاركي الاختبار مع صديقاتكِ 👥</p>
+                    <div class="share-buttons">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://alaa22188-coder.github.io/dal3-test/diva.html" target="_blank" rel="noopener" class="share-btn share-fb">فيسبوك</a>
+                        <a href="https://api.whatsapp.com/send?text=اكتشفي%20هل%20أنتِ%20ديفا%20حقيقية؟%20جربي%20اختبار%20مقياس%20الطاقة%20الأنثوية%20والكاريزما%20✨%20https://alaa22188-coder.github.io/dal3-test/diva.html" target="_blank" rel="noopener" class="share-btn share-wa">واتساب</a>
+                        <a href="https://twitter.com/intent/tweet?url=https://alaa22188-coder.github.io/dal3-test/diva.html&text=اختبار%20الديفا%20التفاعلي:%20اكتشفي%20مستوى%20الكاريزما%20والطاقة%20الأنثوية%20في%20شخصيتك" target="_blank" rel="noopener" class="share-btn share-tw">تويتر X</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="question-screen" class="screen hide">
+                <h2 id="question-text">السؤال سيظهر هنا؟</h2>
+                <div id="answer-buttons" class="btn-grid">
+                    </div>
+            </div>
+
+            <div id="result-screen" class="screen hide">
+                <h2>النتيجة النهائية للاختبار</h2>
+                <p id="result-text">تحميل النتيجة...</p>
+                <button id="restart-btn" class="btn">إعادة خوض الاختبار 🔄</button>
+
+                <div class="share-section">
+                    <p>تحدّي صديقاتكِ بنتيجتكِ واكتشفي حجم الكاريزما لديهن! 🥳</p>
+                    <div class="share-buttons">
+                        <a id="share-fb-result" href="#" target="_blank" rel="noopener" class="share-btn share-fb">انشري النتيجة</a>
+                        <a id="share-wa-result" href="#" target="_blank" rel="noopener" class="share-btn share-wa">أرسليها بالواتساب</a>
+                        <a id="share-tw-result" href="#" target="_blank" rel="noopener" class="share-btn share-tw">تغريدة بالنتيجة</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <article class="seo-content">
+            <h2>ما هو اختبار مقياس الدلع وما الفائدة من تحليله؟</h2>
+            <p>يُعد <strong>اختبار مقياس الدلع</strong> واحداً من الاختبارات الترفيهية والنفسية السلوكية الشائعة التي تبحث في نمط الاستجابة العاطفية واليومية للمرأة. يعتمد هذا التحليل المبتكر على قياس ردود أفعالكِ الافتراضية تجاه مواقف حياتية مختلفة، مثل كيفية التعامل مع الأزمات المفاجئة، اهتمامكِ بالتفاصيل الجمالية الرفيعة، ونظرتكِ الشخصية لأسلوب الراحة والعمل.</p>
+            <p>يتميز نظام الكويز المتطور لدينا بامتلاكه قاعدة بيانات مكونة من 30 سؤالاً منوعاً، تُفرز وتُختار منها 15 سؤالاً عشوائياً ذكياً في كل مرة تخوضين فيها التحدي، لتجربة استثنائية مليئة بالتشويق والتنوع مع صديقاتكِ.</p>
+
+            <h2>كيف يتم حساب نسبة الدلال في الشخصية؟</h2>
+            <p>يرتكز الاختبار على مصفوفة أسئلة مدروسة تقسم أنماط الشخصية إلى ثلاثة محاور رئيسية:</p>
+            <ul>
+                <li><strong>الشخصية الدلوعة (الرقيقة جداً):</strong> وهي الشخصية التي تميل إلى الرفاهية العالية، وتفضل الاعتماد على الآخرين بحب، وتتأثر بالمواقف سريعاً.</li>
+                <li><strong>الشخصية المتوازنة:</strong> تجمع بين الدلال والأنوثة الطاغية في أوقات الراحة، ولكنها تتحول إلى شخصية حاسمة وعملية في أوقات الشدائد والأعمال.</li>
+                <li><strong>الشخصية الجادة (العملية):</strong> شخصية قوية، تمتاز بالاستقلالية الكاملة، تفضل الحلول المباشرة، ولا تلتفت كثيراً للرفاهية المفرطة.</li>
+            </ul>
+
+            <h2>لماذا تُفضل اختبارات منصة مقياس الدلع؟</h2>
+            <p>في منصة <strong>مقياس الدلع</strong>، نحرص على تقديم تجربة مستخدم سريعة وخفيفة جداً متوافقة مع الهواتف المحمولة. اختباراتنا تفاعلية بالكامل ولا تتطلب انتظار أوقات تحميل طويلة، كما تمنحكِ تحليلاً فورياً دقيقاً مبنياً على نقاط حقيقية لكل إجابة تختارينها، مع مراعاة الخصوصية الكاملة حيث لا يتم حفظ أي بيانات شخصية على خوادمنا.</p>
+        </article>
+		   <section class="internal-links-section">
+            <h3>إختبارات قد تهمك أيضاً 🌟</h3>
+            <div class="links-grid">
+                <a href="https://alaa22188-coder.github.io/dal3-test/jealousy-scale.html">← اختبار مقياس الغيرة</a>
+                <a href="https://alaa22188-coder.github.io/dal3-test/personality-strength-scale.html">← اختبار قوة الشخصية</a>
+				<a href="https://alaa22188-coder.github.io/dal3-test/brainrot-quiz.html">← اختبار التعفن الدماغي</a>
+				<a href="https://alaa22188-coder.github.io/dal3-test/spiritual-beauty.html">← اختبار الجمال الروحي</a>
+				<a href="https://alaa22188-coder.github.io/dal3-test/love-test.html">← اختبار هل انت واقع بالحب</a>
+				<a href="https://alaa22188-coder.github.io/dal3-test/neuroticism-scale-test.html">← اختبار مقياس العصبية</a>
+            </div>
+        </section>
+		
+        <section class="developer-bio-section">
+            <h3>عن مطور الموقع 🛠️</h3>
+            <p>أهلاً بكِ! أنا علاء الزقزوق مطور ومصمم تطبيقات ويب متخصص في بناء أدوات تفاعلية واختبارات سلوكية ذكية وخفيفة الوزن . أهتم بتقديم أفضل تجربة مستخدم ممكنة تجمع بين دقة النتائج البرمجية وسرعة التصفح الفائقة على كافة الأجهزة.</p>
+            <div class="developer-social-links">
+                <a href="https://github.com/alaa22188-coder/" target="_blank" rel="noopener">← حساب GitHub الشخصي</a>
+                <a href="https://www.youtube.com/@alaa22188" target="_blank" rel="noopener">← youtube</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="privacy-and-contact.html">سياسة الخصوصية والاتصال</a>
+            <a href="copyright.html">حقوق النشر</a>
+        </div>
+        <p>&copy; 2026 مقياس الدلع. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script>
+        // بنك الأسئلة الشامل لاختبار الديفا (30 سؤالاً سلوكياً ونفسياً ومسلياً)
+        const allQuestions = [
+            { question: "دخلتِ إلى مكان مزدحم أو مناسبة عامة، كيف يكون حضوركِ؟", answers: [{ text: "أدخل بكل ثقة ورأسي مرفوع وألفت الأنظار تلقائياً", score: 3 }, { text: "أدخل بهدوء وأبحث عن مكان مريح لأجلس فيه", score: 2 }, { text: "أحاول ألا يلاحظني أحد وأتجه سريعاً لمن أعرفهم", score: 1 }] },
+            { question: "إذا انتقد أحدهم أسلوب ملابسكِ أو مظهركِ، كيف تكون ردة فعلكِ？", answers: [{ text: "أبتسم ببرود وثقة؛ فرأيهم لا يقلل من ذوقي الرفيع", score: 3 }, { text: "أناقشهم بهدوء لأعرف سبب انتقادهم", score: 2 }, { text: "أشعر بالإحراج فوراً وأفكر في تغيير ملابسي", score: 1 }] },
+            { question: "ما هو الستايل الذي يمثلكِ ويعبر عن كاريزمتكِ؟", answers: [{ text: "ملابس أنيقة وخاطفة للأنظار مع إكسسوارات لافتة", score: 3 }, { text: "ستايل كلاسيكي ناعم، مريح ومتوازن", score: 2 }, { text: "ملابس رياضية أو عملية بالكامل بدون تكلف", score: 1 }] },
+            { question: "عند اتخاذ قرار هام في مجموعة، ما هو دوركِ المعتاد؟", answers: [{ text: "أنا من يقود النقاش ويتخذ القرار النهائي بثقة", score: 3 }, { text: "أعطي رأيي بوضوح وأشارك في التصويت بالتساوي", score: 2 }, { text: "أوافق على ما يختاره الأغلبية لتجنب الجدال", score: 1 }] },
+            { question: "كيف تتعاملين مع مظهر أظافركِ وبشرتكِ بشكل عام؟", answers: [{ text: "روتين مقدس وعناية دورية مستمرة، مظهر ديفا لا غنى عنه", score: 3 }, { text: "أهتم بهما بشكل معتدل ومتوازن دون مبالغة", score: 2 }, { text: "أهتم بهما فقط عند وجود مناسبة ضرورية", score: 1 }] },
+            { question: "عند التقاط صور جماعية مع الصديقات، أين تقفين؟", answers: [{ text: "في المنتصف تماماً وبوضعية تصوير ساحرة ومدروسة", score: 3 }, { text: "في أي مكان متاح وبابتسامة طبيعية", score: 2 }, { text: "أفضل أن أكون خلف الجميع أو ألتقط الصورة بنفسي", score: 1 }] },
+            { question: "رأيتِ حشرة فجأة في مكان عام، كيف تتصرفين؟", answers: [{ text: "أبتعد برقي وأطلب من أحدهم التخلص منها فوراً", score: 3 }, { text: "أتجاهلها طالما أنها بعيدة عني ولا تؤذيني", score: 2 }, { text: "أتخلص منها بنفسي دون أي تردد أو خوف", score: 1 }] },
+            { question: "ما هو نوع العطور المفضل لديكِ؟", answers: [{ text: "عطور فرنسية فاخرة، قوية وتترك أثراً بعد رحيلي", score: 3 }, { text: "عطور هادئة وزهرية خفيفة تناسب النهار", score: 2 }, { text: "أي عطر منعش أو عطور العناية العادية سريعة الاستخدام", score: 1 }] },
+            { question: "إذا تأخر السائق أو طلبكِ في مطعم بشكل مبالغ فيه؟", answers: [{ text: "أتحدث بنبرة حازمة وراقية تعيد الأمور لنصابها فوراً", score: 3 }, { text: "أستفسر عن سبب التأخير بهدوء وصبر", score: 2 }, { text: "أنتظر دون أن أنبس ببنت شفة أو أتحمل الأمر صامتة", score: 1 }] },
+            { question: "كيف تردين على شخص يوجه لكِ إطراءً كبيراً؟", answers: [{ text: "أبتسم بثقة وأقول 'أعلم ذلك، شكراً لك'", score: 3 }, { text: "أشكرهم بلطف وأبادلهم كلمات المديح", score: 2 }, { text: "أرتبك وأخجل وأحاول تغيير الموضوع سريعاً", score: 1 }] },
+            { question: "ما هي فكرتكِ عن عطلة نهاية الأسبوع المثالية؟", answers: [{ text: "الاسترخاء في منتجع صحي فاخر مع تدليل كامل لنفسي", score: 3 }, { text: "الخروج لتناول القهوة مع الصديقات المقربات والتنزه", score: 2 }, { text: "البقاء بالمنزل لإنجاز أعمال مؤجلة أو الدراسة والترتيب", score: 1 }] },
+            { question: "طريقة مشيتكِ في الممرات أو الأماكن العامة تكون:", answers: [{ text: "مشية واثقة، هادئة ومنظمة كأنني على منصة عرض", score: 3 }, { text: "طبيعية ومعتدلة تواكب سرعة من حولي", score: 2 }, { text: "سريعة جداً وعملية، عيناي متجهة نحو هدفي فقط", score: 1 }] },
+            { question: "إذا واجهتِ موقفاً محرجاً أمام الناس، كيف تتخطيّنه؟", answers: [{ text: "أحوله لضحكة راقية بكل كاريزما وكأن شيئاً لم يكن", score: 3 }, { text: "أتعامل معه ببساطة وأتجاوزه في دقيقة", score: 2 }, { text: "أشعر برغبة في الاختفاء ويحمر وجهي خجلاً لفترة", score: 1 }] },
+            { question: "ما هو رأيكِ في القيادة وإدارة الأعمال؟", answers: [{ text: "أنا ولدت لأكون قائدة وأدير الأمور بذكاء من الأعلى", score: 3 }, { text: "أحب العمل الجماعي والمشاركة الفعالة المتوازنة", score: 2 }, { text: "أفضل التنفيذ والابتعاد عن وجع الرأس ومسؤولية الإدارة", score: 1 }] },
+            { question: "حقيبتكِ المفضلة للخروج اليومي تتميز بأنها:", answers: [{ text: "حقيبة ماركة صغيرة وأنيقة تكمل مظهري الجذاب", score: 3 }, { text: "حقيبة كتف متوسطة تتسع للأغراض الأساسية بحكمة", score: 2 }, { text: "حقيبة ظهر كبيرة وعملية تتسع لكل شيء دون اهتمام بالشكل", score: 1 }] },
+            { question: "لو شعرتِ بالملل التام، ما هو الحل السريع لديكِ؟", answers: [{ text: "القيام بجولة تسوق فاخرة لتدليل نفسي وتغيير المزاج", score: 3 }, { text: "مشاهدة فيلم ممتع أو قراءة رواية مسلية", score: 2 }, { text: "النوم أو القيام ببعض التمارين والمهام المنزلية", score: 1 }] },
+            { question: "انكسر ظفركِ أو فسد مكياجكِ قبل موعد هام بدقائق:", answers: [{ text: "أستاء جداً وأحاول إصلاحه باحترافية شديدة ليبقى مظهري كاملاً", score: 3 }, { text: "أعدله بشكل سريع وبسيط ولا أسمح له بإفساد يومي", score: 2 }, { text: "لا يهمني الأمر كثيراً وأذهب للموعد كما أنا", score: 1 }] },
+            { question: "ما هو المشروب الذي تطلبينه عادة في المقاهي؟", answers: [{ text: "مشروب مبتكر، بارد، ومزين بالكريمة بطريقة تصويرية جميلة", score: 3 }, { text: "لاتيه كلاسيكي أو كابتشينو دافئ ومتوازن", score: 2 }, { text: "اسبريسو أو قهوة سوداء سادة قوية لإنجاز العمل", score: 1 }] },
+            { question: "عندما تتحدثين مع الآخرين، نبرة صوتكِ تكون غالباً:", answers: [{ text: "هادئة، واثقة، ومدروسة الكلمات بوضوح ورقي", score: 3 }, { text: "طبيعية، حيوية وتتغير حسب موضوع الحديث", score: 2 }, { text: "سريعة، مباشرة وعالية التركيز على الفكرة فوراً", score: 1 }] },
+            { question: "إذا دخلتِ في نقاش حاد ووجدتي الطرف الآخر يرفع صوته؟", answers: [{ text: "أنظر إليه بنظرة حازمة وأصمت برقي حتى يهدأ خجلاً", score: 3 }, { text: "أطلب منه خفض صوته لنكمل النقاش بعقلانية", score: 2 }, { text: "أرفع صوتي أنا أيضاً لأدافع عن رأيي بقوة", score: 1 }] },
+            { question: "كيف تخططين لرحلة سفر مع عائلتكِ أو صديقاتكِ؟", answers: [{ text: "أختار الفنادق والأماكن الأكثر فخامة وجمالاً للصور", score: 3 }, { text: "أوازن بين الأنشطة الترفيهية والاستكشافية المريحة", score: 2 }, { text: "أركز على جدول عملي واقتصادي يضمن زيارة أكبر عدد من الأماكن", score: 1 }] },
+            { question: "عندما يطلب منكِ أحدهم خدمة، كيف تقررين؟", answers: [{ text: "أساعده إذا كان ذلك لا يضر راحتي أو وقتي الخاص أبداً", score: 3 }, { text: "أساعده بكل سرور طالما بمقدوري ذلك", score: 2 }, { text: "أضغط على نفسي وأتولى الأمر لإنقاذه بأي طريقة", score: 1 }] },
+            { question: "رأيكِ في المجوهرات والإكسسوارات اللامعة:", answers: [{ text: "جزء أساسي من شخصيتي وهوية الديفا ولا أكتمل بدونها", score: 3 }, { text: "أفضل القطع البسيطة والناعمة التي تضفي لمسة رقيقة", score: 2 }, { text: "لا أحبها نادراً ما أرتديها لأنها تقيد حركتي", score: 1 }] },
+            { question: "كيف تتعاملين مع الفشل أو الخسارة في تحدٍّ ما؟", answers: [{ text: "أعتبرها مجرد كبوة محارب، وأعود بقوة أكبر لأبهر الجميع", score: 3 }, { text: "أحلل الأخطاء بهدوء وأحاول مرة أخرى بطريقة أفضل", score: 2 }, { text: "أحزن لفترة طويلة وقد أفقد الرغبة في التكرار والمحاولة", score: 1 }] },
+            { question: "استيقظتِ ووجدتِ بثرة صغيرة ومفاجئة على وجهكِ:", answers: [{ text: "أضع روتين علاج فوري ومكياج يخفيها باحترافية شديدة", score: 3 }, { text: "أضع لاصقة بثور شفافة وأخرج بثقة عادية", score: 2 }, { text: "أتجاهلها تماماً فالأمر طبيعي ولا يستحق التفكير", score: 1 }] },
+            { question: "إذا نسيت صديقتكِ المقربة تهنئتكِ بيوم ميلادكِ؟", answers: [{ text: "أظهر لها عتاباً راقياً يعلمها بمدى قيمتي ومكانتي", score: 3 }, { text: "أعذرها وأفترض أنها مشغولة بظروف الحياة", score: 2 }, { text: "لا أهتم على الإطلاق فالأمر لا يشكل فارقاً لدي", score: 1 }] },
+            { question: "ما هو شعاركِ المفضل في الحياة والتعامل؟", answers: [{ text: "أنا أستحق الأفضل دائماً دون أي تنازلات", score: 3 }, { text: "التوازن واللطف مع الجميع هما سر السعادة", score: 2 }, { text: "العمل الجاد والاستقلالية هما الأمان الوحيد", score: 1 }] },
+            { question: "إذا عرض عليكِ أحدهم حمل حقيبة ثقيلة عنكِ في المطار؟", answers: [{ text: "أقبل بابتسامة راقية وأشكر ذوقه الرفيع فوراً", score: 3 }, { text: "أشكره وأحملها معه إذا كانت متعبة حقاً", score: 2 }, { text: "أرفض بحزم وأقول: 'شكراً، يمكنني الاعتماد على نفسي'", score: 1 }] },
+            { question: "عندما تسمعين موسيقى أو أغنيتكِ المفضلة في مكان عام:", answers: [{ text: "أبتسم بتعلو كبرياء وأتمايل بنعومة ودلال يلفت النظر", score: 3 }, { text: "أدندن معها بخفة ولطف شديد", score: 2 }, { text: "أستمع بهدوء تام دون إظهار أي تفاعل خارجي", score: 1 }] },
+            { question: "أخيراً، كيف يصفكِ المحيطون بكِ في جملة واحدة؟", answers: [{ text: "الديفا الساحرة صاحبة الكاريزما والحضور الطاغي", score: 3 }, { text: "الإنسانة اللطيفة، المتوازنة والذكية في تصرفاتها", score: 2 }, { text: "المرأة القوية، العملية والاعتمادية في الشدائد", score: 1 }] }
+        ];
+
+        // هذه مصفوفة الـ 15 سؤالاً المختارين عشوائياً في كل دورة
+        let questions = [];
+
+        const welcomeScreen = document.getElementById('welcome-screen');
+        const questionScreen = document.getElementById('question-screen');
+        const resultScreen = document.getElementById('result-screen');
+        const progressBar = document.getElementById('progress-bar');
+
+        const startButton = document.getElementById('start-btn');
+        const restartButton = document.getElementById('restart-btn');
+        const questionText = document.getElementById('question-text');
+        const answerButtonsContainer = document.getElementById('answer-buttons');
+        const resultText = document.getElementById('result-text');
+
+        const shareFbResult = document.getElementById('share-fb-result');
+        const shareWaResult = document.getElementById('share-wa-result');
+        const shareTwResult = document.getElementById('share-tw-result');
+
+        let currentQuestionIndex = 0;
+        let totalScore = 0;
+
+        startButton.addEventListener('click', startQuiz);
+        restartButton.addEventListener('click', startQuiz);
+
+        // دالة لخلط بنك الأسئلة واختيار 15 سؤالاً عشوائياً
+        function getRandomQuestions() {
+            let shuffled = [...allQuestions];
+            for (let i = shuffled.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+            }
+            return shuffled.slice(0, 15);
+        }
+
+        function buildProgressBar() {
+            progressBar.innerHTML = '';
+            for (let i = 0; i < questions.length; i++) {
+                const segment = document.createElement('div');
+                segment.classList.add('progress-segment');
+                progressBar.appendChild(segment);
+            }
+        }
+
+        function updateProgressBar() {
+            const segments = document.querySelectorAll('.progress-segment');
+            segments.forEach((segment, index) => {
+                if (index <= currentQuestionIndex) {
+                    segment.classList.add('active');
+                } else {                    
+                    segment.classList.remove('active');
+                }
+            });
+        }
+
+        function startQuiz() {
+            totalScore = 0;
+            currentQuestionIndex = 0;
+            questions = getRandomQuestions();
+
+            welcomeScreen.classList.add('hide');
+            resultScreen.classList.add('hide');
+            questionScreen.classList.remove('hide');
+            progressBar.classList.remove('hide');
+
+            buildProgressBar();
+            showQuestion();
+        }
+
+        function showQuestion() {
+            answerButtonsContainer.innerHTML = '';
+            updateProgressBar();
+
+            let currentQuestion = questions[currentQuestionIndex];
+            questionText.innerText = `سؤال ${currentQuestionIndex + 1} من 15: ${currentQuestion.question}`;
+
+            currentQuestion.answers.forEach(answer => {
+                const button = document.createElement('button');
+                button.innerText = answer.text;
+                button.classList.add('btn', 'btn-answer');
+                button.dataset.score = answer.score;
+                button.addEventListener('click', selectAnswer);
+                answerButtonsContainer.appendChild(button);
+            });
+        }
+
+        function selectAnswer(e) {
+            const selectedButton = e.target.closest('button');
+            const score = parseInt(selectedButton.dataset.score);
+            totalScore += score;
+
+            currentQuestionIndex++;
+
+            if (currentQuestionIndex < questions.length) {
+                showQuestion();
+            } else {
+                showResult();
+            }
+        }
+
+        function showResult() {
+            questionScreen.classList.add('hide');
+            progressBar.classList.add('hide');
+            resultScreen.classList.remove('hide');
+
+            let resultMessage = "";
+            let shareSummary = "";
+
+            if (totalScore >= 38) {
+                resultMessage = `تحليلكِ النهائي: أنتِ ديفا حقيقية بنسبة 100%! 👸✨ \n تمتلكين كاريزما ساحرة وثقة بالنفس تهز المكان. حضوركِ طاغٍ وعنايتكِ بتفاصيلكِ الأنثوية رفيعة جداً، ولدتِ لتكوني في المقدمة والجميع يرى فيكِ ديفا ملهمة وقائدة بالفطرة.`;
+                shareSummary = "طلعت ديفا حقيقية بنسبة 100%! 👸✨ اكتشفي حجم الكاريزما والطاقة الأنثوية لديكِ في هذا الاختبار:";
+            } else if (totalScore >= 26) {
+                resultMessage = `تحليلكِ النهائي: طاقتكِ متوازنة وكاريزمتكِ هادئة! 🌸 \n أنتِ تمزجين بذكاء شديد بين طاقة الأنوثة الراقية وبين الحكمة والمسؤولية الحياتية. ديفا ناعمة وساحرة في أوقات مرحكِ وتألقكِ، ولكنكِ جادة وقوية ويمكن الاعتماد عليكِ تماماً في المواقف الصعبة.`;
+                shareSummary = "كاريزمتي متوازنة ولطيفة بين الأنوثة والمسؤولية! 🌸 جربي اختبار الديفا واكتشفي نتيجتكِ:";
+            } else {
+                resultMessage = `تحليلكِ النهائي: أنتِ شخصية مستقلة وعملية تماماً! 💪 \n طابعكِ الغالب هو الاستقلالية التامة، قوة الشخصية والاعتماد الكامل على النفس. لا تلتفتين للمظاهر المفرطة أو التكلف، وتفضلين الإنجازات الواقعية والحلول الذكية المباشرة بكل ثقة وجدية.`;
+                shareSummary = "طلعت شخصية جادة، مستقلة ومعتمدة على نفسي تماماً! 💪 جربي كويز الديفا واكتشفي طبيعتكِ:";
+            }
+
+            resultText.innerText = resultMessage;
+
+            const pageUrl = encodeURIComponent("https://alaa22188-coder.github.io/dal3-test/diva.html");
+            const encodedText = encodeURIComponent(shareSummary);
+
+            shareFbResult.href = `https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`;
+            shareWaResult.href = `https://api.whatsapp.com/send?text=${encodedText}%20${pageUrl}`;
+            shareTwResult.href = `https://twitter.com/intent/tweet?url=${pageUrl}&text=${encodedText}`;
+        }
+    </script>
+    
+    <script>
+        /*
+        let adsenseLoaded = false;
+        function loadAdSense() {
+            if (adsenseLoaded) return;
+            adsenseLoaded = true;
+
+            let script = document.createElement('script');
+        */
+    </script>
+</body>
+</html>

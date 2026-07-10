@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 🎯 تهيئة السيو ونسبة النقر (CTR) لعام 2026 -->
+    <title>اختبار مقياس العصبية 2026 - اكتشف مدى قدرتك على ضبط النفس</title>
+    <meta name="description" content="جرّب اختبار مقياس العصبية التفاعلي الحقيقي؛ 15 سؤالاً نفسياً عشوائياً متغيراً من بين 30 عبارة مدروسة لتحديد درجة انفعالك وحدتك. اكتشف هدوءك فوراً وبدقة.">
+    <meta name="keywords" content="مقياس العصبية, اختبار العصبية, كويز سرعة الانفعال, اختبارات نفسية تفاعلية, ضبط النفس, مقياس الدلع">
+    
+    <!-- الكانونيكال المعتمد لصفحة مقياس العصبية -->
+    <link rel="canonical" href="https://alaa22188-coder.github.io/dal3-test/neuroticism-scale-test.html">
+
+    <!-- أكواد الأوبن جراف لمشاركة احترافية عبر منصات التواصل -->
+    <meta property="og:locale" content="ar_AR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="اختبار مقياس العصبية التفاعلي 2026: هل أنت هادئ أم بركان هائج؟">
+    <meta property="og:description" content="ادخل اختبار مقياس العصبية واكتشف درجة تحكمك في انفعالاتك؛ هل أنت شخصية باردة، متزنة، أم شديدة العصبية؟ 15 سؤالاً تفاعلياً يكشف لك الحقيقة!">
+    <meta property="og:url" content="https://alaa22188-coder.github.io/dal3-test/neuroticism-scale-test.html">
+    <meta property="og:site_name" content="مقياس الدلع">
+    <meta property="og:image" content="https://alaa22188-coder.github.io/dal3-test/quiz-share.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <style>
+        /* الالتزام الكامل بالألوان المعتمدة والروح التصميمية لموقع مقياس الدلع */
+        :root {
+            --bg-color: #f8fafc;
+            --primary-color: #ff477e; 
+            --secondary-color: #0f172a;
+            --text-muted: #334155;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+            --segment-active: #ff477e;
+            --segment-inactive: #cbd5e1;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--secondary-color);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            line-height: 1.8;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* الهيدر الموحد */
+        header {
+            background-color: var(--card-bg);
+            border-bottom: 1px solid var(--border-color);
+            padding: 16px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo a {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin-right: 16px;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        /* الحاوية الرئيسية */
+        main {
+            flex: 1;
+            max-width: 700px;
+            width: 100%;
+            margin: 24px auto;
+            padding: 0 16px;
+        }
+
+        /* حاوية الاختبار التفاعلي */
+        .quiz-container {
+            background-color: var(--card-bg);
+            padding: 32px 24px;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+            text-align: center;
+            margin-bottom: 24px;
+            min-height: 320px;
+        }
+
+        /* شريط التقدم المجزأ لمنع الـ CLS */
+        .progress-bar-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 6px;
+            margin-bottom: 32px;
+        }
+
+        .progress-segment {
+            flex: 1;
+            height: 8px;
+            background-color: var(--segment-inactive);
+            border-radius: 4px;
+        }
+
+        .progress-segment.active {
+            background-color: var(--segment-active);
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            color: var(--secondary-color);
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            color: var(--secondary-color);
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            color: var(--secondary-color);
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        .quiz-container p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            margin-bottom: 24px;
+            white-space: pre-line;
+        }
+
+        /* أزرار تفاعلية مريحة وسريعة الاستجابة */
+        .btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 14px 28px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 12px;
+            cursor: pointer;
+            width: 100%;
+            min-height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        .btn-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin-top: 24px;
+        }
+
+        .btn-answer {
+            background-color: var(--bg-color);
+            color: var(--secondary-color);
+            border: 1px solid var(--border-color);
+            text-align: right;
+            justify-content: flex-start;
+            padding: 16px;
+            height: auto;
+        }
+
+        .btn-answer:hover,
+        .btn-answer:active {
+            background-color: #f1f5f9;
+            border-color: #cbd5e1;
+        }
+
+        /* أزرار مشاركة النتائج والكويز */
+        .share-section {
+            margin-top: 24px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .share-section p {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--secondary-color);
+        }
+
+        .share-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .share-btn {
+            padding: 10px 16px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: opacity 0.2s;
+            min-height: 40px;
+        }
+
+        .share-btn:hover {
+            opacity: 0.9;
+        }
+
+        .share-fb { background-color: #1877f2; }
+        .share-wa { background-color: #25d366; }
+        .share-tw { background-color: #000000; }
+
+        /* أقسام المحتوى والمطور لتعزيز السيو والـ E-E-A-T */
+        .seo-content, .developer-bio-section {
+            background-color: var(--card-bg);
+            padding: 32px 24px;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 24px;
+        }
+
+        .seo-content h2 {
+            font-size: 1.4rem;
+            color: var(--primary-color);
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+
+        .seo-content p, .developer-bio-section p {
+            color: var(--text-muted);
+            margin-bottom: 16px;
+            font-size: 1.05rem;
+        }
+
+        .seo-content ul {
+            margin-right: 24px;
+            margin-bottom: 16px;
+            color: var(--text-muted);
+        }
+
+        .seo-content ul li {
+            margin-bottom: 8px;
+        }
+
+        .developer-social-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .developer-social-links a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-size: 1.05rem;
+            font-weight: 700;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 2px;
+        }
+
+        .developer-social-links a:hover {
+            color: var(--primary-color);
+            border-bottom-color: var(--secondary-color);
+        }
+
+        /* الفوتر الموحد */
+        footer {
+            background-color: var(--secondary-color);
+            color: #94a3b8;
+            padding: 32px 20px;
+            text-align: center;
+            font-size: 0.95rem;
+            margin-top: auto;
+        }
+
+        .footer-links {
+            margin-bottom: 16px;
+        }
+
+        .footer-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            margin: 0 12px;
+            display: inline-block;
+            min-height: 44px;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .hide {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="https://alaa22188-coder.github.io/dal3-test/">مقياس الدلع</a>
+            </div>
+            <nav class="nav-links">
+                <a href="https://alaa22188-coder.github.io/dal3-test/">الرئيسية</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="quiz-container">
+            <div id="progress-bar" class="progress-bar-container hide"></div>
+
+            <!-- 1. شاشة الترحيب والبدء -->
+            <div id="welcome-screen" class="screen">
+                <h1>اختبار مقياس العصبية وسرعة الانفعال</h1>
+                <p>هل أنت شخص بارد الأعصاب قادر على التحكم بمشاعرك في أصعب الظروف؟ أم أنك بمثابة بركان ثائر سريع الاشتعال من أقل مجهود أو كلمة؟ اكتشف الآن درجتك الحقيقية على مقياس العصبية النفسي من خلال خوض هذا الاختبار المطور؛ 15 سؤالاً يتم اختيارها بالكامل عشوائياً من بين مصفوفة تحتوي على 30 موقفاً يومياً دقيقاً لقياس حدة الانفعال وضبط النفس!</p>
+                <button id="start-btn" class="btn">ابدأ اختبار مقياس العصبية الآن</button>
+
+                <div class="share-section">
+                    <p>شارك الاختبار مع أصدقائك واكتشف من العُصابي بينكم! 🤐</p>
+                    <div class="share-buttons">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://alaa22188-coder.github.io/dal3-test/neuroticism-scale-test.html" target="_blank" rel="noopener" class="share-btn share-fb">فيسبوك</a>
+                        <a href="https://api.whatsapp.com/send?text=هل%20تستطيع%20ضبط%20أعصابك%20أم%20أنك%20سريع%20الانفعال%3F%20جرب%20اختبار%20مقياس%20العصبية%20واكتشف%20نفسك%20الان%20%F0%9F%A5%AF%20https://alaa22188-coder.github.io/dal3-test/neuroticism-scale-test.html" target="_blank" rel="noopener" class="share-btn share-wa">واتساب</a>
+                        <a href="https://twitter.com/intent/tweet?url=https://alaa22188-coder.github.io/dal3-test/neuroticism-scale-test.html&text=اختبار%20مقياس%20العصبية%20التفاعلي%202026:%20اكتشف%20مدى%20قدرتك%20على%20ضبط%20نفسك%20الآن!" target="_blank" rel="noopener" class="share-btn share-tw">تويتر X</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. شاشة عرض الأسئلة المتغيرة -->
+            <div id="question-screen" class="screen hide">
+                <h2 id="question-text">تحميل السؤال...</h2>
+                <div id="answer-buttons" class="btn-grid"></div>
+            </div>
+
+            <!-- 3. شاشة عرض النتيجة والتحليل -->
+            <div id="result-screen" class="screen hide">
+                <h2>النتيجة النهائية لمقياس العصبية</h2>
+                <p id="result-text">يتم حساب درجتك السيكولوجية...</p>
+                <button id="restart-btn" class="btn">إعادة خوض الاختبار 🔄</button>
+
+                <div class="share-section">
+                    <p>انشر نتيجتك بكل صراحة وتحدّ أصدقاءك! 🥳</p>
+                    <div class="share-buttons">
+                        <a id="share-fb-result" href="#" target="_blank" rel="noopener" class="share-btn share-fb">انشر النتيجة</a>
+                        <a id="share-wa-result" href="#" target="_blank" rel="noopener" class="share-btn share-wa">أرسلها بالواتساب</a>
+                        <a id="share-tw-result" href="#" target="_blank" rel="noopener" class="share-btn share-tw">تغريدة بالنتيجة</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- قسم محتوى السيو المخصص لمحركات البحث -->
+        <article class="seo-content">
+            <h2>ما هو اختبار مقياس العصبية التفاعلي؟</h2>
+            <p>يُعتبر <strong>اختبار مقياس العصبية</strong> (Neuroticism Scale) أحد الركائز الأساسية في علم النفس الحديث لقياس مدى استقرار الفرد العاطفي، وردود أفعاله السلوكية تجاه المحفزات والمواقف المزعجة اليومية. العصبية ليست مجرد طبع عابر، بل هي مؤشر على آلية تعامل الدماغ مع الضغوط والمواقف غير المتوقعة.</p>
+            <p>من خلال هذا الكويز التفاعلي على موقع مقياس الدلع، قمنا ببناء مصفوفة برمجية ذكية تختار 15 سؤالاً بطريقة عشوائية بحتة من أصل 30 سؤالاً مدروساً بعناية، لتغطية كافة جوانب الحياة كـ (العمل، الزحام، الخلافات العائلية، والتعامل مع التكنولوجيا والخطط المفسدة)، مما يمنحك نتيجة دقيقة تماماً في كل مرة تعيد فيها تشغيل الأداة.</p>
+
+            <h2>المستويات الثلاثة على مقياس ضبط النفس والانفعال</h2>
+            <ul>
+                <li><strong>أعصاب فولاذية هادئة:</strong> قدرة فائقة على كبح الغضب والتعامل مع المشكلات ببرود تام وتفكير عقلاني منظم دون صراخ أو ارتباك.</li>
+                <li><strong>عصبية طبيعية متزنة:</strong> تنفعل فقط في المواقف التي تستدعي الغضب فعلياً، لكنك سرعان ما تستعيد هدوءك وتتحكم في الكلمات والأفعال بذكاء.</li>
+                <li><strong>عصبية مفرطة حادة:</strong> تشتعل سريعاً من أقل كلمة أو تافهة، وتجد صعوبة بالغة في كتمان الضيق والتوتر، مما قد يؤثر على علاقاتك وصحتك الجسدية.</li>
+            </ul>
+        </article>
+		   <section class="internal-links-section">
+            <h3>إختبارات قد تهمك أيضاً 🌟</h3>
+            <div class="links-grid">
+                <a href="https://alaa22188-coder.github.io/dal3-test/diva.html">← اختبار الديفا للبنات</a>
+                <a href="https://alaa22188-coder.github.io/dal3-test/jealousy-scale.html">← اختبار مقياس الغيرة</a>
+                <a href="https://alaa22188-coder.github.io/dal3-test/personality-strength-scale.html">← اختبار قوة الشخصية</a>
+				<a href="https://alaa22188-coder.github.io/dal3-test/brainrot-quiz.html">← اختبار التعفن الدماغي</a>
+				<a href="https://alaa22188-coder.github.io/dal3-test/spiritual-beauty.html">← اختبار الجمال الروحي</a>
+				<a href="https://alaa22188-coder.github.io/dal3-test/love-test.html">← اختبار هل انت واقع بالحب</a>
+            </div>
+        </section>
+		
+        <section class="developer-bio-section">
+            <h3>عن مطور الموقع 🛠️</h3>
+            <p>أهلاً بك! أنا علاء الزقزوق، مهندس برمجيات ومطور واجهات ويب متخصص في تصميم الأدوات التفاعلية والاختبارات النفسية والتحليلية السريعة والخفيفة كلياً كحلول استاتيكية آمنة.</p>
+            <div class="developer-social-links">
+                <a href="https://github.com/alaa22188-coder/" target="_blank" rel="noopener">← حساب GitHub الشخصي</a>
+                <a href="https://www.youtube.com/@alaa22188" target="_blank" rel="noopener">← يوتيوب</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="privacy-and-contact.html">سياسة الخصوصية والاتصال</a>
+            <a href="copyright.html">حقوق النشر</a>
+        </div>
+        <p>&copy; 2026 مقياس الدلع. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script>
+        const allQuestions = [
+            { question: "عندما تنهار شبكة الإنترنت فجأة أثناء قيامك بعمل هام ومستعجل:", answers: [{ text: "أغضب بشدة وأضرب الطاولة أو الهاتف وأشعر بضغط كبير", score: 3 }, { text: "أتذمر قليلاً ثم أنتظر أو أحاول الاتصال بخدمة العملاء", score: 2 }, { text: "أتقبل الأمر ببرود، وأبتعد عن الجهاز، وأشغل نفسي بشيء آخر", score: 1 }] },
+            { question: "إذا كنت تقود سيارتك وقام أحدهم بقطع الطريق عليك فجأة وبشكل مستفز:", answers: [{ text: "أطلق بوق السيارة باستمرار وأصرخ أو أوجه له كلمات حادة", score: 3 }, { text: "أنزعج للحظات وأعبر عن ضيقي لفظياً داخل السيارة ثم أنسى الموقف", score: 2 }, { text: "أفرمل بهدوء متمنياً له السلامة دون أي انفعال يذكر", score: 1 }] },
+            { question: "تنتظر في طابور طويل ومزدحم وفجأة تخطاك شخص ما بوقاحة:", answers: [{ text: "أشتعل غضباً وأواجهه بصوت مرتفع وحاد أمام الجميع فوراً", score: 3 }, { text: "أنبهه بأدب ولكن بنبرة جافة وصارمة ليعود إلى مكانه", score: 2 }, { text: "أتجاهل الموقف تجنباً للمشاكل وجعجع الرأس", score: 1 }] },
+            { question: "عندما تسقط كأساً من الماء أو العصير وتنسكب فوق ملابسك أو أوراقك النظيفة:", answers: [{ text: "أشتم الموقف وألعن حظي وأتوتر بشدة ويفسد مزاجي تماماً", score: 3 }, { text: "أتضايق لثوانٍ ثم أذهب لتنظيف المكان وتغيير ملابسي", score: 2 }, { text: "أبتسم وأقول 'قدر الله وما شاء فعل' بهدوء تام", score: 1 }] },
+            { question: "إذا انتقد أحد أفراد عائلتك طريقة لبسك أو طبخك بشكل متكرر:", answers: [{ text: "أغضب فوراً وأرد عليهم بقسوة وأقاطع النقاش كلياً", score: 3 }, { text: "أدافع عن وجهة نظري ببعض الضيق والجدال", score: 2 }, { text: "أستمع بابتسامة باردة ولا أسمح للموضوع بالتأثير فيّ", score: 1 }] },
+            { question: "كم مرة تفقد فيها أعصابك وتصرخ في وجه الآخرين أسبوعياً؟", answers: [{ text: "عدة مرات في الأسبوع، العصبية رفيقتي الدائمة تقريباً", score: 3 }, { text: "مرة أو مرتين على الأكثر وعند المواقف المستحقة فقط", score: 2 }, { text: "نادراً جداً أو يكاد يمر الشهر دون أن أصرخ أبداً", score: 1 }] },
+            { question: "عندما يستعجلك أحدهم أثناء إنجازك لمهمة معينة:", answers: [{ text: "أفقد تركيزي تماماً وأصرخ فيه ليصمت ويتركنى وشأني", score: 3 }, { text: "أطلب منه الانتظار بنبرة متوترة متضايقة", score: 2 }, { text: "أتابع عملي بنفس الهدوء والسرعة وكأنه لم يتحدث", score: 1 }] },
+            { question: "إذا شعرت بجوع شديد وتأخر طلب الطعام في المطعم لأكثر من نصف ساعة:", answers: [{ text: "أوبخ النادل بحدة وألغي الطلب وأغادر المطعم وأنا مستشيط غضباً", score: 3 }, { text: "أنادي المسؤول بضيق وأطلب منه استعجال الطلب فوراً", score: 2 }, { text: "أنتظر بهدوء مقدراً أن المطعم قد يكون مزدحماً", score: 1 }] },
+            { question: "عندما تكتشف أنك أضعت مفاتيحك أو محفظتك وأنت مغادر للمنزل:", answers: [{ text: "أبدأ بالصراخ وإلقاء الأشياء والتوتر الشديد وأتهم من حولي بإخفائها", score: 3 }, { text: "أبحث بعصبية وتذمر ظاهر في أرجاء المنزل", score: 2 }, { text: "أتوقف لثوانٍ، وأتذكر أين وضعتها، وأبحث عنها بهدوء وثبات", score: 1 }] },
+            { question: "النقاشات السياسية أو الرياضية الحادة مع الأصدقاء:", answers: [{ text: "تحرق دمي وأتمسك برأيي بعصبية وقد أقاطع الصديق بسببها", score: 3 }, { text: "أتحمس فيها وأنفعل قليلاً ولكن ننتهي بالضحك والمزاح", score: 2 }, { text: "أنسحب منها فوراً أو أستمع ببرود تام دون مشاركة انفعالية", score: 1 }] },
+            { question: "إذا طلب منك طفل صغير طلباً ملحاً ومكرراً وأنت مجهد للغاية:", answers: [{ text: "أنهر بصوت عالٍ جداً وقد أزجره بحدة للتخلص من إزعاجه", score: 3 }, { text: "أخبره بضيق أن يذهب لأمه أو ينتظر لاحقاً", score: 2 }, { text: "أحتضنه بهدوء وأفهمه بلطف شديد أنني متعب الآن", score: 1 }] },
+            { question: "كيف تكون ردة فعلك الجسدية عندما تغضب بشدة؟", answers: [{ text: "تتسارع دقات قلبي، أرتجف، وأشعر برغبة في تكسير الأشياء", score: 3 }, { text: "أكتفي بعبوس الوجه واحمرار طفيف مع التحدث بنبرة جافة", score: 2 }, { text: "لا يظهر علي أي ملمح جسدي عنيف، وأكتم الأمر تماماً في عقلي", score: 1 }] },
+            { question: "عندما تخطط لرحلة أو نزهة ثم تلغى فجأة بسبب ظروف طارئة لغيرك:", answers: [{ text: "ينقلب مزاجي لأسود، وأغضب على الجميع ويفسد يومي بالكامل", score: 3 }, { text: "أحزن بوضوح وأعبر عن إحباطي ثم أتقبل الأمر على مضض", score: 2 }, { text: "أقول ببرود 'لعله خير' وأبحث عن وسيلة تسلية بديلة داخل المنزل", score: 1 }] },
+            { question: "إذا تعطل أحد الأجهزة المنزلية الهامة (كالغسالة أو التكييف) في وضح الصيف:", answers: [{ text: "أكتئب وأغضب وأملأ البيت صراخاً وشكوى من سوء الحظ المستمر", score: 3 }, { text: "أنزعج وأبدأ بالاتصال الفوري بفني الصيانة بعجلة وتذمر", score: 2 }, { text: "أتعامل مع الأمر كحدث طبيعي وأبحث عن حلول مؤقتة حتى يتم الإصلاح", score: 1 }] },
+            { question: "هل يصفك الأشخاص المقربون منك في الغالب بأنك عصبى؟", answers: [{ text: "نعم، دائماً ما يطلبون مني الهدوء ويخشون نقاشي وقت الضيق", score: 3 }, { text: "أحياناً في مواقف معينة فقط، لكنهم يعرفون أن قلبي طيب وطبيعي", score: 2 }, { text: "لا إطلاقاً، يصفونني دائماً بكتلة الثلج أو الشخص الهادئ جداً", score: 1 }] },
+            { question: "عندما تقرأ تعليقاً مسيئاً أو مخالفاً تماماً لرأيك على وسائل التواصل:", answers: [{ text: "أكتب رداً هجومياً لاذعاً وأدخل في معركة كلامية تستمر لساعات", score: 3 }, { text: "أكتب رد تبيين منطقي ببعض الضيق ثم أغلق المنشور", score: 2 }, { text: "أتصفح وأمر عليه ببرود أو أضغط حظر وتجاهل تام دون أن يرمش لي جفن", score: 1 }] },
+            { question: "إذا استيقظت على صوت ضوضاء أو أعمال بناء بجوار منزلك في يوم إجازتك الحيد:", answers: [{ text: "أستيقظ غاضباً جداً وأبدأ بسب الوضع وأنا متوتر المزاج طوال اليوم", score: 3 }, { text: "أنزعج وأغلق النوافذ محاولاً العودة للنوم مع بعض التأفف", score: 2 }, { text: "أستيقظ بهدوء، وأستغل الوقت المبكر في إنجاز أعمال أخرى نافعة", score: 1 }] },
+            { question: "عندما تضطر للشرح لشخص ما فكرة معينة لثلاث مرات متتالية ولم يفهمها:", answers: [{ text: "أفقد أعصابي وأتهمه بالغباء وأرفض مواصلة الحديث معه", score: 3 }, { text: "أشعر بنفاد صبري بوضوح وتتغير نبرة صوتي لتصبح حادة", score: 2 }, { text: "أتنفس بعمق وأحاول تغيير أسلوب الشرح لطريقة أبسط بصدر رحب", score: 1 }] },
+            { question: "إذا نسيت وجبتك المفضلة على النار حتى احترقت تماماً:", answers: [{ text: "أرمي الإناء بعنف، ويتحول يومي إلى كآبة وعصبية بالغة", score: 3 }, { text: "أتضايق كثيراً من خسارة الطعام والوقت ثم أطلب ديليفري", score: 2 }, { text: "أضحك على الموقف وأقوم بتنظيف المطبخ وإعداد شيء سريع آخر", score: 1 }] },
+            { question: "تجلس في وسيلة مواصلات وشخص بجانبك يتحدث بصوت جهوري مفرط في الهاتف:", answers: [{ text: "أنظر إليه بنظرات نارية مرعبة أو أوبخه بحدة لكي يخفض صوته", score: 3 }, { text: "أطلب منه بلطف ممزوج بالضيق خفض الصوت قليلاً", score: 2 }, { text: "أضع سماعات الأذن الخاصة بي وأستمع لموسيقاي أو قرآني بسلام", score: 1 }] },
+            { question: "عندما تخطئ في كتابة كلمة مرور حسابك لثلاث مرات ويغلق الحساب مؤقتاً:", answers: [{ text: "أضرب لوحة المفاتيح بغيظ شديد وأقلق وأتوتر بشكل هيستيري", score: 3 }, { text: "أتنهد بضيق شديد وأبدأ خطوات استعادة الحساب وأنا متذمر", score: 2 }, { text: "أبتسم لنسياني وأنتظر الوقت المحدد لفتح الحساب بهدوء", score: 1 }] },
+            { question: "إذا قام صديق بطلب استعارة شيء ثمين منك ورده إليك مكسوراً أو تالفاً:", answers: [{ text: "أصرخ في وجهه وأهينه وأنهي علاقتي به فوراً ودون تفكير", score: 3 }, { text: "أعاتبه بمرارة وجفاء وأطلب منه تعويضاً أو تصليح الشيء", score: 2 }, { text: "أتحكم في ملامحي وأقول 'فداك، المهم سلامتك' رغم قيمته", score: 1 }] },
+            { question: "كم يستغرق الوقت لكي يهدأ مزاجك تماماً بعد نوبة غضب شديدة؟", answers: [{ text: "أظل عصبياً ومتقلب المزاج لعدة ساعات أو طوال اليوم والليل", score: 3 }, { text: "نصف ساعة أو ساعة كافية لكي أسترجع طبيعتي الهادئة", score: 2 }, { text: "دقائق معدودة وأعود للضحك والحديث وكأن شيئاً لم يكن", score: 1 }] },
+            { question: "عندما تجد البيت فوضوياً وغير مرتب بمجرد عودتك من عمل شاق:", answers: [{ text: "أبدأ بإلقاء اللوم والصراخ على كل من في المنزل فوراً", score: 3 }, { text: "أبدي تذمري وضيق مادي بشكل واضح وأطلب ترتيبه بسرعة", score: 2 }, { text: "أذهب لغرفتي لأرتاح أولاً، وأؤجل الحديث في الأمر لوقت لاحق", score: 1 }] },
+            { question: "إذا سخر شخص غريب من مظهرك أو طريقة مشيك بكلمة عابرة في الشارع:", answers: [{ text: "ألتفت إليه وأشتبك معه لفظياً أو جسدياً لأخذ حقي بعنف", score: 3 }, { text: "أرد عليه بنقد لاذع وسريع ثم أواصل طريقي وأنا منزعج", score: 2 }, { text: "أحتقره بنظرة باردة وأكمل سيري وكأن ذبابة مرت بجانبي", score: 1 }] },
+            { question: "تتابع مباراة لفريقك المفضل وخسر في الدقائق الأخيرة بهدف غبي:", answers: [{ text: "أكسر أي شيء أمامي، وأشتم، وينعكس ذلك على تعاملي مع عائلتي بعنف", score: 3 }, { text: "أتحسر بضيق شديد وأغلق التلفاز وأنا حزين المزاج", score: 2 }, { text: "أقول 'هذه هي الكرة، يوم لك ويوم عليك' وأنام بسلام", score: 1 }] },
+            { question: "عندما تقع في مشكلة مادية طارئة لم تكن في الحسبان مطلقاً:", answers: [{ text: "أصاد بالهلع وتضيق أنفاسي وأصبح عصبياً جداً مع كل من يحادثني", score: 3 }, { text: "أقلق بشكل واضح وأبدأ بالتفكير السريع المضغوط في حلول وبدائل", score: 2 }, { text: "أهدأ تماماً وأقنع نفسي أن الأزمات تحل بالتفكير البارد وليس بالتوتر", score: 1 }] },
+            { question: "إذا تأخر عليك موظف المعاملات الحكومية لأسباب روتينية تافهة:", answers: [{ text: "أفتعل مشكلة كبيرة في المكتب وأطالب بمقابلة المدير بصوت جهوري", score: 3 }, { text: "أظهر تبرمي وضجري وألح عليه لكي ينهي أوراقي سريعاً", score: 2 }, { text: "أجلس وأخرج هاتفي لأتصفحه منتظراً دوري برواق تام", score: 1 }] },
+            { question: "عندما ينقطع التيار الكهربائي فجأة أثناء مشاهدتك لفيلمك المفضل في ذروته:", answers: [{ text: "أصرخ متأففاً وألعن شركة الكهرباء بحدة بالغة ويفسد مزاجي السهرة", score: 3 }, { text: "أنزعج قليلاً ثم أبحث عن كشاف الهاتف المحمول مستسلماً للأمر", score: 2 }, { text: "أستغل العتمة في جلسة تأمل هادئة أو حديث عائلي لطيف", score: 1 }] },
+            { question: "أخيراً، كيف ترى تأثير عصبيتك وانفعالك على صحتك وعلاقاتك العامة؟", answers: [{ text: "أعلم أنها تدمرني وتسبب لي المشاكل، لكنني عاجز تماماً عن ضبطها", score: 3 }, { text: "تؤثر أحياناً، لذا أحاول السيطرة عليها قدر الإمكان لتقليل الخسائر", score: 2 }, { text: "الحمد لله أعصابي متحكم بها كلياً ولا تسبب لي أي خسارة في حياتي", score: 1 }] }
+        ];
+
+        let questions = [];
+        const welcomeScreen = document.getElementById('welcome-screen');
+        const questionScreen = document.getElementById('question-screen');
+        const resultScreen = document.getElementById('result-screen');
+        const progressBar = document.getElementById('progress-bar');
+        const startButton = document.getElementById('start-btn');
+        const restartButton = document.getElementById('restart-btn');
+        const questionText = document.getElementById('question-text');
+        const answerButtonsContainer = document.getElementById('answer-buttons');
+        const resultText = document.getElementById('result-text');
+        const shareFbResult = document.getElementById('share-fb-result');
+        const shareWaResult = document.getElementById('share-wa-result');
+        const shareTwResult = document.getElementById('share-tw-result');
+
+        let currentQuestionIndex = 0;
+        let totalScore = 0;
+
+        startButton.addEventListener('click', startQuiz);
+        restartButton.addEventListener('click', startQuiz);
+
+        function getRandomQuestions() {
+            let shuffled = [...allQuestions];
+            for (let i = shuffled.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+            }
+            return shuffled.slice(0, 15);
+        }
+
+        function buildProgressBar() {
+            progressBar.innerHTML = '';
+            for (let i = 0; i < questions.length; i++) {
+                const segment = document.createElement('div');
+                segment.classList.add('progress-segment');
+                progressBar.appendChild(segment);
+            }
+        }
+
+        function updateProgressBar() {
+            const segments = document.querySelectorAll('.progress-segment');
+            segments.forEach((segment, index) => {
+                if (index <= currentQuestionIndex) {
+                    segment.classList.add('active');
+                } else {                    
+                    segment.classList.remove('active');
+                }
+            });
+        }
+
+        function startQuiz() {
+            totalScore = 0;
+            currentQuestionIndex = 0;
+            questions = getRandomQuestions();
+            welcomeScreen.classList.add('hide');
+            resultScreen.classList.add('hide');
+            questionScreen.classList.remove('hide');
+            progressBar.classList.remove('hide');
+            buildProgressBar();
+            showQuestion();
+        }
+
+        function showQuestion() {
+            answerButtonsContainer.innerHTML = '';
+            updateProgressBar();
+            let currentQuestion = questions[currentQuestionIndex];
+            questionText.innerText = `سؤال ${currentQuestionIndex + 1} من 15: ${currentQuestion.question}`;
+
+            currentQuestion.answers.forEach(answer => {
+                const button = document.createElement('button');
+                button.innerText = answer.text;
+                button.classList.add('btn', 'btn-answer');
+                
+                // الاستماع المباشر والآمن للحدث وضمان إرسال النتيجة فوراً
+                button.addEventListener('click', () => {
+                    handleAnswerSelection(answer.score);
+                });
+
+                answerButtonsContainer.appendChild(button);
+            });
+        }
+
+        function handleAnswerSelection(score) {
+            totalScore += score;
+            currentQuestionIndex++;
+
+            if (currentQuestionIndex < questions.length) {
+                showQuestion();
+            } else {
+                showResult();
+            }
+        }
+
+        function showResult() {
+            questionScreen.classList.add('hide');
+            progressBar.classList.add('hide');
+            resultScreen.classList.remove('hide');
+
+            let resultMessage = "";
+            let shareSummary = "";
+
+            if (totalScore >= 38) {
+                resultMessage = `تحليلك النهائي: درجة العصبية لديك مرتفعة جداً (أنت بركان هائج)! 🤯🔥 \n\nتشير النتيجة إلى أنك تعاني من سرعة اشتعال بالغة؛ حيث تستفزك المواقف اليومية والأخطاء العابرة بسرعة وتفقدك التحكم في الكلمات أو ردود الأفعال الجسدية. هذا المستوى من العصبية يستهلك طاقتك النفسية والجسدية بشكل مفرط. ننصحك بشدة بالتدرب على تمارين التنفس العميق، وفصل ذاتك عن المشاكل الخارجية، وتذكر دائماً أن التوتر لا يحل العطل بل يضاعفه.`;
+                shareSummary = "درجة العصبية عندي طلعت مرتفعة جداً (بركان هائج)! 🤯🔥 جرب اختبار مقياس العصبية واكتشف درجة تحكمك بنفسك:";
+            } else if (totalScore >= 24) {
+                resultMessage = `تحليلك النهائي: درجتك طبيعية ومتزنة على مقياس العصبية! ⚖️ ونعم الصبر \n\nأنت شخص طبيعي ومتوازن عاطفياً؛ تنفعل وتغضب فقط عندما تكون هناك أسباب قوية ومستحقة فعلياً للضيق، لكنك تمتلك كابحاً داخلياً ذكياً يمنعك من ارتكاب حماقات أو خسارة المقربين منك وقت الغضب. سرعان ما تستعيد هدوءك وتبدأ بالتفكير المنطقي لإصلاح المشكلة، وهي سمة نفسية ممتازة وصحية جداً لعلاقاتك وصحتك.`;
+                shareSummary = "طلعت طبيعي ومتزن على مقياس العصبية وضبط النفس! ⚖️ جرب كويز مقياس العصبية:";
+            } else {
+                resultMessage = `تحليلك النهائي: أنت تمتلك أعصاباً فولاذية هادئة (كتلة ثلج باردة)! 🧊✨ \n\nما شاء الله! درجة عصبيتك تكاد تكون منعدمة. تتمتع ببرود أعصاب مذهل وقدرة نادرة على التغاضي واستيعاب الصدمات والمواقف المستفزة بابتسامة أو تجاهل تام. لا تسمح للظروف الخارجية أو الكلمات العابرة بأن تعكر صفو سلامك الداخلي، ويرى الناس فيك الملجأ الآمن وقت الأزمات لثباتك ورواقك. هنيئاً لك هذا السلام النفسي!`;
+                shareSummary = "أعصابي فولاذية هادئة جداً وطلعت كتلة ثلج باردة! 🧊✨ جرب اختبار مقياس العصبية:";
+            }
+
+            resultText.innerText = resultMessage;
+            const pageUrl = encodeURIComponent("https://alaa22188-coder.github.io/dal3-test/neuroticism-scale-test.html");
+            const encodedText = encodeURIComponent(shareSummary);
+
+            shareFbResult.href = `https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`;
+            shareWaResult.href = `https://api.whatsapp.com/send?text=${encodedText}%20${pageUrl}`;
+            shareTwResult.href = `https://twitter.com/intent/tweet?url=${pageUrl}&text=${encodedText}`;
+        }
+    </script>
+</body>
+</html>

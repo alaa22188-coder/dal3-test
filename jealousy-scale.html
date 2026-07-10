@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>اختبار مقياس الغيرة 2026 - اكتشفي درجة الغيرة ونوع شخصيتك العاطفية</title>
+    <meta name="description" content="جرّبي اختبار مقياس الغيرة التفاعلي الممتع؛ 15 سؤالاً عشوائياً متغيراً من بين 30 سؤالاً مميزاً لتهيئة تجربة فريدة! اكتشفي هل غيرتكِ طبيعية، طاغية، أم باردة فوراً.">
+    <meta name="keywords" content="مقياس الغيرة, اختبار الغيرة, كويز نسبة الغيرة, اختبار شخصية عاطفية, غيرة البنات تفاعلي">
+    
+    <link rel="canonical" href="https://alaa22188-coder.github.io/dal3-test/jealousy-scale.html">
+
+    <meta property="og:locale" content="ar_AR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="اختبار مقياس الغيرة التفاعلي 2026: اكتشفي حجم الغيرة في شخصيتكِ">
+    <meta property="og:description" content="ادخلي اختبار مقياس الغيرة واكتشفي هل تمتلكين غيرة اشتعال وثقة مهتزة أم غيرة متزنة وذكية؟ 15 سؤالاً مسلياً في انتظارك!">
+    <meta property="og:url" content="https://alaa22188-coder.github.io/dal3-test/jealousy-scale.html">
+    <meta property="og:site_name" content="مقياس الدلع">
+    <meta property="og:image" content="https://alaa22188-coder.github.io/dal3-test/quiz-share.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <style>
+        /* إعدادات خطوط النظام السريعة والمريحة جداً للعين (تمنع CLS) */
+        :root {
+            --bg-color: #f8fafc;
+            --primary-color: #db2777;
+            --secondary-color: #0f172a;
+            --text-muted: #334155;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+            --segment-active: #f472b6;
+            --segment-inactive: #cbd5e1;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--secondary-color);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            line-height: 1.8;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* الهيدر */
+        header {
+            background-color: var(--card-bg);
+            border-bottom: 1px solid var(--border-color);
+            padding: 16px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo a {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin-right: 16px;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        /* الحاوية الرئيسية */
+        main {
+            flex: 1;
+            max-width: 700px;
+            width: 100%;
+            margin: 24px auto;
+            padding: 0 16px;
+        }
+
+        /* حاوية مساحة الإعلان المحجوزة مسبقاً (تحمي من اهتزاز الـ CLS للبيج سبيد) */
+        .ad-slot-container {
+            min-height: 280px;
+            margin: 0 auto 24px auto;
+            text-align: center;
+            background-color: #f1f5f9;
+            border: 1px dashed var(--border-color);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #94a3b8;
+            font-size: 0.9rem;
+            font-weight: 600;
+            overflow: hidden;
+        }
+
+        /* حاوية الاختبار */
+        .quiz-container {
+            background-color: var(--card-bg);
+            padding: 32px 24px;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+            text-align: center;
+            margin-bottom: 24px;
+            min-height: 320px;
+        }
+
+        /* شريط التقدم */
+        .progress-bar-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 6px;
+            margin-bottom: 32px;
+        }
+
+        .progress-segment {
+            flex: 1;
+            height: 8px;
+            background-color: var(--segment-inactive);
+            border-radius: 4px;
+        }
+
+        .progress-segment.active {
+            background-color: var(--segment-active);
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            color: var(--secondary-color);
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            color: var(--secondary-color);
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            color: var(--secondary-color);
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        .quiz-container p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            margin-bottom: 24px;
+        }
+
+        /* أزرار مريحة للموبايل */
+        .btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 14px 28px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 12px;
+            cursor: pointer;
+            width: 100%;
+            min-height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        .btn-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin-top: 24px;
+        }
+
+        .btn-answer {
+            background-color: var(--bg-color);
+            color: var(--secondary-color);
+            border: 1px solid var(--border-color);
+            text-align: right;
+            justify-content: flex-start;
+            padding: 16px;
+            height: auto;
+        }
+
+        .btn-answer:hover,
+        .btn-answer:active {
+            background-color: #f1f5f9;
+            border-color: #cbd5e1;
+        }
+
+        /* أزرار مشاركة التواصل الاجتماعي المحسنة السريعة */
+        .share-section {
+            margin-top: 24px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .share-section p {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--secondary-color);
+        }
+
+        .share-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .share-btn {
+            padding: 10px 16px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: opacity 0.2s;
+            min-height: 40px;
+        }
+
+        .share-btn:hover {
+            opacity: 0.9;
+        }
+
+        .share-fb {
+            background-color: #1877f2;
+        }
+
+        .share-wa {
+            background-color: #25d366;
+        }
+
+        .share-tw {
+            background-color: #000000;
+        }
+
+        /* قسم السيو والمحتوى النصي */
+        .seo-content {
+            background-color: var(--card-bg);
+            padding: 32px 24px;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 24px;
+        }
+
+        .seo-content h2 {
+            font-size: 1.4rem;
+            color: var(--primary-color);
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+
+        .seo-content p {
+            color: var(--text-muted);
+            margin-bottom: 16px;
+            font-size: 1.05rem;
+        }
+
+        .seo-content ul {
+            margin-right: 24px;
+            margin-bottom: 16px;
+            color: var(--text-muted);
+        }
+
+        .seo-content ul li {
+            margin-bottom: 8px;
+        }
+
+        /* 🧑‍💻 قسم معلومات المطور الشخصية لتعزيز الـ E-E-A-T */
+        .developer-bio-section {
+            background-color: var(--card-bg);
+            padding: 32px 24px;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 24px;
+        }
+
+        .developer-bio-section p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            margin-bottom: 16px;
+        }
+
+        .developer-social-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .developer-social-links a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-size: 1.05rem;
+            font-weight: 700;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 2px;
+        }
+
+        .developer-social-links a:hover {
+            color: var(--primary-color);
+            border-bottom-color: var(--secondary-color);
+        }
+
+        /* الفوتر */
+        footer {
+            background-color: var(--secondary-color);
+            color: #94a3b8;
+            padding: 32px 20px;
+            text-align: center;
+            font-size: 0.95rem;
+            margin-top: auto;
+        }
+
+        .footer-links {
+            margin-bottom: 16px;
+        }
+
+        .footer-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            margin: 0 12px;
+            display: inline-block;
+            min-height: 44px;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .hide {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="https://alaa22188-coder.github.io/dal3-test/">مقياس الدلع</a>
+            </div>
+            <nav class="nav-links">
+                <a href="https://alaa22188-coder.github.io/dal3-test/">الرئيسية</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="quiz-container">
+            <div id="progress-bar" class="progress-bar-container hide">
+                </div>
+
+            <div id="welcome-screen" class="screen">
+                <h1>اختبار مقياس الغيرة ونوع الشخصية العاطفية</h1>
+                <p>هل غيرتكِ نابعة من حب عميق واهتمام متوازن؟ أم أنها غيرة شديدة تسبب لكِ التوتر؟ أم تميلين للبرود العاطفي الكامل؟ اكتشفي مستوى الغيرة في طبيعتكِ العاطفية الآن عبر الإجابة على 15 سؤالاً مسلياً تُختار عشوائياً في كل مرة من بين 30 سؤالاً فريداً لضمان تجربة دقيقة وممتعة دائماً!</p>
+                <button id="start-btn" class="btn">ابدئي اختبار مقياس الغيرة الآن</button>
+
+                <div class="share-section">
+                    <p>شاركي الاختبار مع صديقاتكِ 👥</p>
+                    <div class="share-buttons">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://alaa22188-coder.github.io/dal3-test/jealousy-scale.html" target="_blank" rel="noopener" class="share-btn share-fb">فيسبوك</a>
+                        <a href="https://api.whatsapp.com/send?text=اكتشفي%20كم%20نسبة%20غيرتكِ%20جربي%20اختبار%20مقياس%20الغيرة%20والشخصية%20العاطفية%20✨%20https://alaa22188-coder.github.io/dal3-test/jealousy-scale.html" target="_blank" rel="noopener" class="share-btn share-wa">واتساب</a>
+                        <a href="https://twitter.com/intent/tweet?url=https://alaa22188-coder.github.io/dal3-test/jealousy-scale.html&text=اختبار%20مقياس%20الغيرة%20التفاعلي:%20اكتشفي%20مستوى%20الغيرة%20والثقة%20في%20شخصيتكِ" target="_blank" rel="noopener" class="share-btn share-tw">تويتر X</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="question-screen" class="screen hide">
+                <h2 id="question-text">السؤال سيظهر هنا؟</h2>
+                <div id="answer-buttons" class="btn-grid">
+                    </div>
+            </div>
+
+            <div id="result-screen" class="screen hide">
+                <h2>النتيجة النهائية للاختبار</h2>
+                <p id="result-text">تحميل النتيجة...</p>
+                <button id="restart-btn" class="btn">إعادة خوض الاختبار 🔄</button>
+
+                <div class="share-section">
+                    <p>تحدّي صديقاتكِ بنتيجتكِ واكتشفي حجم الغيرة لديهن! 🥳</p>
+                    <div class="share-buttons">
+                        <a id="share-fb-result" href="#" target="_blank" rel="noopener" class="share-btn share-fb">انشري النتيجة</a>
+                        <a id="share-wa-result" href="#" target="_blank" rel="noopener" class="share-btn share-wa">أرسليها بالواتساب</a>
+                        <a id="share-tw-result" href="#" target="_blank" rel="noopener" class="share-btn share-tw">تغريدة بالنتيجة</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <article class="seo-content">
+            <h2>ما هو اختبار مقياس الغيرة وما الفائدة من تحليله؟</h2>
+            <p>يُعد <strong>اختبار مقياس الغيرة</strong> أداة سيكولوجية ترفيهية تهدف إلى تحليل أنماط المشاعر وردود الأفعال العاطفية تجاه الشريك أو الأصدقاء أو حتى المحيط الاجتماعي. الغيرة شعور إنساني طبيعي، ولكن مستوياتها تختلف من شخص لآخر؛ لذا يساعدكِ هذا الاختبار في معرفة مكانكِ على هذا المقياس بدقة.</p>
+            <p>يعتمد الكويز على فرز 15 سؤالاً ذكياً بشكل عشوائي تماماً من بين 30 سؤالاً مميزاً في كل مرة تعيدين فيها التحدي، مما يضمن لكِ ولصديقاتك تجربة مشوقة ومتجددة لاكتشاف خبايا الشخصية العاطفية.</p>
+
+            <h2>كيف يتم تحليل مستويات الغيرة في الشخصية?</h2>
+            <p>يرتكز نظام النقاط داخل الاختبار على تصنيف الشخصيات إلى ثلاثة مستويات رئيسية:</p>
+            <ul>
+                <li><strong>الغيرة الشديدة (البركانية):</strong> غيرة نابعة من رغبة قوية في الاستحواذ أو حماية مفرطة للمقربين، وقد تحتاج في بعض الأحيان إلى تعزيز الثقة بالنفس والهدوء لمنع الخلافات.</li>
+                <li><strong>الغيرة المتوازنة (الذكية):</strong> وهي الغيرة الطبيعية الصحية التي تعبر عن الحب والاهتمام دون خنق الطرف الآخر، وتعد مؤشراً على شخصية ناضجة واثقة.</li>
+                <li><strong>الغيرة المنخفضة (الباردة):</strong> نمط يتميز بالهدوء التام واللامبالاة، أو ثقة مطلقة تجعل الشخصية مسترخية تماماً تجاه أي تصرف خارجي.</li>
+            </ul>
+
+            <h2>لماذا تُفضل اختبارات منصة مقياس الدلع؟</h2>
+            <p>منصتنا توفر تجربة تصفح فائقة السرعة ومتوافقة 100% مع أجهزة الموبايل لضمان عدم حدوث أي بطء. نظام الكويز يعالج البيانات برمجياً فورياً لتقديم النتيجة والتحليل النفسي الدقيق المباشر فور الانتهاء من الإجابات، مع ضمان خصوصيتك التامة حيث لا يتم تخزين أي ردود على الخادم.</p>
+        </article>
+		   <section class="internal-links-section">
+            <h3>إختبارات قد تهمك أيضاً 🌟</h3>
+            <div class="links-grid">
+                <a href="https://alaa22188-coder.github.io/dal3-test/diva.html">← اختبار الديفا للبنات</a>
+                <a href="https://alaa22188-coder.github.io/dal3-test/personality-strength-scale.html">← اختبار قوة الشخصية</a>
+				<a href="https://alaa22188-coder.github.io/dal3-test/brainrot-quiz.html">← اختبار التعفن الدماغي</a>
+				<a href="https://alaa22188-coder.github.io/dal3-test/spiritual-beauty.html">← اختبار الجمال الروحي</a>
+				<a href="https://alaa22188-coder.github.io/dal3-test/love-test.html">← اختبار هل انت واقع بالحب</a>
+				<a href="https://alaa22188-coder.github.io/dal3-test/neuroticism-scale-test.html">← اختبار مقياس العصبية</a>
+            </div>
+        </section>
+		
+        <section class="developer-bio-section">
+            <h3>عن مطور الموقع 🛠️</h3>
+            <p>أهلاً بكِ! أنا علاء الزقزوق مطور ومصمم تطبيقات ويب متخصص في بناء أدوات تفاعلية واختبارات سلوكية ذكية وخفيفة الوزن . أهتم بتقديم أفضل تجربة مستخدم ممكنة تجمع بين دقة النتائج البرمجية وسرعة التصفح الفائقة على كافة الأجهزة.</p>
+            <div class="developer-social-links">
+                <a href="https://github.com/alaa22188-coder/" target="_blank" rel="noopener">← حساب GitHub الشخصي</a>
+                <a href="https://www.youtube.com/@alaa22188" target="_blank" rel="noopener">← youtube</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="privacy-and-contact.html">سياسة الخصوصية والاتصال</a>
+            <a href="copyright.html">حقوق النشر</a>
+        </div>
+        <p>&copy; 2026 مقياس الدلع. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script>
+        const allQuestions = [
+            { question: "إذا رأيتِ الشريك يتحدث ويضحك مع شخص آخر في مكان عام بشكل عابر؟", answers: [{ text: "أشعر بنار الغيرة تشتعل بداخلي وأتدخل فوراً لإنهاء الموقف", score: 3 }, { text: "أراقب الموقف بهدوء ثم أسأله بلطف لاحقاً عن الهوية", score: 2 }, { text: "أمر طبيعي جداً ولا أهتم أو أشعر بأي انزعاج", score: 1 }] },
+            { question: "صديقتكِ المقربة خرجت مع صديقة أخرى دون إخباركِ أو دعوتكِ؟", answers: [{ text: "أشعر بالضيق الشديد والعتاب الحاد، وأعتبره تقليلاً من مكانتي", score: 3 }, { text: "أعاتبها بلطف مستفسرة، دون إفساد علاقتنا", score: 2 }, { text: "أتمنى لهما وقتاً ممتعاً وأمضي في يومي بشكل طبيعي", score: 1 }] },
+            { question: "كيف تتعاملين مع كلمات الإعجاب التي قد يتلقاها الشريك في غيابكِ أو حضوركِ؟", answers: [{ text: "أرفضها تماماً وأضع حدوداً صارمة وقاسية لمنع تكرارها", score: 3 }, { text: "أشعر بغيرة بسيطة مغلفة بالفخر والابتسامة الواثقة", score: 2 }, { text: "لا تؤثر فيّ على الإطلاق لأنني أثق في نفسي وفي مكانتي", score: 1 }] },
+            { question: "هل تفتشين في هاتف الشريك أو المقربين إذا سنحت لكِ الفرصة دون علمهم؟", answers: [{ text: "نعم، بشكل دوري لأن الفضول والشك يقتلني دائماً", score: 3 }, { text: "نادراً جداً وفقط إذا شعرت بوجود تصرف غريب يثير الريبة", score: 2 }, { text: "مستحيل، أحترم الخصوصية والحرية الشخصية بالكامل", score: 1 }] },
+            { question: "إذا حقق زميل لكِ في العمل أو الدراسة نجاحاً كبيراً لم تتمكني من تحقيقه؟", answers: [{ text: "أشعر بغيرة داخلية حارقة وأتمنى لو كنت مكانه", score: 3 }, { text: "تشتعل غيرة إيجابية تحفزني للعمل بجدية أكبر لتطوير نفسي", score: 2 }, { text: "أبارك له بصدق وقلب صافٍ دون أي تفكير آخر", score: 1 }] },
+            { question: "تأخر الشريك في الرد على رسائلكِ لبضع ساعات دون سبب واضح؟", answers: [{ text: "أعتقد فوراً أنه يتجاهلني أو مشغول بغيري وأغضب بشدة", score: 3 }, { text: "أقلق عليه قليلاً وأنتظر تبريره بهدوء وصبر", score: 2 }, { text: "أعلم أنه مشغول بحياته أو عمله وأنشغل أنا بأموري أيضاً", score: 1 }] },
+            { question: "تحدث الشريك عن مزايا وإيجابيات شخصية عامة أو مشهورة أممكِ؟", answers: [{ text: "أقارن نفسي بها فوراً وأشعر بالاستياء والغيرة وأغير الموضوع", score: 3 }, { text: "أوافقه الرأي أو أتناقش معه في الأمر بعادية وثقة", score: 2 }, { text: "لا يثير اهتمامي الموقف من الأساس", score: 1 }] },
+            { question: "إذا قرر الشريك قضاء عطلته مع أصدقائه بدلاً من قضائها معكِ؟", answers: [{ text: "أرفض وأختلق مشكلة لأنني أريد الاستحواذ على وقته كاملاً", score: 3 }, { text: "أوافق طالما أنه يخصص لي وقتاً كافياً في الأيام الأخرى", score: 2 }, { text: "أشجعه على ذلك وأستغل الوقت لراحة نفسي وهواياتي", score: 1 }] },
+            { question: "عندما يحصل شخص تعرفينه على شيء كنتِ تتمنينه بشدة (مثل سيارة أو هاتف):", answers: [{ text: "أشعر بضيق خفي وأتساءل لماذا هو وليس أنا؟", score: 3 }, { text: "أغبطه وأتمنى لنفسي الأفضل بالعمل والسعي", score: 2 }, { text: "أفرح له من كل قلبي ولا التفت للمقارنات", score: 1 }] },
+            { question: "هل تطلبين من الشريك قطع علاقته بأشخاص معينين فقط لأنكِ لا ترتاحين لهم؟", answers: [{ text: "نعم، وبشكل حازم لأن راحتي النفسية فوق كل شيء", score: 3 }, { text: "أشرح له أسبابي بهدوء وأترك له حرية التقدير والقرار", score: 2 }, { text: "لا أتدخل في علاقاته وصداقاته أبداً", score: 1 }] },
+            { question: "إذا لاحظتِ أن الشريك مهتم بمظهره وعطره فجأة أكثر من المعتاد لخروجه:", answers: [{ text: "أشك فوراً وأبدأ في استجوابه والتحقيق معه بنبرة حادة", score: 3 }, { text: "أمتدح مظهره بذكاء وأراقب التفاصيل عن بعد بحذر", score: 2 }, { text: "أفرح باهتمامه بنفسه دون بناء أي شكوك عشوائية", score: 1 }] },
+            { question: "عندما تتذكرين علاقات الشريك السابقة أو ذكرياته القديمة:", answers: [{ text: "أشعر بغيرة شديدة وضيق وكأنها تحدث الآن وأفتح نقاشات حادة", score: 3 }, { text: "أتقبل أنها ماضٍ انتهى وصنع حاضره المتوازن معي", score: 2 }, { text: "لا أفكر في الأمر إطلاقاً فالمستقبل هو ما يهمني", score: 1 }] },
+            { question: "رأيتِ تفاعلاً (لايك أو تعليق) من الشريك على منشور لشخص آخر بشكل متكرر؟", answers: [{ text: "أثور غضباً وأطالبه بحذف التفاعل وتوضيح السبب فوراً", score: 3 }, { text: "أتابع الأمر للتأكد من طبيعة العلاقة دون تسرع في الحكم", score: 2 }, { text: "أعتبره تفاعلاً طبيعياً على منصات التواصل ولا يستحق العتاب", score: 1 }] },
+            { question: "ما هي الكلمة التي تصف شعور الغيرة لديكِ في العلاقات؟", answers: [{ text: "امتلاك وحماية كاملة ومنع أي شريك من الابتعاد", score: 3 }, { text: "بهارات الحب التي تزيد من بريق العلاقة إذا كانت متوازنة", score: 2 }, { text: "ثقة مطلقة وهدوء تام لا تهزه العواصف", score: 1 }] },
+            { question: "إذا امتدحت والدة الشريك أو أخته امرأة أخرى أمامكِ بكثافة؟", answers: [{ text: "أشعر بالإهانة الخفية والغيرة وأحاول إظهار عيوب تلك المرأة", score: 3 }, { text: "أبتسم وأشارك في المديح بثقة عالية بنفسي وبمكاني", score: 2 }, { text: "أتجاهل الحديث وأنشغل بأمر آخر ممتع", score: 1 }] },
+            { question: "لو سافر الشريك في رحلة عمل، كم مرة تتصلين به للاطمئنان ومعرفة مكانه؟", answers: [{ text: "بشكل متواصل وعلى مدار الساعة لمعرفة كل تفاصيله وتحركاته", score: 3 }, { text: "مرتين أو ثلاث في اليوم بأوقات مناسبة للاطمئنان والدردشة", score: 2 }, { text: "أتركه يتصل هو عندما يتفرغ من التزاماته وأعماله", score: 1 }] },
+            { question: "رأيتِ صديقتك المقربة تشارك أسرارها الخاصة مع صديقة جديدة:", answers: [{ text: "أشعر بغدر وخيانة كبيرة وأبتعد عنها تدريجياً عقاباً لها", score: 3 }, { text: "أشعر بعتاب خفيف وأتحدث معها بوضوح عن مشاعري", score: 2 }, { text: "أعلم أن لكل شخص مساحته وحريته في اختيار مستمعيه", score: 1 }] },
+            { question: "إذا امتدحك شخص بأسلوب لم يعجب الشريك وأبدى غيرته عليكِ؟", answers: [{ text: "أفرح جداً لأن غيرته تشعرني بقيمتي وحبه الطاغي لي", score: 3 }, { text: "أقدر مشاعره وأحاول تهدئته وإنهاء الموقف برقي", score: 2 }, { text: "أنزعج من تحكمه وأعتبر غيرته تقييداً غير مبرر لحريتي", score: 1 }] },
+            { question: "هل تقارنين عدد المتابعين والتفاعل بين حسابك وحسابات صديقاتكِ؟", answers: [{ text: "نعم بانتظام، وأشعر بالغيرة والضيق إذا تفوقن عليّ", score: 3 }, { text: "ألاحظ الفارق أحياناً كدافع لتطوير حسابي وصناعة محتوى أفضل", score: 2 }, { text: "لا يهمني عدد المتابعين ولا أدخل في هذه المقارنات السطحية", score: 1 }] },
+            { question: "عندما يقضي الشريك وقتاً طويلاً على هاتفه وهو يبتسم ويهمس:", answers: [{ text: "أخطف الهاتف من يده أو أصرخ لمعرفة ما يضحكه فوراً", score: 3 }, { text: "أسأله بفضول لطيف وابتسامة: 'شاركني الضحكة؟'", score: 2 }, { text: "أترك له مساحته دون التدخل في شؤونه الخاصة", score: 1 }] },
+            { question: "إذا تم اختيار شخص آخر غيركِ لتولي دور قيادي كنتِ ترغبين به بشدة؟", answers: [{ text: "أحقد عليه وأحاول إثبات فشله أمام الجميع بطرق ملتوية", score: 3 }, { text: "أغار غيرة بناءة تدفعني للتعلم والعمل لمنافسته بشرف لاحقاً", score: 2 }, { text: "أتقبل النتيجة بروح رياضية وأدعم القائد الجديد", score: 1 }] },
+            { question: "كيف تكون ردة فعلكِ إذا تذكر الشريك تاريخاً هاماً يخص صديقاً ونسي تاريخ ميلادكِ؟", answers: [{ text: "أقيم الدنيا ولا أقعدها وأعتبر العلاقة قد انتهت فعلياً", score: 3 }, { text: "أغضب وأعاتب بحزم وأطالبه بالتعويض بهدية مميزة", score: 2 }, { text: "أذكره بالأمر ببساطة ودون اختلاق أزمات مبالغ فيها", score: 1 }] },
+            { question: "هل تشعرين بالغيرة من نجاح أفراد عائلتكِ أو إخوتكِ المقربين؟", answers: [{ text: "نعم، أحياناً أشعر أن الاهتمام كله يتجه نحوهم وأبقى في الظل", score: 3 }, { text: "غيرة بسيطة تحمسني للنجاح مثلهم مع فرحي الشديد لأجلهم", score: 2 }, { text: "مستحيل، نجاحهم هو نجاحي وأفتخر بهم أمام العالم دائماً", score: 1 }] },
+            { question: "إذا أبدى الشريك إعجابه بطبخة أو أسلوب تنظيم امرأة أخرى:", answers: [{ text: "أستاء بشدة وأعتبره تقليلاً من مجهودي وأرفض الطبخ لفترة", score: 3 }, { text: "أتحداه بذكاء وأحاول تقديم الأفضل في المرات القادمة بثقة", score: 2 }, { text: "أطلب منها الوصفة بكل بساطة لتجربتها وتحسين مهاراتي", score: 1 }] },
+            { question: "عندما تجدين أن شريككِ يمتلك زميلات عمل ويتحدث معهن بحدود العمل:", answers: [{ text: "أرفض الفكرة تماماً وأطالبه بالحد من الحديث أو تغيير العمل", score: 3 }, { text: "أتقبل الأمر طالما أن الحديث احترافي وفي حدود العمل الرسمية", score: 2 }, { text: "أثق به ثقة عمياء ولا أفكر في هذا الجانب أبداً", score: 1 }] },
+            { question: "هل تشعرين بالضيق إذا مدحت صديقتكِ المقربة خصال فتاة أخرى بكثافة أمامكِ؟", answers: [{ text: "نعم وأشعر أنها تستبدلني بها وأبدأ بالابتعاد والبرود", score: 3 }, { text: "أستمع وأشارك برأيي المتوازن دون حساسيات مفرطة", score: 2 }, { text: "لا يضايقني مطلقاً فمكانتي عندها ثابتة ومحفوظة", score: 1 }] },
+            { question: "إذا طلب منكِ الشريك كلمة المرور الخاصة بحساباتكِ، وأبدى غيرته الشديدة عليكِ:", answers: [{ text: "أعطيه إياها فوراً وأطلب منه كلمات المرور الخاصة به أيضاً بالمقابل", score: 3 }, { text: "أrefuse بهدوء موصحة أن الثقة والاحترام المتبادل هما أساس علاقتنا", score: 2 }, { text: "أرفض بغضب شديد وأعتبر طلبه دليلاً على انعدام الأمان والشك", score: 1 }] },
+            { question: "لو رأيتِ فتاة أخرى ترتدي نفس فستانكِ تماماً في حفل زفاف ذهبتم به:", answers: [{ text: "أصاب بالإحباط والغيرة الشديدة وأفكر في مغادرة الحفل فوراً", score: 3 }, { text: "أذهب إليها وأمازحها بابتسامة: 'ذوقكِ رفيع وأنيق مثل ذوقي'", score: 2 }, { text: "لا أكترث للأمر وأستمتع بوقتي ورقصي بشكل طبيعي", score: 1 }] },
+            { question: "عندما يتلقى الشريك اتصالاً هاتفياً في وقت متأخر ويبتعد ليتحدث بهدوء:", answers: [{ text: "ألحق به فوراً للتنصت أو أواجهه بعصبية وشك قاتل", score: 3 }, { text: "أنتظر انتهاء المكالمة وأسأله بلطف وعفوية عن المتصل", score: 2 }, { text: "أفترض أنه أمر خاص بالعمل أو العائلة وأتركه براحته", score: 1 }] },
+            { question: "أخيراً، كيف تصفين الغيرة في جملة واحدة تعبر عن عقليتكِ؟", answers: [{ text: "الغيرة هي الدليل الوحيد والقاطع على وجود الحب الحقيقي الطاغي", score: 3 }, { text: "الغيرة نار جميلة تدفئ العلاقة العاطفية إذا تم التحكم بها بحكمة", score: 2 }, { text: "الغيرة هي قلة ثقة بالنفس وتدمير تدريجي لجمال واستقرار العلاقات", score: 1 }] }
+        ];
+
+        let questions = [];
+        const welcomeScreen = document.getElementById('welcome-screen');
+        const questionScreen = document.getElementById('question-screen');
+        const resultScreen = document.getElementById('result-screen');
+        const progressBar = document.getElementById('progress-bar');
+        const startButton = document.getElementById('start-btn');
+        const restartButton = document.getElementById('restart-btn');
+        const questionText = document.getElementById('question-text');
+        const answerButtonsContainer = document.getElementById('answer-buttons');
+        const resultText = document.getElementById('result-text');
+        const shareFbResult = document.getElementById('share-fb-result');
+        const shareWaResult = document.getElementById('share-wa-result');
+        const shareTwResult = document.getElementById('share-tw-result');
+
+        let currentQuestionIndex = 0;
+        let totalScore = 0;
+
+        startButton.addEventListener('click', startQuiz);
+        restartButton.addEventListener('click', startQuiz);
+
+        function getRandomQuestions() {
+            let shuffled = [...allQuestions];
+            for (let i = shuffled.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+            }
+            return shuffled.slice(0, 15);
+        }
+
+        function buildProgressBar() {
+            progressBar.innerHTML = '';
+            for (let i = 0; i < questions.length; i++) {
+                const segment = document.createElement('div');
+                segment.classList.add('progress-segment');
+                progressBar.appendChild(segment);
+            }
+        }
+
+        function updateProgressBar() {
+            const segments = document.querySelectorAll('.progress-segment');
+            segments.forEach((segment, index) => {
+                if (index <= currentQuestionIndex) {
+                    segment.classList.add('active');
+                } else {                    
+                    segment.classList.remove('active');
+                }
+            });
+        }
+
+        function startQuiz() {
+            totalScore = 0;
+            currentQuestionIndex = 0;
+            questions = getRandomQuestions();
+            welcomeScreen.classList.add('hide');
+            resultScreen.classList.add('hide');
+            questionScreen.classList.remove('hide');
+            progressBar.classList.remove('hide');
+            buildProgressBar();
+            showQuestion();
+        }
+
+        function showQuestion() {
+            answerButtonsContainer.innerHTML = '';
+            updateProgressBar();
+            let currentQuestion = questions[currentQuestionIndex];
+            questionText.innerText = `سؤال ${currentQuestionIndex + 1} من 15: ${currentQuestion.question}`;
+
+            currentQuestion.answers.forEach(answer => {
+                const button = document.createElement('button');
+                button.innerText = answer.text;
+                button.classList.add('btn', 'btn-answer');
+                button.dataset.score = answer.score;
+                button.addEventListener('click', selectAnswer);
+                answerButtonsContainer.appendChild(button);
+            });
+        }
+
+        function selectAnswer(e) {
+            const selectedButton = e.target.closest('button');
+            const score = parseInt(selectedButton.dataset.score);
+            totalScore += score;
+            currentQuestionIndex++;
+
+            if (currentQuestionIndex < questions.length) {
+                showQuestion();
+            } else {
+                showResult();
+            }
+        }
+
+        function showResult() {
+            questionScreen.classList.add('hide');
+            progressBar.classList.add('hide');
+            resultScreen.classList.remove('hide');
+
+            let resultMessage = "";
+            let shareSummary = "";
+
+            if (totalScore >= 38) {
+                resultMessage = `تحليلكِ النهائي: غيرتكِ بركانية وشديدة جداً! 🔥📈 \n أنتِ تمتلكين مشاعر غيرة قوية وحب استحواذ طاغٍ على المقربين والشريك. هذه الغيرة قد تنبع من خوفكِ الشديد من الفقد أو رغبتكِ في حماية العلاقة، لكنها قد تسبب لكِ وللطرف الآخر ضغوطاً مستمرة. حاولي تعزيز مساحات الثقة والهدوء للتنفس براحة أكبر.`;
+                shareSummary = "غيرتي طلعت بركانية وشديدة جداً! 🔥📈 جربي اختبار مقياس الغيرة واكتشفي درجتكِ فوراً:";
+            } else if (totalScore >= 26) {
+                resultMessage = `تحليلكِ النهائي: غيرتكِ متوازنة وذكية! 🌸✨ \n مبروك! أنتِ تمتلكين مستوى مثالي وصحي جداً من الغيرة. غيرتكِ هي 'بهارات الحب' التي تعبر عن اهتمامكِ وعاطفتكِ الصادقة دون تضييق الخناق أو إزعاج الآخرين. تثقين بنفسكِ وبمكانتكِ، وتعرفين متى تتدخلين بحكمة ومتى تتجاوزين الأمور برقي.`;
+                shareSummary = "غيرتي متوازنة وذكية وهي بهارات الحب الحقيقية! 🌸✨ جربي كويز مقياس الغيرة:";
+            } else {
+                resultMessage = `تحليلكِ النهائي: غيرتكِ منخفضة وأنتِ باردة ومسترخية تماماً! 😎🧊 \n طبيعتكِ العاطفية تميل إلى الاستقلالية المطلقة والثقة الباردة. إما أنكِ تثقين بالشريك والمحيطين بكِ ثقة عمياء لا تزعزعها المواقف، أو أنكِ تمتلكين سلاماً داخلياً يجعلكِ تترفعين عن المقارنات والشكوك تماماً. شخصية مرنة وعملية جداً في العلاقات.`;
+                shareSummary = "طلع بالي طويل وغيرتي منخفضة ومسترخية تماماً! 😎🧊 جربي اختبار مقياس الغيرة:";
+            }
+
+            resultText.innerText = resultMessage;
+            const pageUrl = encodeURIComponent("https://alaa22188-coder.github.io/dal3-test/jealousy-scale.html");
+            const encodedText = encodeURIComponent(shareSummary);
+
+            shareFbResult.href = `https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`;
+            shareWaResult.href = `https://api.whatsapp.com/send?text=${encodedText}%20${pageUrl}`;
+            shareTwResult.href = `https://twitter.com/intent/tweet?url=${pageUrl}&text=${encodedText}`;
+        }
+    </script>
+</body>
+</html>
