@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 🎯 التايتل والدسكربشن المحسنين بالكامل للسيو ونسبة النقر (CTR) -->
+    <title>اختبار مقياس حب الذات - هل تقدر وتتصالح مع نفسك؟</title>
+    <meta name="description" content="جرّب اختبار مقياس حب الذات التفاعلي المبتكر؛ حيث تظهر لك 15 سؤالاً عشوائياً متغيراً من بين 30 سؤالاً نفسياً وسلوكياً دقيقاً. اكتشف مدى تقديرك وتصالحك مع ذاتك الآن!">
+    <meta name="keywords" content="اختبار حب الذات, مقياس تقدير الذات, تحليل شخصية نفسي, اختبار التصالح مع النفس, كويز الثقة بالنفس">
+    <link rel="canonical" href="https://quiz.arabsdar.net/Self-Love-Test.html">
+
+    <!-- أكواد الأوبن جراف لمشاركة احترافية على منصات التواصل -->
+    <meta property="og:locale" content="ar_AR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="اختبار مقياس حب الذات التفاعلي 2026: اكتشف مستوى تقديرك لنفسك">
+    <meta property="og:description" content="ادخل اختبار مقياس حب الذات واكتشف هل أنت متصالح مع نفسك، قاسي عليها، أم متوازن عاطفياً؟ 15 سؤالاً عشوائياً شيقاً في انتظارك!">
+    <meta property="og:url" content="https://quiz.arabsdar.net/Self-Love-Test.html">
+    <meta property="og:site_name" content="مقياس حب الذات">
+    <meta property="og:image" content="https://alaa22188-coder.github.io/dal3-test/quiz-share.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <style>
+        /* إعدادات خطوط النظام السريعة والمريحة جداً للعين (تمنع CLS) */
+        :root {
+            --bg-color: #f8fafc;
+            --primary-color: #db2777;
+            --secondary-color: #0f172a;
+            --text-muted: #334155;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+            --segment-active: #f472b6;
+            --segment-inactive: #cbd5e1;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--secondary-color);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            line-height: 1.8;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* الهيدر */
+        header {
+            background-color: var(--card-bg);
+            border-bottom: 1px solid var(--border-color);
+            padding: 16px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo a {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin-right: 16px;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        /* الحاوية الرئيسية */
+        main {
+            flex: 1;
+            max-width: 700px;
+            width: 100%;
+            margin: 24px auto;
+            padding: 0 16px;
+        }
+
+        /* حاوية مساحة الإعلان المحجوزة مسبقاً (تحمي من اهتزاز الـ CLS للبيج سبيد) */
+        .ad-slot-container {
+            min-height: 280px;
+            margin: 0 auto 24px auto;
+            text-align: center;
+            background-color: #f1f5f9;
+            border: 1px dashed var(--border-color);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #94a3b8;
+            font-size: 0.9rem;
+            font-weight: 600;
+            overflow: hidden;
+        }
+
+        /* حاوية الاختبار */
+        .quiz-container {
+            background-color: var(--card-bg);
+            padding: 32px 24px;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+            text-align: center;
+            margin-bottom: 24px;
+            min-height: 320px;
+        }
+
+        /* شريط التقدم */
+        .progress-bar-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 6px;
+            margin-bottom: 32px;
+        }
+
+        .progress-segment {
+            flex: 1;
+            height: 8px;
+            background-color: var(--segment-inactive);
+            border-radius: 4px;
+        }
+
+        .progress-segment.active {
+            background-color: var(--segment-active);
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            color: var(--secondary-color);
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            color: var(--secondary-color);
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            color: var(--secondary-color);
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        .quiz-container p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            margin-bottom: 24px;
+        }
+
+        /* أزرار مريحة للموبايل */
+        .btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 14px 28px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 12px;
+            cursor: pointer;
+            width: 100%;
+            min-height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        .btn-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin-top: 24px;
+        }
+
+        .btn-answer {
+            background-color: var(--bg-color);
+            color: var(--secondary-color);
+            border: 1px solid var(--border-color);
+            text-align: right;
+            justify-content: flex-start;
+            padding: 16px;
+            height: auto;
+        }
+
+        .btn-answer:hover,
+        .btn-answer:active {
+            background-color: #f1f5f9;
+            border-color: #cbd5e1;
+        }
+
+        /* أزرار مشاركة التواصل الاجتماعي المحسنة السريعة */
+        .share-section {
+            margin-top: 24px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .share-section p {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--secondary-color);
+        }
+
+        .share-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .share-btn {
+            padding: 10px 16px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: opacity 0.2s;
+            min-height: 40px;
+        }
+
+        .share-btn:hover {
+            opacity: 0.9;
+        }
+
+        .share-fb {
+            background-color: #1877f2;
+        }
+
+        .share-wa {
+            background-color: #25d366;
+        }
+
+        .share-tw {
+            background-color: #000000;
+        }
+
+        /* قسم السيو والمحتوى النصي */
+        .seo-content {
+            background-color: var(--card-bg);
+            padding: 32px 24px;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 24px;
+        }
+
+        .seo-content h2 {
+            font-size: 1.4rem;
+            color: var(--primary-color);
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+
+        .seo-content p {
+            color: var(--text-muted);
+            margin-bottom: 16px;
+            font-size: 1.05rem;
+        }
+
+        .seo-content ul {
+            margin-right: 24px;
+            margin-bottom: 16px;
+            color: var(--text-muted);
+        }
+
+        .seo-content ul li {
+            margin-bottom: 8px;
+        }
+
+        /* 🔗 قسم الروابط الداخلية */
+        .internal-links-section {
+            background-color: var(--card-bg);
+            padding: 32px 24px;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 24px;
+        }
+
+        .links-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .links-grid a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 600;
+            padding: 4px 0;
+            display: inline-block;
+        }
+
+        .links-grid a:hover {
+            text-decoration: underline;
+            color: var(--secondary-color);
+        }
+
+        /* 🧑‍💻 قسم معلومات المطور الشخصية لتعزيز الـ E-E-A-T */
+        .developer-bio-section {
+            background-color: var(--card-bg);
+            padding: 32px 24px;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 24px;
+        }
+
+        .developer-bio-section p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            margin-bottom: 16px;
+        }
+
+        .developer-social-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .developer-social-links a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-size: 1.05rem;
+            font-weight: 700;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 2px;
+        }
+
+        .developer-social-links a:hover {
+            color: var(--primary-color);
+            border-bottom-color: var(--secondary-color);
+        }
+
+        /* الفوتر */
+        footer {
+            background-color: var(--secondary-color);
+            color: #94a3b8;
+            padding: 32px 20px;
+            text-align: center;
+            font-size: 0.95rem;
+            margin-top: auto;
+        }
+
+        .footer-links {
+            margin-bottom: 16px;
+        }
+
+        .footer-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            margin: 0 12px;
+            display: inline-block;
+            min-height: 44px;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .hide {
+            display: none !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="https://alaa22188-coder.github.io/dal3-test/">مقياس الدلع</a>
+            </div>
+            <nav class="nav-links">
+                <a href="https://alaa22188-coder.github.io/dal3-test/">الرئيسية</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- 🎯 مساحة الإعلان العلوية (محجوزة الأبعاد مسبقاً لحماية السرعة والسيو) -->
+        <!-- نهاية كود الاعلان -->
+
+        <div class="quiz-container">
+            <div id="progress-bar" class="progress-bar-container hide">
+                <!-- جافا سكريبت ستولد 15 قطعة هنا -->
+            </div>
+
+            <!-- 1. شاشة الترحيب -->
+            <div id="welcome-screen" class="screen">
+                <h1>اختبار مقياس حب الذات والتقدير النفسي</h1>
+                <p>هل تعتني بسلامك النفسي وصحتك العاطفية وتعطي ذاتك حقها من التقدير والقبول، أم أنك تقسو على نفسك بشكل مفرط وتضع الآخرين دائماً في المقدمة؟ اكتشف مستوى تصالحك مع ذاتك الآن عبر الإجابة عن 15 سؤالاً يتم اختيارها عشوائياً من بين 30 سؤالاً سلوكياً ونفسياً دقيقاً لتجربة تحليلية حقيقية وملهمة في كل مرة!</p>
+                <button id="start-btn" class="btn">ابدأ الاختبار الآن</button>
+
+                <div class="share-section">
+                    <p>شارك الاختبار مع أصدقائك 👥</p>
+                    <div class="share-buttons">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://quiz.arabsdar.net/Self-Love-Test.html" target="_blank" rel="noopener" class="share-btn share-fb">فيسبوك</a>
+                        <a href="https://api.whatsapp.com/send?text=اكتشف%20مستوى%20تقديرك%20وحبك%20لذاتك%20مع%20هذا%20الاختبار%20التفاعلي%20المميز%20%E2%9C%A8%20https://quiz.arabsdar.net/Self-Love-Test.html" target="_blank" rel="noopener" class="share-btn share-wa">واتساب</a>
+                        <a href="https://twitter.com/intent/tweet?url=https://quiz.arabsdar.net/Self-Love-Test.html&text=اختبار%20مقياس%20حب%20الذات%20التفاعلي:%20اكتشف%20مستوى%20تصالحك%20مع%20نفسك%20الآن" target="_blank" rel="noopener" class="share-btn share-tw">تويتر X</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. شاشة الأسئلة -->
+            <div id="question-screen" class="screen hide">
+                <h2 id="question-text">السؤال سيظهر هنا؟</h2>
+                <div id="answer-buttons" class="btn-grid">
+                    <!-- الأزرار ستتولد تلقائياً هنا -->
+                </div>
+            </div>
+
+            <!-- 3. شاشة النتيجة -->
+            <div id="result-screen" class="screen hide">
+                <h2>النتيجة النهائية للاختبار</h2>
+                <p id="result-text">تحميل النتيجة...</p>
+                <button id="restart-btn" class="btn">إعادة خوض الاختبار 🔄</button>
+
+                <div class="share-section">
+                    <p>تحدّ أصدقاءك بنتيجتك واكتشف الفروق بينكم! 🥳</p>
+                    <div class="share-buttons">
+                        <a id="share-fb-result" href="#" target="_blank" rel="noopener" class="share-btn share-fb">انشر النتيجة</a>
+                        <a id="share-wa-result" href="#" target="_blank" rel="noopener" class="share-btn share-wa">أرسلها بالواتساب</a>
+                        <a id="share-tw-result" href="#" target="_blank" rel="noopener" class="share-btn share-tw">تغريدة بالنتيجة</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- قسم محتوى السيو المكتوب بعناية لمحركات البحث -->
+        <article class="seo-content">
+            <h2>ما هو اختبار مقياس حب الذات وكيف يساعدك في حياتك؟</h2>
+            <p>يُعد <strong>اختبار مقياس حب الذات</strong> واحداً من أكثر أدوات التقييم النفسي والترفيهي طلباً، نظراً لأهميته في تحديد مستوى تقديرك لشخصك والتصالح مع ميزاتك وعيوبك. لا يهدف الاختبار إلى قياس الأنانية، بل يركز بشكل عميق على مفهوم الرعاية النفسية والجسدية السليمة، والقدرة على قول "لا" عندما يتطلب الأمر ذلك لحماية سلامك الداخلي.</p>
+            <p>يتميز نظام الكويز المتطور لدينا بامتلاكه قاعدة بيانات ديناميكية مكونة من 30 سؤالاً مدروساً بعناية، تُفرز وتُختار منها 15 سؤالاً عشوائياً ذكياً في كل مرة تخوض فيها التحدي، مما يمنحك تجربة غنية، مختلفة، وأكثر شمولية عند مشاركتها مع عائلتك وصديقاتك.</p>
+
+            <h2>كيف نقيس مستويات حب الذات والتقدير النفسي؟</h2>
+            <p>يعمل الاختبار السلوكي عبر تتبع إجاباتك وتحليلها لتصنيف شخصيتك ضمن ثلاثة مستويات رئيسية:</p>
+            <ul>
+                <li><strong>التقدير المتزن والواعي:</strong> وهو النطاق المثالي الذي تحب فيه نفسك وتعتني بها، دون السقوط في فخ النرجسية أو التضحية المفرطة بسلامتك لإرضاء الآخرين.</li>
+                <li><strong>جلد الذات والقسوة عليها:</strong> نمط تضع فيه احتياجات الجميع فوق احتياجاتك الشخصية، وتشعر بالذنب المستمر عند تدليل نفسك أو أخذ قسط من الراحة.</li>
+                <li><strong>المركزية المفرطة (حب الذات الزائد):</strong> نمط قد يدنو أحياناً من الرعاية الفردية الشديدة التي تتجاهل مشاعر المحيطين بك تماماً.</li>
+            </ul>
+
+            <h2>لماذا تختار منصة مقياس الدلع لتجربة اختباراتك؟</h2>
+            <p>عبر منصة <strong>مقياس الدلع</strong>، نحرص دائماً على تطبيق أعلى معايير البرمجة الحديثة لتقديم صفحات ويب تفاعلية فائقة السرعة وخفيفة جداً تفتح بلمحة بصر على الهواتف والتابلت. اختباراتنا خالية تماماً من التعقيدات وتمنح نتائج دقيقة وفورية فور إتمام الإجابات، مع حماية مطلقة لخصوصيتك دون تسجيل أو حفظ أي بيانات خاصة بك.</p>
+        </article>
+
+        <!-- 🔗 قسم الروابط الداخلية الموصى بها لتعزيز بقاء المستخدم -->
+        <section class="internal-links-section">
+            <h3>روابط واختبارات قد تهمكِ أيضاً 🔗</h3>
+            <div class="links-grid">
+                <a href="https://alaa22188-coder.github.io/dal3-test/">← جربي اختبار مقياس الدلع الأصلي والأنوثة</a>
+                <a href="https://quiz.arabsdar.net/Possessiveness-Test.html">← هل تعاني من الغيرة؟ جرب مقياس حب التملك</a>
+            </div>
+        </section>
+
+        <!-- 🧑‍💻 قسم معلومات المطور الشخصية لتعزيز الـ E-E-A-T وموثوقية جوجل -->
+        <section class="developer-bio-section">
+            <h3>عن مطور الموقع 🛠️</h3>
+            <p>أهلاً بكِ! أنا علاء الزقزوق مطور ومصمم تطبيقات ويب متخصص في بناء أدوات تفاعلية واختبارات سلوكية ذكية وخفيفة الوزن. أهتم بتقديم أفضل تجربة مستخدم ممكنة تجمع بين دقة النتائج البرمجية وسرعة التصفح الفائقة على كافة الأجهزة.</p>
+            <div class="developer-social-links">
+                <a href="https://github.com/alaa22188-coder/" target="_blank" rel="noopener">← حساب GitHub الشخصي</a>
+                <a href="https://www.youtube.com/@alaa22188" target="_blank" rel="noopener">← youtube</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="privacy-and-contact.html">سياسة الخصوصية والاتصال</a>
+            <a href="copyright.html">حقوق النشر</a>
+        </div>
+        <p>&copy; 2026 مقياس الدلع. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script>
+        // بنك الأسئلة الشامل (30 سؤالاً سلوكياً ونفسياً حول حب الذات وتقدير النفس)
+        const allQuestions = [
+            { question: "عندما ترتكب خطأً غير مقصود في عملك أو دراستك، كيف تتحدث مع نفسك؟", answers: [{ text: "ألوم نفسي بقسوة وأشعر بالغباء والتقصير لعدة أيام", score: 1 }, { text: "أشعر بالضيق ولكنني أسامح نفسي وأبحث عن طريقة للإصلاح", score: 3 }, { text: "لا أهتم كثيراً فكل الناس يخطئون دون تفكير زائد", score: 2 }] },
+            { question: "إذا طلب منك شخص خدمة تسبب لك ضغطاً كبيراً وإرهاقاً، هل ترفض؟", answers: [{ text: "أوافق رغماً عني خوفاً من أن يغضبوا مني أو يظنونني سيئاً", score: 1 }, { text: "أعتذر بلطف ولباقة موضحاً عدم قدرتي في الوقت الحالي", score: 3 }, { text: "أرفض مباشرة وبشكل حازم دون تقديم تبريرات طويلة", score: 2 }] },
+            { question: "كم مرة تخصص وقتاً في الأسبوع للاعتناء بنفسك وراحتك بمفردك؟", answers: [{ text: "نادراً أو لا أفعل ذلك إطلاقاً، فوقتي كله للآخرين والمسؤوليات", score: 1 }, { text: "أحاول حجز ساعات أسبوعية مخصصة لراحتي وممارسة هواياتي", score: 3 }, { text: "أقضي أغلب الأوقات في راحة وتدليل لنفسي دون قيود", score: 2 }] },
+            { question: "عندما تنظر إلى المرآة، ما هي أول فكرة تخطر ببالك عادة؟", answers: [{ text: "أركز فوراً على عيوبي الجسدية وأشعر بعدم الرضا", score: 1 }, { text: "أبتسم لنفسي وأرى جمالي الداخلي والخارجي بامتنان", score: 3 }, { text: "لا أفكر بشيء مجرد تفقّد سريع لشكلي الخارجي", score: 2 }] },
+            { question: "كيف تتعامل مع الإطراء والمديح الذي يوجهه الآخرون لك؟", answers: [{ text: "أشعر بالحرج الشديد وأحاول التقليل من شأن إنجازي رداً عليهم", score: 1 }, { text: "أبتسم وأشكرهم بصدق وبكل فخر واعتزاز بالنفس", score: 3 }, { text: "أعتبره أمراً طبيعياً يستحقونه هم لملاحظة تميزي", score: 2 }] },
+            { question: "إذا شعرت بالتعب الجسدي الشديد بينما هناك مهام منزلية أو عملية بانتظارك؟", answers: [{ text: "أضغط على نفسي حتى الانهيار لإنجاز كل شيء دون توقف", score: 1 }, { text: "أؤجل ما يمكن تأجيله وأحصل على قسط كافٍ من النوم والراحة", score: 3 }, { text: "أترك كل المهام دون أدنى شعور بالمسؤولية أو الاهتمام بالنتائج", score: 2 }] },
+            { question: "ما هو تصرفك عندما تلاحظ نجاح أحد أصدقائك في تحقيق حلم تسعى إليه أنت أيضاً؟", answers: [{ text: "أقارن نفسي به فوراً وأشعر بالفشل التام واليأس", score: 1 }, { text: "أفرح له من قلبي وأتخذ نجاحه كحافز قوي ومبشر لي", score: 3 }, { text: "أقلل من نجاحه في داخلي وأقنع نفسي بأنه محظوظ فحسب", score: 2 }] },
+            { question: "إذا قررت شراء شيء يسعدك ولكن ثمنه مرتفع قليلاً ولديك القدرة المالية الكافية؟", answers: [{ text: "أشعر بالذنب الشديد وأتراجع مفضلاً إنفاق المال على الآخرين", score: 1 }, { text: "أشتريه بكل سرور كنوع من المكافأة والتقدير لجهودي", score: 3 }, { text: "أشتريه بتهور ودون تفكير حتى لو تسبب لي بضائقة لاحقة", score: 2 }] },
+            { question: "هل تقبل البقاء في علاقة (صداقة أو حب) تشعرك بالتقليل من قيمتك باستمرار؟", answers: [{ text: "نعم، أتحمل على أمل أن يتغيروا أو لأنني أخشى البقاء وحيداً", score: 1 }, { text: "لا أقبل مطلقاً وأضع حداً حازماً أو أنسحب فوراً لحماية كرامتي", score: 3 }, { text: "أفتعل المشاكل دائماً معهم لكنني لا أغادر العلاقة فعلياً", score: 2 }] },
+            { question: "عندما تنجز عملاً عظيماً، كيف تحتفل بهذا النجاح؟", answers: [{ text: "أعتبره أمراً عادياً ولا أحتفل، فدائماً هناك الأفضل لأفعله", score: 1 }, { text: "أكافئ نفسي بوجبة مفضلة أو نزهة أو شيء يسعد قلبي", score: 3 }, { text: "أتباهى به أمام الجميع وأطالبهم بالإشادة بي باستمرار", score: 2 }] },
+            { question: "كيف تتعامل مع الانتقادات السلبية أو الكلام المحبط من الآخرين؟", answers: [{ text: "أصدقه تماماً وينهار مزاجي وثقتي بنفسي لعدة أيام", score: 1 }, { text: "أفلتر الكلام؛ أستفيد من النقد البناء وألقي بالباقي خلف ظهري", score: 3 }, { text: "أغضب وأهاجم الشخص الآخر بشراسة دفاعاً عن نفسي", score: 2 }] },
+            { question: "هل تسامح نفسك بسهولة على أخطاء وقرارات الماضي البعيد؟", answers: [{ text: "لا، ما زلت أعذب نفسي بالندم والتفكير المستمر في 'لو أنني فعلت كذا'", score: 1 }, { text: "نعم، تقبلت أنني كنت أقل وعياً وتعلمت الدرس لأكون أفضل اليوم", score: 3 }, { text: "لا أهتم بالماضي لأنه لا يعنيني بأي شكل من الأشكال", score: 2 }] },
+            { question: "عندما تشعر بالحزن أو الرغبة في البكاء، ماذا تفعل؟", answers: [{ text: "أكتم مشاعري وأعتبر البكاء ضعفاً وخسارة للوقت والجهد", score: 1 }, { text: "أسمح لنفسي بالبكاء والتعبير عن حزني براحة حتى أرتاح", score: 3 }, { text: "أشتت نفسي بأي نشاط صاخب هرباً من مواجهة مشاعري الحقيقية", score: 2 }] },
+            { question: "ما هو مدى قبولك لعيوبك الشخصية التي لا يمكنك تغييرها كطولك أو ملامحك؟", answers: [{ text: "أكرهها بشدة وأتمنى لو كنت شخصاً آخر تماماً", score: 1 }, { text: "أتقبلها بحب وامتنان وأركز على إبراز نقاط قوتي وتميزي", score: 3 }, { text: "أدّعي القبول التام أمام الناس ولكنني غير راضٍ في داخلي", score: 2 }] },
+            { question: "إذا عُرضت عليك فرصة ممتازة تخاف من الفشل فيها، كيف تتصرف؟", answers: [{ text: "أرفضها خوفاً من الفشل ولإحساسي بأنني غير مؤهل بالكامل", score: 1 }, { text: "أقبل التحدي وأحاول بأقصى جهدي متقبلاً النتيجتين بنضج", score: 3 }, { text: "أوافق بثقة مفرطة ودون أي استعداد معتقداً أنني عبقري", score: 2 }] },
+            { question: "هل تجد صعوبة بالغة في التعبير عن مشاعرك واحتياجاتك للآخرين؟", answers: [{ text: "نعم، أفضل الصمت والكتمان لكي لا أكون عبئاً على أحد", score: 1 }, { text: "لا، أعبر عما أحتاج إليه بوضوح وود دون خجل", score: 3 }, { text: "أطالب الآخرين بتخمين ما أحتاجه دون أن أتكلم، وأغضب لو لم يفعلوا", score: 2 }] },
+            { question: "عندما تشعر بالوحدة، كيف تقضي هذا الوقت؟", answers: [{ text: "أشعر بالاكتئاب والخوف وأحاول البحث عن أي شخص يتحدث معي", score: 1 }, { text: "أستمتع بمجالسة نفسي، القراءة، أو ممارسة شيء محبب لقلبي", score: 3 }, { text: "أهرب للنوم الطويل جداً لتجنب التفكير والعيش في الواقع", score: 2 }] },
+            { question: "إذا طلب منك شريك حياتك أو صديقك تغيير طباع أساسية في شخصيتك؟", answers: [{ text: "أحاول إلغاء شخصيتي تماماً لإرضائه وتجنب خسارته", score: 1 }, { text: "أناقشه وأغير فقط ما يضر بالطرفين مع الحفاظ على هويتي", score: 3 }, { text: "أرفض التغيير بوقاحة وأخبره بأن يقبلني كما أنا أو يرحل", score: 2 }] },
+            { question: "كم مرة تقارن حياتك الشخصية بحياة المشاهير على وسائل التواصل الاجتماعي؟", answers: [{ text: "باستمرار، وأشعر بأن حياتي بائسة وبدون أي قيمة مقارنة بهم", score: 1 }, { text: "نادراً، فأنا أعلم أن منصات التواصل تعرض جانباً واحداً ومزيفاً", score: 3 }, { text: "لا أتابع أحداً لأنني أرى نفسي أفضل من الجميع دائماً", score: 2 }] },
+            { question: "إذا واجهت يوماً سيئاً مليئاً بالإحباطات، كيف تنهيه؟", answers: [{ text: "أستسلم للأفكار السوداوية وأعتقد أن حظي سيئ مدى الحياة", score: 1 }, { text: "أستحم، وأتناول مشروباً دافئاً وأخبر نفسي بأن غداً أفضل", score: 3 }, { text: "أتجاهل مشاعري تماماً وأسهر طويلاً لإرهاق عقلي وجسدي", score: 2 }] },
+            { question: "ما مدى اهتمامك بصحتك الغذائية وممارسة نشاط بدني خفيف؟", answers: [{ text: "لا أهتم إطلاقاً، وأهمل صحتي وجسدي بشكل مستمر وبسيط", score: 1 }, { text: "أحاول قدر الإمكان تناول طعام صحي والتحرك لإيماني بحق جسدي عليّ", score: 3 }, { text: "أهتم فقط بالوسائل السريعة والمظهر الخارجي أمام الناس", score: 2 }] },
+            { question: "عندما يقدم لك أحدهم نصيحة لتطوير نفسك في مهارة معينة؟", answers: [{ text: "أشعر بالنقص فوراً وأعتقد أنهم يجدونني فاشلاً وغير كفؤ", score: 1 }, { text: "أشكرهم بصدق وأدرس النصيحة لتطبيقها إن كانت مفيدة", score: 3 }, { text: "أغضب بصمت وأعتبر نصيحتهم تدخلاً وقاحة في شؤوني", score: 2 }] },
+            { question: "هل تشعر بالذنب عندما ترفض دعوة لحضور مناسبة اجتماعية بداعي التعب؟", answers: [{ text: "نعم، يجلدني ضميري طوال الليل وأختلق أعذاراً كاذبة بدافع الخوف", score: 1 }, { text: "لا، أحترم طاقتي وجسدي وأعتذر بصدق ودون أي شعور بالذنب", score: 3 }, { text: "لا أعتذر بل أتجاهل الاتصالات والرسائل تماماً دون مبالاة", score: 2 }] },
+            { question: "إذا تخلت عنك شخصية كنت تثق بها كثيراً في حياتك؟", answers: [{ text: "أنكسر تماماً وأعتقد أن العيب بي وأنني لا أستحق الحب", score: 1 }, { text: "أحزن لفترة، لكنني أعلم قيمتي وأواصل طريقي مستعيناً بالله", score: 3 }, { text: "أقنع نفسي بأنهم خسروا جوهرة لا تعوض وأحقد عليهم", score: 2 }] },
+            { question: "ما هو مفهومك الحقيقي عن 'حب الذات'؟", answers: [{ text: "هو أنانية وتكبر يجب التخلص منه للعيش بسلام مع الآخرين", score: 1 }, { text: "هو تقدير النفس وتلبية احتياجاتها لتستطيع العطاء بحب واتزان", score: 3 }, { text: "هو وضع مصلحتي فوق كل اعتبار حتى لو تضررت مصالح الآخرين", score: 2 }] },
+            { question: "هل تحتفظ بأهداف شخصية تسعى إليها بدافع الشغف الشخصي وليس إرضاءً لغيرك؟", answers: [{ text: "لا، أهدافي كلها تتمحور حول إرضاء أهلي أو شريكي والمجتمع", score: 1 }, { text: "نعم، لدي قائمة أحلام خاصة بي تعكس شغفي وكياني المستقل", score: 3 }, { text: "ليس لدي أهداف محددة بل أعيش اليوم بيومه وبشكل عشوائي", score: 2 }] },
+            { question: "عندما تتذكر ملامح طفولتك وتصرفاتك السابقة؟", answers: [{ text: "أشعر بالخجل والضيق وأتمنى مسح تلك المرحلة من ذاكرتي", score: 1 }, { text: "أبتسم بحنين وأشعر بالحب لتلك النسخة الصغيرة مني والامتنان لها", score: 3 }, { text: "أجدها مجرد مرحلة تافهة لا تستحق التفكير أو التأمل", score: 2 }] },
+            { question: "إذا انتقد شخص طريقة ضحكتك أو أسلوب كلامك العفوي؟", answers: [{ text: "أحاول كتم ضحكتي وتغيير طريقتي فوراً لكي لا يسخروا مني", score: 1 }, { text: "لا أهتم وأستمر بضحكتي وعفويتي فالأصل هو راحتي النفسية", score: 3 }, { text: "أنتقده هو بشكل أقسى وأعلق بسخرية على عيوبه هو", score: 2 }] },
+            { question: "هل تحرص على قول عبارات تشجيعية لنفسك أمام المرآة أو كتابتها؟", answers: [{ text: "لا، أعتبر هذا التصرف تافهاً ولا يجدي نفعاً مع مشاكلي", score: 1 }, { text: "نعم، أحدث نفسي بإيجابية وأذكرها دائماً بقوتها وإنجازاتها", score: 3 }, { text: "أفعل ذلك أحياناً كتقليد دون إيمان حقيقي بتأثيره", score: 2 }] },
+            { question: "عندما تنام في نهاية اليوم، هل تشعر بالسلام والامتنان لكونك 'أنت'؟", answers: [{ text: "لا، يداهمني القلق، الندم، والتفكير السلبي في عيوب يومي", score: 1 }, { text: "نعم، أشعر بالامتنان لنفسي لجهدها وأغمض عيني بسلام وأمل", score: 3 }, { text: "أنام مباشرة من التعب الجسدي الشديد دون التفكير بأي شيء", score: 2 }] }
+        ];
+
+        // هذه مصفوفة لحفظ الأسئلة المخصصة المختارة عشوائياً
+        let questions = [];
+
+        const welcomeScreen = document.getElementById('welcome-screen');
+        const questionScreen = document.getElementById('question-screen');
+        const resultScreen = document.getElementById('result-screen');
+        const progressBar = document.getElementById('progress-bar');
+
+        const startButton = document.getElementById('start-btn');
+        const restartButton = document.getElementById('restart-btn');
+        const questionText = document.getElementById('question-text');
+        const answerButtonsContainer = document.getElementById('answer-buttons');
+        const resultText = document.getElementById('result-text');
+
+        const shareFbResult = document.getElementById('share-fb-result');
+        const shareWaResult = document.getElementById('share-wa-result');
+        const shareTwResult = document.getElementById('share-tw-result');
+
+        let currentQuestionIndex = 0;
+        let totalScore = 0;
+
+        startButton.addEventListener('click', startQuiz);
+        restartButton.addEventListener('click', startQuiz);
+
+        // دالة لخلط بنك الأسئلة واختيار 15 سؤالاً عشوائياً
+        function getRandomQuestions() {
+            let shuffled = [...allQuestions];
+            for (let i = shuffled.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+            }
+            return shuffled.slice(0, 15);
+        }
+
+        function buildProgressBar() {
+            progressBar.innerHTML = '';
+            for (let i = 0; i < 15; i++) {
+                const segment = document.createElement('div');
+                segment.classList.add('progress-segment');
+                progressBar.appendChild(segment);
+            }
+        }
+
+        function updateProgressBar() {
+            const segments = progressBar.children;
+            for (let i = 0; i < segments.length; i++) {
+                if (i <= currentQuestionIndex) {
+                    segments[i].classList.add('active');
+                } else {
+                    segments[i].classList.remove('active');
+                }
+            }
+        }
+
+        function startQuiz() {
+            currentQuestionIndex = 0;
+            totalScore = 0;
+            questions = getRandomQuestions();
+            welcomeScreen.classList.add('hide');
+            resultScreen.classList.add('hide');
+            questionScreen.classList.remove('hide');
+            progressBar.classList.remove('hide');
+            buildProgressBar();
+            showQuestion();
+        }
+
+        function showQuestion() {
+            updateProgressBar();
+            const currentQuestion = questions[currentQuestionIndex];
+            questionText.textContent = `${currentQuestionIndex + 1}. ${currentQuestion.question}`;
+            answerButtonsContainer.innerHTML = '';
+
+            currentQuestion.answers.forEach(answer => {
+                const button = document.createElement('button');
+                button.textContent = answer.text;
+                button.classList.add('btn', 'btn-answer');
+                button.addEventListener('click', () => selectAnswer(answer.score));
+                answerButtonsContainer.appendChild(button);
+            });
+        }
+
+        function selectAnswer(score) {
+            totalScore += score;
+            currentQuestionIndex++;
+            if (currentQuestionIndex < 15) {
+                showQuestion();
+            } else {
+                showResult();
+            }
+        }
+
+        function showResult() {
+            questionScreen.classList.add('hide');
+            progressBar.classList.add('hide');
+            resultScreen.classList.remove('hide');
+
+            let interpretation = '';
+            let percentage = Math.round((totalScore / 45) * 100);
+
+            if (percentage >= 80) {
+                interpretation = `💖 <strong>تقدير وتصالح متزن وممتاز مع الذات (${percentage}%):</strong><br>أنت تمتلك علاقة غاية في الروعة والنضج مع نفسك! تحترم حدود طاقتك الشخصية، تمنح جسدك وروحك الراحة والتدليل الكافي، وتجيد قول "لا" بلباقة لحماية سلامك الداخلي. ثقتك قوية وقائمة على وعي حقيقي بمميزاتك مع تقبل كامل لعيوبك الإنسانية. استمر في نشر هذا السلام الداخلي!`;
+            } else if (percentage >= 50 && percentage < 80) {
+                interpretation = `⚖️ <strong>مستوى حب ذات مقبول وعقلاني (${percentage}%):</strong><br>أنت في منطقة آمنة ومتوازنة، تسعى لتقدير ذاتك وتدليلها والوقوف بجانبها في الكثير من المواقف، لكنك أحياناً قد تقع في فخ القسوة المفرطة على نفسك أو تفضيل رضا الآخرين على حساب سلامتك وراحتك وصحتك النفسية. تذكر دائماً أنك تستحق الأولوية والمزيد من الحنان والرحمة مع ذاتك.`;
+            } else {
+                interpretation = `🥺 <strong>حالة من جلد الذات والقسوة عليها تحتاج لرعاية (${percentage}%):</strong><br>النتيجة تشير إلى أنك تضغط على نفسك بشكل مرهق للغاية وتضع متطلبات الجميع في المقدمة بينما تهمل ذاتك وتلومها بقسوة على أي هفوة. أنت تستحق الحب، الدعم والراحة تماماً كالآخرين. ابدأ من اليوم في مسامحة نفسك، وتدليل روحك بوعي، والتدرب على قول "لا" لتستعيد توازنك العاطفي والنفسي المفقود.`;
+            }
+
+            resultText.innerHTML = interpretation;
+
+            // تحديث روابط المشاركة للنتيجة الجديدة بدقة
+            const siteUrl = "https://quiz.arabsdar.net/Self-Love-Test.html";
+            const shareText = `حصلت على نسبة ${percentage}% في اختبار مقياس حب الذات والتقدير الشخصي! اكتشف مستوى تصالحك مع نفسك الآن مجاناً عبر هذا الرابط:`;
+            
+            shareFbResult.href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(siteUrl)}`;
+            shareWaResult.href = `https://api.whatsapp.com/send?text=${encodeURIComponent(shareText + " " + siteUrl)}`;
+            shareTwResult.href = `https://twitter.com/intent/tweet?url=${encodeURIComponent(siteUrl)}&text=${encodeURIComponent(shareText)}`;
+        }
+    </script>
+</body>
+
+</html>
