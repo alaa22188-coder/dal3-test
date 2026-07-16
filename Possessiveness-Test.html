@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 🎯 التايتل والدسكربشن المحسنين بالكامل للسيو ونسبة النقر (CTR) -->
+    <title>اختبار مقياس حب التملك - هل أنت شخصية تملكية وغيورة؟</title>
+    <meta name="description" content="جرّب اختبار مقياس حب التملك التفاعلي المبتكر؛ حيث تظهر لك 15 سؤالاً عشوائياً متغيراً من بين 30 سؤالاً نفسياً وسلوكياً دقيقاً. اكتشف طبيعة مشاعرك ونسبة حب التملك لديك الآن!">
+    <meta name="keywords" content="اختبار حب التملك, مقياس الغيرة, تحليل شخصية عاطفي, اختبار العلاقات, كويز حب التملك والسيطرة">
+    <link rel="canonical" href="https://quiz.arabsdar.net/Possessiveness-Test.html">
+
+    <!-- أكواد الأوبن جراف لمشاركة احترافية على منصات التواصل -->
+    <meta property="og:locale" content="ar_AR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="اختبار مقياس حب التملك التفاعلي 2026: اكتشف نسبة رغبتك في السيطرة">
+    <meta property="og:description" content="ادخل اختبار مقياس حب التملك واكتشف هل أنت شريك عاطفي متوازن، غيور أم تملكي بامتياز؟ 15 سؤالاً عشوائياً شيقاً في انتظارك!">
+    <meta property="og:url" content="https://quiz.arabsdar.net/Possessiveness-Test.html">
+    <meta property="og:site_name" content="مقياس حب التملك">
+    <meta property="og:image" content="https://alaa22188-coder.github.io/dal3-test/quiz-share.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <style>
+        /* إعدادات خطوط النظام السريعة والمريحة جداً للعين (تمنع CLS) */
+        :root {
+            --bg-color: #f8fafc;
+            --primary-color: #db2777;
+            --secondary-color: #0f172a;
+            --text-muted: #334155;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+            --segment-active: #f472b6;
+            --segment-inactive: #cbd5e1;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--secondary-color);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            line-height: 1.8;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* الهيدر */
+        header {
+            background-color: var(--card-bg);
+            border-bottom: 1px solid var(--border-color);
+            padding: 16px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo a {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin-right: 16px;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        /* الحاوية الرئيسية */
+        main {
+            flex: 1;
+            max-width: 700px;
+            width: 100%;
+            margin: 24px auto;
+            padding: 0 16px;
+        }
+
+        /* حاوية مساحة الإعلان المحجوزة مسبقاً (تحمي من اهتزاز الـ CLS للبيج سبيد) */
+        .ad-slot-container {
+            min-height: 280px;
+            margin: 0 auto 24px auto;
+            text-align: center;
+            background-color: #f1f5f9;
+            border: 1px dashed var(--border-color);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #94a3b8;
+            font-size: 0.9rem;
+            font-weight: 600;
+            overflow: hidden;
+        }
+
+        /* حاوية الاختبار */
+        .quiz-container {
+            background-color: var(--card-bg);
+            padding: 32px 24px;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+            text-align: center;
+            margin-bottom: 24px;
+            min-height: 320px;
+        }
+
+        /* شريط التقدم */
+        .progress-bar-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 6px;
+            margin-bottom: 32px;
+        }
+
+        .progress-segment {
+            flex: 1;
+            height: 8px;
+            background-color: var(--segment-inactive);
+            border-radius: 4px;
+        }
+
+        .progress-segment.active {
+            background-color: var(--segment-active);
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            color: var(--secondary-color);
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            color: var(--secondary-color);
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            color: var(--secondary-color);
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        .quiz-container p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            margin-bottom: 24px;
+        }
+
+        /* أزرار مريحة للموبايل */
+        .btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 14px 28px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 12px;
+            cursor: pointer;
+            width: 100%;
+            min-height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        .btn-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin-top: 24px;
+        }
+
+        .btn-answer {
+            background-color: var(--bg-color);
+            color: var(--secondary-color);
+            border: 1px solid var(--border-color);
+            text-align: right;
+            justify-content: flex-start;
+            padding: 16px;
+            height: auto;
+        }
+
+        .btn-answer:hover,
+        .btn-answer:active {
+            background-color: #f1f5f9;
+            border-color: #cbd5e1;
+        }
+
+        /* أزرار مشاركة التواصل الاجتماعي المحسنة السريعة */
+        .share-section {
+            margin-top: 24px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .share-section p {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--secondary-color);
+        }
+
+        .share-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .share-btn {
+            padding: 10px 16px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: opacity 0.2s;
+            min-height: 40px;
+        }
+
+        .share-btn:hover {
+            opacity: 0.9;
+        }
+
+        .share-fb {
+            background-color: #1877f2;
+        }
+
+        .share-wa {
+            background-color: #25d366;
+        }
+
+        .share-tw {
+            background-color: #000000;
+        }
+
+        /* قسم السيو والمحتوى النصي */
+        .seo-content {
+            background-color: var(--card-bg);
+            padding: 32px 24px;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 24px;
+        }
+
+        .seo-content h2 {
+            font-size: 1.4rem;
+            color: var(--primary-color);
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+
+        .seo-content p {
+            color: var(--text-muted);
+            margin-bottom: 16px;
+            font-size: 1.05rem;
+        }
+
+        .seo-content ul {
+            margin-right: 24px;
+            margin-bottom: 16px;
+            color: var(--text-muted);
+        }
+
+        .seo-content ul li {
+            margin-bottom: 8px;
+        }
+
+        /* 🔗 قسم الروابط الداخلية */
+        .internal-links-section {
+            background-color: var(--card-bg);
+            padding: 32px 24px;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 24px;
+        }
+
+        .links-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .links-grid a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 600;
+            padding: 4px 0;
+            display: inline-block;
+        }
+
+        .links-grid a:hover {
+            text-decoration: underline;
+            color: var(--secondary-color);
+        }
+
+        /* 🧑‍💻 قسم معلومات المطور الشخصية لتعزيز الـ E-E-A-T */
+        .developer-bio-section {
+            background-color: var(--card-bg);
+            padding: 32px 24px;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 24px;
+        }
+
+        .developer-bio-section p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            margin-bottom: 16px;
+        }
+
+        .developer-social-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .developer-social-links a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-size: 1.05rem;
+            font-weight: 700;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 2px;
+        }
+
+        .developer-social-links a:hover {
+            color: var(--primary-color);
+            border-bottom-color: var(--secondary-color);
+        }
+
+        /* الفوتر */
+        footer {
+            background-color: var(--secondary-color);
+            color: #94a3b8;
+            padding: 32px 20px;
+            text-align: center;
+            font-size: 0.95rem;
+            margin-top: auto;
+        }
+
+        .footer-links {
+            margin-bottom: 16px;
+        }
+
+        .footer-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            margin: 0 12px;
+            display: inline-block;
+            min-height: 44px;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .hide {
+            display: none !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="https://quiz.arabsdar.net/">مقياس الدلع</a>
+            </div>
+            <nav class="nav-links">
+                <a href="https://quiz.arabsdar.net/">الرئيسية</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- 🎯 مساحة الإعلان العلوية (محجوزة الأبعاد مسبقاً لحماية السرعة والسيو) -->
+        <!-- نهاية كود الاعلان -->
+
+        <div class="quiz-container">
+            <div id="progress-bar" class="progress-bar-container hide">
+                <!-- جافا سكريبت ستولد 15 قطعة هنا -->
+            </div>
+
+            <!-- 1. شاشة الترحيب -->
+            <div id="welcome-screen" class="screen">
+                <h1>اختبار مقياس حب التملك والعلاقات</h1>
+                <p>هل تعاني من الغيرة المفرطة والرغبة في السيطرة العاطفية، أم أنك شريك متزن يمنح الحرية والثقة الكاملة لمن يحب؟ اكتشف طبيعة صفاتك النفسية وتعاملك مع شريك حياتك الآن عبر الإجابة عن 15 سؤالاً يتم اختيارها عشوائياً من بين 30 سؤالاً سلوكياً دقيقاً لتجربة تحليلية استثنائية في كل مرة تدير فيها الاختبار!</p>
+                <button id="start-btn" class="btn">ابدأ الاختبار الآن</button>
+
+                <div class="share-section">
+                    <p>شارك الاختبار مع أصدقائك 👥</p>
+                    <div class="share-buttons">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://quiz.arabsdar.net/Possessiveness-Test.html" target="_blank" rel="noopener" class="share-btn share-fb">فيسبوك</a>
+                        <a href="https://api.whatsapp.com/send?text=اكتشف%20نسبة%20حب%20التملك%20والغيرة%20لديك%20مع%20هذا%20الاختبار%20التفاعلي%20المميز%20%E2%9C%A8%20https://quiz.arabsdar.net/Possessiveness-Test.html" target="_blank" rel="noopener" class="share-btn share-wa">واتساب</a>
+                        <a href="https://twitter.com/intent/tweet?url=https://quiz.arabsdar.net/Possessiveness-Test.html&text=اختبار%20مقياس%20حب%20التملك%20التفاعلي:%20اكتشف%20نسبة%20الرغبة%20في%20السيطرة%20لديك" target="_blank" rel="noopener" class="share-btn share-tw">تويتر X</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. شاشة الأسئلة -->
+            <div id="question-screen" class="screen hide">
+                <h2 id="question-text">السؤال سيظهر هنا؟</h2>
+                <div id="answer-buttons" class="btn-grid">
+                    <!-- الأزرار ستتولد تلقائياً هنا -->
+                </div>
+            </div>
+
+            <!-- 3. شاشة النتيجة -->
+            <div id="result-screen" class="screen hide">
+                <h2>النتيجة النهائية للاختبار</h2>
+                <p id="result-text">تحميل النتيجة...</p>
+                <button id="restart-btn" class="btn">إعادة خوض الاختبار 🔄</button>
+
+                <div class="share-section">
+                    <p>تحدّ أصدقاءك بنتيجتك واكتشف الفروق بينكم! 🥳</p>
+                    <div class="share-buttons">
+                        <a id="share-fb-result" href="#" target="_blank" rel="noopener" class="share-btn share-fb">انشر النتيجة</a>
+                        <a id="share-wa-result" href="#" target="_blank" rel="noopener" class="share-btn share-wa">أرسلها بالواتساب</a>
+                        <a id="share-tw-result" href="#" target="_blank" rel="noopener" class="share-btn share-tw">تغريدة بالنتيجة</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- قسم محتوى السيو المكتوب بعناية لمحركات البحث -->
+        <article class="seo-content">
+            <h2>ما هو اختبار مقياس حب التملك وما الفائدة من تحليله؟</h2>
+            <p>يُعد <strong>اختبار مقياس حب التملك</strong> واحداً من الاختبارات الترفيهية والنفسية السلوكية الشائعة التي تبحث في نمط الاستجابة العاطفية واليومية للمرأة. يعتمد هذا التحليل المبتكر على قياس ردود أفعالكِ الافتراضية تجاه مواقف حياتية مختلفة، مثل كيفية التعامل مع الأزمات المفاجئة، اهتمامكِ بالتفاصيل الجمالية الرفيعة، ونظرتكِ الشخصية لأسلوب الراحة والعمل.</p>
+            <p>يتميز نظام الكويز المتطور لدينا بامتلاكه قاعدة بيانات مكونة من 30 سؤالاً منوعاً، تُفرز وتُختار منها 15 سؤالاً عشوائياً ذكياً في كل مرة تخوضين فيها التحدي، لتجربة استثنائية مليئة بالتشويق والتنوع مع صديقاتكِ.</p>
+
+            <h2>كيف يتم حساب نسبة الدلال في الشخصية؟</h2>
+            <p>يرتكز الاختبار على مصفوفة أسئلة مدروسة تقسم أنماط الشخصية إلى ثلاثة محاور رئيسية:</p>
+            <ul>
+                <li><strong>الشخصية الدلوعة (الرقيقة جداً):</strong> وهي الشخصية التي تميل إلى الرفاهية العالية، وتفضل الاعتماد على الآخرين بحب، وتتأثر بالمواقف سريعاً.</li>
+                <li><strong>الشخصية المتوازنة:</strong> تجمع بين الدلال والأنوثة الطاغية في أوقات الراحة، ولكنها تتحول إلى شخصية حاسمة وعملية في أوقات الشدائد والأعمال.</li>
+                <li><strong>الشخصية الجادة (العملية):</strong> شخصية قوية، تمتاز بالاستقلالية الكاملة، تفضل الحلول المباشرة، ولا تلتفت كثيراً للرفاهية المفرطة.</li>
+            </ul>
+
+            <h2>لماذا تُفضل اختبارات منصة مقياس الدلع؟</h2>
+            <p>في منصة <strong>مقياس الدلع</strong>، نحرص على تقديم تجربة مستخدم سريعة وخفيفة جداً متوافقة مع الهواتف المحمولة. اختباراتنا تفاعلية بالكامل ولا تتطلب انتظار أوقات تحميل طويلة، كما تمنحكِ تحليلاً فورياً دقيقاً مبنياً على نقاط حقيقية لكل إجابة تختارينها، مع مراعاة الخصوصية الكاملة حيث لا يتم حفظ أي بيانات شخصية على خوادمنا.</p>
+        </article>
+
+        <!-- 🧑‍💻 قسم معلومات المطور الشخصية لتعزيز الـ E-E-A-T وموثوقية جوجل -->
+        <section class="developer-bio-section">
+            <h3>عن مطور الموقع 🛠️</h3>
+            <p>أهلاً بكِ! أنا علاء الزقزوق مطور ومصمم تطبيقات ويب متخصص في بناء أدوات تفاعلية واختبارات سلوكية ذكية وخفيفة الوزن . أهتم بتقديم أفضل تجربة مستخدم ممكنة تجمع بين دقة النتائج البرمجية وسرعة التصفح الفائقة على كافة الأجهزة.</p>
+            <div class="developer-social-links">
+                <a href="https://github.com/alaa22188-coder/" target="_blank" rel="noopener">← حساب GitHub الشخصي</a>
+                <a href="https://www.youtube.com/@alaa22188" target="_blank" rel="noopener">← youtube</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="privacy-and-contact.html">سياسة الخصوصية والاتصال</a>
+            <a href="copyright.html">حقوق النشر</a>
+        </div>
+        <p>&copy; 2026 مقياس الدلع. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script>
+        // بنك الأسئلة الشامل (30 سؤالاً نفسياً وسلوكياً حول حب التملك والغيرة)
+        const allQuestions = [
+            { question: "إذا لم يقم شريكك بالرد على رسالتك فوراً بالرغم من أنه متصل بالإنترنت، فماذا تفعل؟", answers: [{ text: "أصاب بالغضب الشديد وأرسل رسائل متتالية لمعرفة السبب فورا", score: 3 }, { text: "أنتظر بضع دقائق ثم أسأله بلطف عن انشغاله", score: 2 }, { text: "أتابع يومي بشكل طبيعي وأعلم أنه سيرد حينما يفرغ", score: 1 }] },
+            { question: "يريد شريكك الخروج في نزهة مع أصدقائه بدونك، ما هي ردة فعلك الحقيقية؟", answers: [{ text: "أبدي انزعاجي الشديد وأحاول تذكيره بوعودنا أو اختلاق سبب لمنعه", score: 3 }, { text: "أوافق ببعض التحفظ وأطلب منه أن يراسلني بين الحين والآخر", score: 2 }, { text: "أشجعه على الاستمتاع بوقته وأستغل الفرصة للقيام بأنشطتي الخاصة", score: 1 }] },
+            { question: "هل تعرف كلمات المرور الخاصة بحسابات شريكك على منصات التواصل الاجتماعي؟", answers: [{ text: "نعم كلها، وأقوم بتفقد رسائله وقائمة أصدقائه بانتظام للتأكد", score: 3 }, { text: "أعرف بعضها كنوع من الثقة المتبادلة دون التدخل في شؤونه", score: 2 }, { text: "لا أعرفها ولا أهتم بمعرفتها أبداً فلكل منا خصوصيته", score: 1 }] },
+            { question: "إذا تحدث شريكك بلطف مع زميل أو زميلة عمل جديدة، كيف تشعر؟", answers: [{ text: "أشعر بنيران الغيرة تشتعل في داخلي وقد أفتعل مشكلة لاحقاً", score: 3 }, { text: "أشعر ببعض الفضول والغيرة الطفيفة دون إظهار ذلك بحدة", score: 2 }, { text: "أعتبر الأمر طبيعياً ومهنياً تماماً ولا يثير غيرتي إطلاقاً", score: 1 }] },
+            { question: "كيف تنظر إلى ماضي شريكك العاطفي قبل معرفتك به؟", answers: [{ text: "أشعر بالغيرة الشديدة منه وأطالبه دائماً بمسح ذكرياته وحظر الجميع", score: 3 }, { text: "أهتم به أحياناً وأتمنى لو لم يكن هناك ماضٍ لكنني أتقبله بصعوبة", score: 2 }, { text: "أؤمن أنه جزء من الماضي ولا يؤثر على حاضرنا ومستقبلنا معاً", score: 1 }] },
+            { question: "إذا غير شريكك أسلوب ملابسه أو قصة شعره دون أخذ رأيك مسبقاً؟", answers: [{ text: "أغضب وأخبره بأنه لا يحق له تغيير مظهره دون موافقتي", score: 3 }, { text: "أبدي رأيي بصراحة وأعبر عن دهشتي لأنه لم يخبرني", score: 2 }, { text: "أحترم حريته واختياره الشخصي طالما يسعده ذلك", score: 1 }] },
+            { question: "شريكك قرر البدء في هواية جديدة تأخذ الكثير من وقته المشترك معك؟", answers: [{ text: "أحاول إحباطه أو إقناعه بتركها لأنني أريد كل وقته لي", score: 3 }, { text: "أشعر بالضيق قليلاً لكنني أحاول التكيف مع الجدول الجديد", score: 2 }, { text: "أشجعه بحرص وأعطيه المساحة الكاملة لتطوير شغفه", score: 1 }] },
+            { question: "عندما تختلفان في الرأي حول قرار شخصي يخصه هو فقط؟", answers: [{ text: "أصر على فرض رأيي وأشعر بالإهانة لو لم ينفذ ما أريد", score: 3 }, { text: "أحاول نقاشه ومحاولة إقناعه بوجهة نظري لمصلحته", score: 2 }, { text: "أبدي نصيحتي وأترك له القرار النهائي دون أي ضغوط", score: 1 }] },
+            { question: "إذا لاحظت أن شريكك يضحك أثناء قراءة رسالة على هاتفه؟", answers: [{ text: "أسأله بحدة وحزم 'مع من تتحدث؟' وأطالب برؤية الشاشة", score: 3 }, { text: "أسأله بفضول لطيف وابتسامة عما يضحكه", score: 2 }, { text: "أبتسم لابتسامته تلقائياً دون أي رغبة في التفتيش خلفه", score: 1 }] },
+            { question: "ما هو شعورك حيال امتلاك شريكك لصديق مقرب جداً يثق به؟", answers: [{ text: "أكره هذا الصديق بشدة وأحاول تخريب العلاقة بينهما للانفراد به", score: 3 }, { text: "أشعر ببعض الغيرة أحياناً وأقارن نفسي بهذا الصديق", score: 2 }, { text: "أسعد بوجود شخص يدعمه وأحترم عمق صداقتهما", score: 1 }] },
+            { question: "إذا سافر شريكك في رحلة عمل لعدة أيام، كم مرة تتصل به؟", answers: [{ text: "أتصل به باستمرار وعلى مدار الساعة عبر مكالمات الفيديو لأراقبه", score: 3 }, { text: "أتصل به مرتين أو ثلاث للاطمئنان عليه ومعرفة أخباره", score: 2 }, { text: "أرسل له رسائل دافئة وأدع له مساحة لإنهاء أعماله براحة", score: 1 }] },
+            { question: "تكتشف أن شريكك يخفي عنك سراً بسيطاً ليس له ضرر كبير؟", answers: [{ text: "أعتبر ذلك خيانة عظمى وثلمة في جدار الثقة لا تغتفر", score: 3 }, { text: "أواجهه بجدية وأطلب منه تفسيراً لعدم مشاركته معي", score: 2 }, { text: "أحاول فهم دوافعه بهدوء وأؤكد له أنني متقبل لظروفه", score: 1 }] },
+            { question: "شريكك مدح أمامك شخصية مشهورة أو تصرفاً لشخص آخر بإنبهار؟", answers: [{ text: "أغضب وأنتقد هذا الشخص بشدة وأعتبر المديح تقليلاً مني", score: 3 }, { text: "أشعر بالغيرة الخفيفة وأحاول تغيير مجرى الحديث بلطف", score: 2 }, { text: "أوافقه الرأي أو أناقشه بالموضوع بعقلانية تامة", score: 1 }] },
+            { question: "هل تؤمن بمقولة 'من الحب ما قتل وأن الغيرة الشديدة تعني حباً أكبر'؟", answers: [{ text: "نعم بالتأكيد، فالحب بلا غيرة تملكية وسيطرة كاملة ليس حباً حقيقياً", score: 3 }, { text: "إلى حد ما، فالغيرة بهارات العلاقات ولكن بحدود مقبولة", score: 2 }, { text: "لا مطلقاً، فالحب الحقيقي يتغذى على الأمان والثقة والحرية", score: 1 }] },
+            { question: "إذا قرر شريكك قضاء العطلة الأسبوعية في النوم والراحة بعيداً عن الجميع حتى أنت؟", answers: [{ text: "أغضب بشدة وأتهمه بالإهمال والبرود والابتعاد المتعمد عني", score: 3 }, { text: "أحزن قليلاً لكنني أترك له فرصة ليرتاح دون إلحاح شديد", score: 2 }, { text: "أتفهم تعبه الجسدي تماماً وأتمنى له نوماً هنيئاً ومريحاً", score: 1 }] },
+            { question: "يرد شريكك ببرود على مكالمتك بسبب ضغط العمل، كيف تتصرف؟", answers: [{ text: "أنفجر غضباً وأتهمه بعدم تقديري وأقاطعه لأيام لعقابه", score: 3 }, { text: "أشعر بالضيق والشك، وأنتظر انتهاء عمله لأعاتبه", score: 2 }, { text: "أنهي المكالمة بسرعة وأتمنى له التوفيق مع مراعاة ظرفه", score: 1 }] },
+            { question: "ما هو تصرفك إذا علمت أن شريكك التقى بمجموعة من زملائه القدامى دون إعلامك؟", answers: [{ text: "أقيم الدنيا ولا أقعدها وأعتبر ذلك خروجاً عن سيطرتي وتجاوزاً صارخاً", score: 3 }, { text: "أعاتبه على عدم إخباري مسبقاً وأطلب معرفة التفاصيل كاملة", score: 2 }, { text: "أمرر الأمر ببساطة وأسأله بابتسامة إن كان قد استمتع بوقته", score: 1 }] },
+            { question: "هل تشعر بالرغبة في معرفة كل تفاصيل تحركات شريكك اليومية بالدقيقة؟", answers: [{ text: "نعم، أريد معرفة أين هو ومع من يتحدث طوال الـ 24 ساعة", score: 3 }, { text: "أحب معرفة الخطوط العريضة ليومه دون الدخول في تفاصيل خانقة", score: 2 }, { text: "لا أحتاج لذلك، فالثقة المتبادلة تغنينا عن الاستجواب المستمر", score: 1 }] },
+            { question: "عندما تشتري هدية لشريكك ولا تبدو عليه الفرحة الطاغية التي توقعتها؟", answers: [{ text: "أستعيد الهدية أو أفتعل مشكلة كبيرة وأتهمه بعدم تقدير مشاعري", score: 3 }, { text: "أشعر بالإحباط قليلاً وأحاول الاستفسار بلطف عما يفضله", score: 2 }, { text: "أتقبل ردة فعله بهدوء وأعلم أن التعبير عن الفرح يختلف من شخص لآخر", score: 1 }] },
+            { question: "إذا عرض أحدهم على شريكك فرصة عمل ممتازة في مدينة أخرى؟", answers: [{ text: "أرفض رفضاً قاطعاً حتى لو كانت مستقبله لأنني لا أحتمل بعده عني", score: 3 }, { text: "أتردد كثيراً وأحاول البحث عن حل وسط يبقيه قريباً تحت ناظري", score: 2 }, { text: "أدعمه بقوة وأفكر في كيفية التخطيط معاً لتجاوز عقبة المسافة", score: 1 }] },
+            { question: "ما هي ردة فعلك عندما يتحدث شريكك بإعجاب عن ذكاء أو مهارة شخص آخر؟", answers: [{ text: "أشعر بالإهانة فوراً وأبدأ في تعداد عيوب ذلك الشخص لتقليله", score: 3 }, { text: "أشعر بضيق صامت وأتمنى لو يمدحني أنا بتلك الطريقة", score: 2 }, { text: "أبدي إعجابي بالشخص المذكور وأشاركه الحديث بموضوعية", score: 1 }] },
+            { question: "عندما تلاحظ أن شريكك أصبح يقضي وقتاً أطول على هاتفه مؤخراً؟", answers: [{ text: "أراقبه وأحاول اختراق هاتفه أو قراءة رسائله دون علمه فوراً", score: 3 }, { text: "أواجهه بشكوكي بشكل مباشر وأطلب منه تفسيراً هادئاً", score: 2 }, { text: "أعتبر الأمر عادياً ولا يثير شكوكي طالما علاقتنا مستقرة", score: 1 }] },
+            { question: "ما هو موقفك من وجود أفراد من الجنس الآخر في دائرة معارف شريكك؟", answers: [{ text: "أرفض وجودهم تماماً وأجبره على قطع علاقاته بهم فوراً دون نقاش", score: 3 }, { text: "أسمح بوجودهم بحدود رسمية ضيقة مع مراقبة تصرفاتهم بحذر", score: 2 }, { text: "أتقبل الأمر بصدر رحب طالما يسود الاحترام والحدود الطبيعية", score: 1 }] },
+            { question: "إذا طلب منك شريكك بعض الوقت بمفرده ليفكر في حياته؟", answers: [{ text: "أعتقد مباشرة أنه يريد التخلي عني وأبدأ في البكاء والضغط عليه ليتراجع", score: 3 }, { text: "أوافقه بصعوبة وأقلق طوال الوقت من احتمالية خسارته", score: 2 }, { text: "أحترم رغبته وأمنحه الوقت والهدوء الكافي لترتيب أفكاره وثقتي به عالية", score: 1 }] },
+            { question: "إذا أبدى شريكك اهتماماً شديداً بمتابعة شخص معين على وسائل التواصل الاجتماعي؟", answers: [{ text: "أطالبه بإلغاء المتابعة فوراً وأعتبر المتابعة تهديداً مباشراً لعلاقتنا", score: 3 }, { text: "أبدي انزعاجي تلميحاً وأحاول معرفة سبب اهتمامه به", score: 2 }, { text: "لا أهتم على الإطلاق، فالمتابعة الافتراضية لا تؤثر في الواقع", score: 1 }] },
+            { question: "كيف تتصرف لو نسيت شريكك تاريخ ميلادك أو ذكرى زواجكما؟", answers: [{ text: "أثور وأعتبره غير محب لي على الإطلاق وقد أقرر الانفصال لفترة وعقابه", score: 3 }, { text: "أغضب وأعاتبه بشدة لكنني أسامحه بعد تقديم اعتذار مقبول وهدية", score: 2 }, { text: "أذكره بالأمر بابتسامة ودعابة، فالمشاغل اليومية تنسي الكثيرين", score: 1 }] },
+            { question: "هل تشعر بالغيرة من نجاحات شريكك التي قد تسلط الأضواء عليه وحده؟", answers: [{ text: "نعم، لأنني أريده أن يظل معتمداً عليّ وتابعا لي في كل التفاصيل", score: 3 }, { text: "أحياناً أشعر بالخوف من أن يبتعد عني بسبب مكانته الجديدة", score: 2 }, { text: "أفخر به وبنجاحاته كأنها نجاحاتي تماماً وأكون أول الداعمين له", score: 1 }] },
+            { question: "إذا وافق شريكك على مساعدة شخص غريب من الجنس الآخر في موقف طارئ بالشارع؟", answers: [{ text: "أمنعه فوراً وأتشاجر معه لتدخله في شؤون الآخرين وإبداء اهتمامه بهم", score: 3 }, { text: "أراقب الموقف بضيق وتوجس منتظراً انتهاء المساعدة بسرعة", score: 2 }, { text: "أفخر بشهامته وأساعده أنا أيضاً إن تطلب الأمر", score: 1 }] },
+            { question: "هل تعتبر غياب شريكك عن المنزل لساعات طويلة بداعي عمل طارئ مبرراً كافياً؟", answers: [{ text: "لا أصدق هذه المبررات وأعتقد دائماً أن لديه اهتمامات سرية أخرى", score: 3 }, { text: "أصدقه ولكنني أشعر بالقلق المستمر والاتصال به للتثبت", score: 2 }, { text: "أثق بكلمته وأقدر جهده وعمله الصادق من أجل مستقبلنا", score: 1 }] },
+            { question: "شريكك قرر الخروج مرتدياً لباساً تراه جذاباً جداً لحضور مناسبة عامة وحده؟", answers: [{ text: "أجبره على تغييره فوراً لأنني لا أريد لأحد غيري أن ينظر إليه بإعجاب", score: 3 }, { text: "أطلب منه برفق تعديل جزء من هندامه لتقليل لفت الأنظار", score: 2 }, { text: "أمتدح مظهره الأنيق وأتمنى له وقتاً رائعاً بكل فخر وثقة", score: 1 }] }
+        ];
+
+        // هذه مصفوفة لحفظ الأسئلة المخصصة المختارة عشوائياً
+        let questions = [];
+
+        const welcomeScreen = document.getElementById('welcome-screen');
+        const questionScreen = document.getElementById('question-screen');
+        const resultScreen = document.getElementById('result-screen');
+        const progressBar = document.getElementById('progress-bar');
+
+        const startButton = document.getElementById('start-btn');
+        const restartButton = document.getElementById('restart-btn');
+        const questionText = document.getElementById('question-text');
+        const answerButtonsContainer = document.getElementById('answer-buttons');
+        const resultText = document.getElementById('result-text');
+
+        const shareFbResult = document.getElementById('share-fb-result');
+        const shareWaResult = document.getElementById('share-wa-result');
+        const shareTwResult = document.getElementById('share-tw-result');
+
+        let currentQuestionIndex = 0;
+        let totalScore = 0;
+
+        startButton.addEventListener('click', startQuiz);
+        restartButton.addEventListener('click', startQuiz);
+
+        // دالة لخلط بنك الأسئلة واختيار 15 سؤالاً عشوائياً
+        function getRandomQuestions() {
+            let shuffled = [...allQuestions];
+            for (let i = shuffled.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+            }
+            return shuffled.slice(0, 15);
+        }
+
+        function buildProgressBar() {
+            progressBar.innerHTML = '';
+            for (let i = 0; i < 15; i++) {
+                const segment = document.createElement('div');
+                segment.classList.add('progress-segment');
+                progressBar.appendChild(segment);
+            }
+        }
+
+        function updateProgressBar() {
+            const segments = progressBar.children;
+            for (let i = 0; i < segments.length; i++) {
+                if (i <= currentQuestionIndex) {
+                    segments[i].classList.add('active');
+                } else {
+                    segments[i].classList.remove('active');
+                }
+            }
+        }
+
+        function startQuiz() {
+            currentQuestionIndex = 0;
+            totalScore = 0;
+            questions = getRandomQuestions();
+            welcomeScreen.classList.add('hide');
+            resultScreen.classList.add('hide');
+            questionScreen.classList.remove('hide');
+            progressBar.classList.remove('hide');
+            buildProgressBar();
+            showQuestion();
+        }
+
+        function showQuestion() {
+            updateProgressBar();
+            const currentQuestion = questions[currentQuestionIndex];
+            questionText.textContent = `${currentQuestionIndex + 1}. ${currentQuestion.question}`;
+            answerButtonsContainer.innerHTML = '';
+
+            currentQuestion.answers.forEach(answer => {
+                const button = document.createElement('button');
+                button.textContent = answer.text;
+                button.classList.add('btn', 'btn-answer');
+                button.addEventListener('click', () => selectAnswer(answer.score));
+                answerButtonsContainer.appendChild(button);
+            });
+        }
+
+        function selectAnswer(score) {
+            totalScore += score;
+            currentQuestionIndex++;
+            if (currentQuestionIndex < 15) {
+                showQuestion();
+            } else {
+                showResult();
+            }
+        }
+
+        function showResult() {
+            questionScreen.classList.add('hide');
+            progressBar.classList.add('hide');
+            resultScreen.classList.remove('hide');
+
+            let interpretation = '';
+            let percentage = Math.round((totalScore / 45) * 100);
+
+            if (percentage >= 80) {
+                interpretation = `🔒 <strong>نسبة حب التملك لديك مرتفعة جداً (${percentage}%):</strong><br>أنت تميل للسيطرة العاطفية الكاملة على شريك حياتك والغيرة المفرطة التي قد تخنق العلاقة وتحد من حرية شريكك. حاول منح المزيد من المساحة والثقة لشريكك لكي تنمو العلاقة وتتنفس بسلام ودون قيود سلبية.`;
+            } else if (percentage >= 50 && percentage < 80) {
+                interpretation = `⚖️ <strong>نسبة حب التملك لديك متوازنة وعاطفية (${percentage}%):</strong><br>أنت تمتلك غيرة طبيعية ومقبولة تنم عن حب حقيقي ودفء المشاعر، ولكنها تظل تحت السيطرة والعقلانية في أغلب المواقف. تمنح شريكك ثقة جيدة مع الاحتفاظ باهتمامك الجميل بتفاصيل حياته.`;
+            } else {
+                interpretation = `🕊️ <strong>نسبة حب التملك لديك منخفضة ومتحررة تماماً (${percentage}%):</strong><br>أنت شريك مثالي يمنح الثقة المطلقة والحرية التامة لمن يحب. لا تميل إلى السيطرة أو التدخل في خصوصيات شريكك إطلاقاً، وتؤمن بأن الأمان المتبادل والحرية هما أساس النجاح والاستمرار في العلاقات العاطفية.`;
+            }
+
+            resultText.innerHTML = interpretation;
+
+            // تحديث روابط المشاركة للنتيجة الجديدة بدقة
+            const siteUrl = "https://quiz.arabsdar.net/Possessiveness-Test.html";
+            const shareText = `حصلت على نسبة ${percentage}% في اختبار مقياس حب التملك والسيطرة! اكتشف طبيعتك العاطفية الآن مجاناً عبر هذا الرابط:`;
+            
+            shareFbResult.href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(siteUrl)}`;
+            shareWaResult.href = `https://api.whatsapp.com/send?text=${encodeURIComponent(shareText + " " + siteUrl)}`;
+            shareTwResult.href = `https://twitter.com/intent/tweet?url=${encodeURIComponent(siteUrl)}&text=${encodeURIComponent(shareText)}`;
+        }
+    </script>
+</body>
+
+</html>
