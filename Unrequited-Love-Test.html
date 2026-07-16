@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 🎯 التايتل والدسكربشن المحسنين بالكامل للسيو ونسبة النقر (CTR) -->
+    <title>اختبار الحب من طرف واحد للبنات - هل يحبك أم أنتِ وحدكِ من تحبين؟</title>
+    <meta name="description" content="جرّبي اختبار مقياس الحب من طرف واحد للبنات التفاعلي؛ حيث تظهر لكِ 15 سؤالاً عشوائياً متغيراً من بين 30 سؤالاً نفسياً وسلوكياً دقيقاً. اكتشف حقيقة مشاعره تجاهكِ الآن!">
+    <meta name="keywords" content="اختبار الحب من طرف واحد, مقياس الحب للبنات, تحليل شخصية عاطفي للبنات, علامات الحب من طرف واحد, كويز هل يحبني">
+    <link rel="canonical" href="https://quiz.arabsdar.net/Unrequited-Love-Test.html">
+
+    <!-- أكواد الأوبن جراف لمشاركة احترافية على منصات التواصل -->
+    <meta property="og:locale" content="ar_AR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="اختبار الحب من طرف واحد للبنات: هل مشاعره متبادلة أم تعيشين وهماً؟">
+    <meta property="og:description" content="ادخلي اختبار مقياس الحب من طرف واحد للبنات واكتشفي حقيقة مشاعره بـ 15 سؤالاً عشوائياً شيقاً صُمم خصيصاً لكِ!">
+    <meta property="og:url" content="https://quiz.arabsdar.net/Unrequited-Love-Test.html">
+    <meta property="og:site_name" content="مقياس الحب من طرف واحد">
+    <meta property="og:image" content="https://alaa22188-coder.github.io/dal3-test/quiz-share.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <style>
+        /* إعدادات خطوط النظام السريعة والمريحة جداً للعين (تمنع CLS) */
+        :root {
+            --bg-color: #f8fafc;
+            --primary-color: #db2777;
+            --secondary-color: #0f172a;
+            --text-muted: #334155;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+            --segment-active: #f472b6;
+            --segment-inactive: #cbd5e1;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--secondary-color);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            line-height: 1.8;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* الهيدر */
+        header {
+            background-color: var(--card-bg);
+            border-bottom: 1px solid var(--border-color);
+            padding: 16px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo a {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin-right: 16px;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        /* الحاوية الرئيسية */
+        main {
+            flex: 1;
+            max-width: 700px;
+            width: 100%;
+            margin: 24px auto;
+            padding: 0 16px;
+        }
+
+        /* حاوية مساحة الإعلان المحجوزة مسبقاً (تحمي من اهتزاز الـ CLS للبيج سبيد) */
+        .ad-slot-container {
+            min-height: 280px;
+            margin: 0 auto 24px auto;
+            text-align: center;
+            background-color: #f1f5f9;
+            border: 1px dashed var(--border-color);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #94a3b8;
+            font-size: 0.9rem;
+            font-weight: 600;
+            overflow: hidden;
+        }
+
+        /* حاوية الاختبار */
+        .quiz-container {
+            background-color: var(--card-bg);
+            padding: 32px 24px;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+            text-align: center;
+            margin-bottom: 24px;
+            min-height: 320px;
+        }
+
+        /* شريط التقدم */
+        .progress-bar-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 6px;
+            margin-bottom: 32px;
+        }
+
+        .progress-segment {
+            flex: 1;
+            height: 8px;
+            background-color: var(--segment-inactive);
+            border-radius: 4px;
+        }
+
+        .progress-segment.active {
+            background-color: var(--segment-active);
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            color: var(--secondary-color);
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            color: var(--secondary-color);
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            color: var(--secondary-color);
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        .quiz-container p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            margin-bottom: 24px;
+        }
+
+        /* أزرار مريحة للموبايل */
+        .btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 14px 28px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 12px;
+            cursor: pointer;
+            width: 100%;
+            min-height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        .btn-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin-top: 24px;
+        }
+
+        .btn-answer {
+            background-color: var(--bg-color);
+            color: var(--secondary-color);
+            border: 1px solid var(--border-color);
+            text-align: right;
+            justify-content: flex-start;
+            padding: 16px;
+            height: auto;
+        }
+
+        .btn-answer:hover,
+        .btn-answer:active {
+            background-color: #f1f5f9;
+            border-color: #cbd5e1;
+        }
+
+        /* أزرار مشاركة التواصل الاجتماعي المحسنة السريعة */
+        .share-section {
+            margin-top: 24px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .share-section p {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--secondary-color);
+        }
+
+        .share-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .share-btn {
+            padding: 10px 16px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: opacity 0.2s;
+            min-height: 40px;
+        }
+
+        .share-btn:hover {
+            opacity: 0.9;
+        }
+
+        .share-fb {
+            background-color: #1877f2;
+        }
+
+        .share-wa {
+            background-color: #25d366;
+        }
+
+        .share-tw {
+            background-color: #000000;
+        }
+
+        /* قسم السيو والمحتوى النصي */
+        .seo-content {
+            background-color: var(--card-bg);
+            padding: 32px 24px;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 24px;
+        }
+
+        .seo-content h2 {
+            font-size: 1.4rem;
+            color: var(--primary-color);
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+
+        .seo-content p {
+            color: var(--text-muted);
+            margin-bottom: 16px;
+            font-size: 1.05rem;
+        }
+
+        .seo-content ul {
+            margin-right: 24px;
+            margin-bottom: 16px;
+            color: var(--text-muted);
+        }
+
+        .seo-content ul li {
+            margin-bottom: 8px;
+        }
+
+        /* 🔗 قسم الروابط الداخلية */
+        .internal-links-section {
+            background-color: var(--card-bg);
+            padding: 32px 24px;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 24px;
+        }
+
+        .links-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .links-grid a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 600;
+            padding: 4px 0;
+            display: inline-block;
+        }
+
+        .links-grid a:hover {
+            text-decoration: underline;
+            color: var(--secondary-color);
+        }
+
+        /* 🧑‍💻 قسم معلومات المطور الشخصية لتعزيز الـ E-E-A-T */
+        .developer-bio-section {
+            background-color: var(--card-bg);
+            padding: 32px 24px;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 24px;
+        }
+
+        .developer-bio-section p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            margin-bottom: 16px;
+        }
+
+        .developer-social-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .developer-social-links a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-size: 1.05rem;
+            font-weight: 700;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 2px;
+        }
+
+        .developer-social-links a:hover {
+            color: var(--primary-color);
+            border-bottom-color: var(--secondary-color);
+        }
+
+        /* الفوتر */
+        footer {
+            background-color: var(--secondary-color);
+            color: #94a3b8;
+            padding: 32px 20px;
+            text-align: center;
+            font-size: 0.95rem;
+            margin-top: auto;
+        }
+
+        .footer-links {
+            margin-bottom: 16px;
+        }
+
+        .footer-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            margin: 0 12px;
+            display: inline-block;
+            min-height: 44px;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .hide {
+            display: none !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="https://alaa22188-coder.github.io/dal3-test/">مقياس الدلع</a>
+            </div>
+            <nav class="nav-links">
+                <a href="https://alaa22188-coder.github.io/dal3-test/">الرئيسية</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- 🎯 مساحة الإعلان العلوية (محجوزة الأبعاد مسبقاً لحماية السرعة والسيو) -->
+        <!-- نهاية كود الاعلان -->
+
+        <div class="quiz-container">
+            <div id="progress-bar" class="progress-bar-container hide">
+                <!-- جافا سكريبت ستولد 15 قطعة هنا -->
+            </div>
+
+            <!-- 1. شاشة الترحيب -->
+            <div id="welcome-screen" class="screen">
+                <h1>اختبار الحب من طرف واحد للبنات</h1>
+                <p>هل تعيشين قصة حب متبادلة ودافئة، أم أنكِ تبذلين كل جهدكِ ومشاعركِ من طرف واحد دون الحصول على أي اهتمام حقيقي بالمقابل؟ جربي هذا المقياس النفسي والسلوكي المتطور المصمم خصيصاً للفتيات. بالإجابة عن 15 سؤالاً تفاعلياً يتم اختيارها عشوائياً من بين 30 سؤالاً مميزاً، ستكتشفين بوضوح حقيقة مشاعره ومكانتكِ في قلبه!</p>
+                <button id="start-btn" class="btn">ابدأ الاختبار الآن</button>
+
+                <div class="share-section">
+                    <p>شاركي الاختبار مع صديقاتكِ 👥</p>
+                    <div class="share-buttons">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://quiz.arabsdar.net/Unrequited-Love-Test.html" target="_blank" rel="noopener" class="share-btn share-fb">فيسبوك</a>
+                        <a href="https://api.whatsapp.com/send?text=اكتشفي%20هل%20هو%20حب%20متبادل%20أم%20من%20طرف%20واحد%20مع%20هذا%20الاختبار%20المميز%20%E2%9C%A8%20https://quiz.arabsdar.net/Unrequited-Love-Test.html" target="_blank" rel="noopener" class="share-btn share-wa">واتساب</a>
+                        <a href="https://twitter.com/intent/tweet?url=https://quiz.arabsdar.net/Unrequited-Love-Test.html&text=اختبار%20مقياس%20الحب%20من%20طرف%20واحد%20للبنات:%20اكتشفي%20حقيقة%20مشاعره%20تجاهكِ%20الآن" target="_blank" rel="noopener" class="share-btn share-tw">تويتر X</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. شاشة الأسئلة -->
+            <div id="question-screen" class="screen hide">
+                <h2 id="question-text">السؤال سيظهر هنا؟</h2>
+                <div id="answer-buttons" class="btn-grid">
+                    <!-- الأزرار ستتولد تلقائياً هنا -->
+                </div>
+            </div>
+
+            <!-- 3. شاشة النتيجة -->
+            <div id="result-screen" class="screen hide">
+                <h2>النتيجة النهائية للاختبار</h2>
+                <p id="result-text">تحميل النتيجة...</p>
+                <button id="restart-btn" class="btn">إعادة خوض الاختبار 🔄</button>
+
+                <div class="share-section">
+                    <p>شاركي النتيجة مع صديقاتكِ المقربات لأخذ رأيهن! 🥳</p>
+                    <div class="share-buttons">
+                        <a id="share-fb-result" href="#" target="_blank" rel="noopener" class="share-btn share-fb">انشر النتيجة</a>
+                        <a id="share-wa-result" href="#" target="_blank" rel="noopener" class="share-btn share-wa">أرسليها بالواتساب</a>
+                        <a id="share-tw-result" href="#" target="_blank" rel="noopener" class="share-btn share-tw">تغريدة بالنتيجة</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- قسم محتوى السيو المكتوب بعناية لمحركات البحث -->
+        <article class="seo-content">
+            <h2>ما هو اختبار الحب من طرف واحد للبنات وما مدى دقة نتائجه؟</h2>
+            <p>يُعد <strong>اختبار الحب من طرف واحد للبنات</strong> من أهم الأدوات النفسية والعاطفية الترفيهية التي تساعدكِ على وضع مشاعركِ الحالية تحت المجهر. في كثير من الأحيان، تقود العاطفة الجياشة الفتيات لتفسير اللمسات العادية أو اللطف العابر كدليل على الحب، مما يؤدي إلى استهلاك عاطفي شديد في علاقة غير متكافئة.</p>
+            <p>يعتمد نظام الكويز المبتكر لدينا على قياس تفاصيل بالغة الأهمية في لغة الجسد، طرق التواصل اليومي، المبادرة، ومدى الحضور الذهني للطرف الآخر في حياتكِ. من خلال 30 سؤالاً شاملاً يتم اختيار 15 منها بشكل عشوائي تماماً في كل محاولة، ستحصلين على مراجعة عاطفية متوازنة تفتح لكِ آفاقاً جديدة للتفكير.</p>
+
+            <h2>كيف تتعرفين على علامات الحب من طرف واحد؟</h2>
+            <p>يشير خبراء العلاقات العاطفية والنفسية إلى عدة مؤشرات تظهر بوضوح في إجابات هذا الاختبار، ومنها:</p>
+            <ul>
+                <li><strong>غياب المبادرة:</strong> عندما تكونين أنتِ دائماً من يبدأ المراسلة، الاتصال، أو التخطيط للقاءات، دون أي حركة مماثلة منه.</li>
+                <li><strong>الردود المقتضبة والباردة:</strong> قضاء ساعات طويلة دون رد على رسائلكِ، والاكتفاء بإجابات قصيرة وسطحية لا تفتح باباً للنقاش الحقيقي.</li>
+                <li><strong>الحديث المتمحور حول الذات:</strong> تركيز حديثه عن مشاكله واهتماماته وإنجازاته، مع إهمال تام للاستماع إليكِ أو الاستفسار عن تفاصيل يومكِ.</li>
+                <li><strong>الظهور والاختفاء المفاجئ:</strong> التواصل معكِ فقط في الأوقات التي يحتاج فيها إلى خدمة، أو يشعر بالملل، ثم الاختفاء التام بعدها.</li>
+            </ul>
+
+            <h2>لماذا تختارين منصة مقياس الدلع لخوض اختباراتكِ؟</h2>
+            <p>تحتوي منصة <strong>مقياس الدلع</strong> على تجربة تصفح سريعة وخفيفة جداً تضمن لكِ فتح الاختبار بلمح البصر على كافة الهواتف الذكية. اختباراتنا تفاعلية وحيوية خالية من الإعلانات المزعجة المعطلة للتصفح، وتعتني بخصوصيتكِ التامة حيث لا يتم مشاركة أو حفظ أي من إجاباتكِ على الخوادم لضمان أمانكِ الكامل.</p>
+        </article>
+
+        <!-- 🔗 قسم الروابط الداخلية الموصى بها لتعزيز بقاء المستخدم -->
+        <section class="internal-links-section">
+            <h3>روابط واختبارات قد تهمكِ أيضاً 🔗</h3>
+            <div class="links-grid">
+                <a href="https://alaa22188-coder.github.io/dal3-test/">← جربي اختبار مقياس الدلع الأصلي والأنوثة</a>
+                <a href="https://quiz.arabsdar.net/Possessiveness-Test.html">← هل أنتِ تملكية؟ جربي مقياس حب التملك</a>
+                <a href="https://quiz.arabsdar.net/Self-Love-Test.html">← كيف تقدرين نفسكِ؟ جربي مقياس حب الذات</a>
+            </div>
+        </section>
+
+        <!-- 🧑‍💻 قسم معلومات المطور الشخصية لتعزيز الـ E-E-A-T وموثوقية جوجل -->
+        <section class="developer-bio-section">
+            <h3>عن مطور الموقع 🛠️</h3>
+            <p>أهلاً بكِ! أنا علاء الزقزوق مطور ومصمم تطبيقات ويب متخصص في بناء أدوات تفاعلية واختبارات سلوكية ذكية وخفيفة الوزن. أهتم بتقديم أفضل تجربة مستخدم ممكنة تجمع بين دقة النتائج البرمجية وسرعة التصفح الفائقة على كافة الأجهزة.</p>
+            <div class="developer-social-links">
+                <a href="https://github.com/alaa22188-coder/" target="_blank" rel="noopener">← حساب GitHub الشخصي</a>
+                <a href="https://www.youtube.com/@alaa22188" target="_blank" rel="noopener">← youtube</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="privacy-and-contact.html">سياسة الخصوصية والاتصال</a>
+            <a href="copyright.html">حقوق النشر</a>
+        </div>
+        <p>&copy; 2026 مقياس الدلع. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script>
+        // بنك الأسئلة الشامل (30 سؤالاً سلوكياً ونفسياً مصمماً للبنات حول حقيقة مشاعره)
+        const allQuestions = [
+            { question: "من الذي يبدأ في العادة بإرسال الرسالة الأولى في الصباح أو بداية اليوم؟", answers: [{ text: "أنا دائماً من يبادر، وإن لم أفعل قد تمر أيام دون أن يرسل شيئاً", score: 1 }, { text: "أحياناً أنا وأحياناً هو، فالأمر متبادل وتلقائي بيننا", score: 3 }, { text: "يبادر هو فقط عندما يحتاج لشيء معين أو خدمة عابرة", score: 2 }] },
+            { question: "كيف يتصرف عندما تتحدثين معه عن تفاصيل يومكِ أو مشكلة تواجهكِ؟", answers: [{ text: "يبدو غير مكترث، يغير الموضوع بسرعة أو يرد بكلمات مختصرة للغاية", score: 1 }, { text: "يستمع بإنصات شديد، يتعاطف معي ويحاول مساعدتي في إيجاد حلول", score: 3 }, { text: "يستمع لبعض الوقت ثم يبدأ في الحديث عن مشاكله هو فوراً", score: 2 }] },
+            { question: "إذا توقفتِ تماماً عن التواصل معه أو الاتصال به لعدة أيام متواصلة، ماذا يحدث؟", answers: [{ text: "لا يبحث عني إطلاقاً ولا يلاحظ غيابي إلا بعد وقت طويل جداً", score: 1 }, { text: "يقلق عليّ سريعاً، يتصل بي أو يرسل متسائلاً بلهفة عن سبب اختفائي", score: 3 }, { text: "يرسل رسالة عادية خالية من الاهتمام مثل 'أين أنتِ؟' دون إلحاح", score: 2 }] },
+            { question: "هل يتذكر التواريخ الهامة والمناسبات التي تخصكِ (عيد ميلادكِ مثلاً) دون تذكير مسبق؟", answers: [{ text: "لا يتذكرها أبداً، وحتى لو علم بها مسبقاً يتجاهلها في نفس اليوم", score: 1 }, { text: "يتذكرها بدقة ويحرص على التهنئة بشكل مميز أو تقديم مفاجأة لطيفة", score: 3 }, { text: "يتذكرها أحياناً بالصدفة أو بعد أن يرى منشوراً على وسائل التواصل", score: 2 }] },
+            { question: "عندما تتقابلان ضمن مجموعة من الأصدقاء المشتركين، كيف يكون سلوكه معكِ؟", answers: [{ text: "يتجاهلني تماماً ويركز اهتمامه وحديثه مع الجميع ما عداي", score: 1 }, { text: "يخصني بنظرات واهتمام دافئ، ويحرص على الجلوس بجانبي والحديث معي", score: 3 }, { text: "يعاملني كأي صديق عادي آخر في المجموعة دون أي تمييز يذكر", score: 2 }] },
+            { question: "إذا طلبتِ منه لقاءً لمقابلته والتحدث معه، كيف تكون استجابته عادة؟", answers: [{ text: "يتحجج دائماً بالانشغال وضيق الوقت، ويرفض أو يؤجل اللقاء مراراً", score: 1 }, { text: "يرحب بالفكرة فوراً ويحاول تفريغ وقته بكل سرور لرؤيتي", score: 3 }, { text: "يوافق فقط إذا كان اللقاء مناسباً لجدوله وجغرافياً قريباً منه دون جهد", score: 2 }] },
+            { question: "عندما ينشر شيئاً على منصات التواصل الاجتماعي، وأنتِ تعلقين أو تتفاعلين معه؟", answers: [{ text: "يتجاهل تفاعلي أو يعجب بتعليقات الآخرين ويتخطي تعليقي ببرود", score: 1 }, { text: "يرد على تعليقي بسرعة وبأسلوب لطيف ومليء بالود والمزاح", score: 3 }, { text: "يضع إعجاباً عادياً (لايك) جافاً دون كتابة أي رد عاطفي", score: 2 }] },
+            { question: "هل يحدثكِ عن عائلته، طفولته، وأسراره العميقة التي لا يعرفها الكثيرون؟", answers: [{ text: "لا يشاركني أي شيء شخصي إطلاقاً وحواراتنا سطحية للغاية", score: 1 }, { text: "نعم، يثق بي ويشاركني أدق تفاصيل حياته وأسراره وأهدافه المستقبلية", score: 3 }, { text: "يتحدث فقط بلمحات عامة كنوع من كسر الصمت والدردشة العادية", score: 2 }] },
+            { question: "هل سبق وأن عبرتِ له بوضوح أو تلميحاً عن مشاعركِ، وكيف كانت ردة فعله؟", answers: [{ text: "تهرب من الموضوع، غيّر مجرى الحديث، أو تظاهر بعدم الفهم ببرود", score: 1 }, { text: "بادلني نفس المشاعر بصدق ولهفة واضحة وأبدى سعادته الغامرة", score: 3 }, { text: "أخبرني بلطف أنه يفضل أن نبقى 'مجرد أصدقاء' في الوقت الحالي", score: 2 }] },
+            { question: "إذا مرضتِ أو مررتِ بوعكة صحية وأخبرتيه بذلك، كيف يتصرف؟", answers: [{ text: "يكتفي برسالة جافة مثل 'سلامتكِ' ولا يسأل عني بعدها مطلقاً", score: 1 }, { text: "يتصل بي مراراً للاطمئنان، ويبدي قلقاً كبيراً ويعرض المساعدة الصادقة", score: 3 }, { text: "يسألني عن حالي بعد مرور وقت طويل بنبرة عادية غير قلقة", score: 2 }] },
+            { question: "كيف يرى مستقبله؟ هل يلمح أو يذكر وجودكِ فيه بأي طريقة؟", answers: [{ text: "يتحدث عن خططه المستقبلية بمفرده تماماً وكأنني لست موجودة في حياته", score: 1 }, { text: "يشركني في أحلامه ويستعين بكلمات مثل 'نحن' ويسألني عن رأيي بقراراته", score: 3 }, { text: "يرفض الحديث عن المستقبل بجدية ويفضل العيش في اللحظة المؤقتة", score: 2 }] },
+            { question: "عندما يتحدث معكِ، هل يذكر فتيات أخريات ويمدح مظهرهن أو شخصياتهن بانتظام؟", answers: [{ text: "نعم، يفعل ذلك بكثرة دون مراعاة لمشاعري أو غيرتي عليه", score: 1 }, { text: "لا، يركز اهتمامه ومديحه عليّ أنا فقط ويشعرني بتميزي", score: 3 }, { text: "يفعل ذلك نادراً وبطريقة عفوية خالية من القصد أو التلميح", score: 2 }] },
+            { question: "إذا عرضتِ عليه خدمة أو مساعدة في أمر يخصه، كيف يستقبلها؟", answers: [{ text: "يأخذها كأمر مسلم به ويطالب بالمزيد دون إبداء امتنان حقيقي", score: 1 }, { text: "يشكرني بحرارة ويقدر اهتمامي، ويرفض إرهاقي إن تطلب الأمر مجهوداً", score: 3 }, { text: "يقبلها ببرود عادي كأي خدمة يقدمها له أي شخص آخر", score: 2 }] },
+            { question: "ما هو شعوركِ الحقيقي والمستمر في أعماقكِ تجاه هذه العلاقة؟", answers: [{ text: "أشعر بعدم الأمان، الحيرة، والقلق الدائم من أنني أضيع وقتي ومشاعري", score: 1 }, { text: "أشعر براحة بالغة، أمان عاطفي تام وثقة كاملة في محبته وصدقه تجاهي", score: 3 }, { text: "أشعر بالأمل تارة واليأس تارة أخرى، وأعيش تذبذباً مستمراً في مشاعري", score: 2 }] },
+            { question: "هل يلاحظ التغييرات البسيطة فيكِ (مثل قصة شعر جديدة، فستان جديد، أو إرهاق في وجهكِ)؟", answers: [{ text: "لا يلاحظ أي شيء أبداً حتى لو لفتُّ انتباهه بوضوح", score: 1 }, { text: "يلاحظ فوراً ويبادر بمدح التغيير أو سؤالي بقلق عن سبب إرهاقي", score: 3 }, { text: "يلاحظ أحياناً بعد أن يذكر له أحد آخر ذلك أمامه", score: 2 }] },
+            { question: "إذا تشاجرتما أو اختلفتما في وجهات النظر، من الذي يبادر بالاعتذار والصلح؟", answers: [{ text: "أنا دائماً، حتى لو كان الخطأ فادحاً منه، وذلك خوفاً من خسارته", score: 1 }, { text: "يعتذر المخطئ منا بنضج، وإن كان هو يبادر دائماً لمصالحتني بلطف", score: 3 }, { text: "نتقاطع لأيام طويلة دون حل حتى تبرد الأمور وتعود تلقائياً دون اعتذار", score: 2 }] },
+            { question: "عندما تتحدثان هاتفياً، هل تشعرين بأنه يرغب في إنهاء المكالمة بسرعة؟", answers: [{ text: "نعم، يختلق الأعذار دائماً لينهي المكالمة بعد دقائق معدودة بملل", score: 1 }, { text: "لا، يستمتع بالحديث معي وتطول المكالمات بيننا لساعات دون ملل", score: 3 }, { text: "حسب مزاجه ونشاطه، أحياناً يطيل وأحياناً ينهي بسرعة", score: 2 }] },
+            { question: "إذا اعتذرتِ عن حضور موعد اتفقتما عليه مسبقاً بداعي ظرف طارئ؟", answers: [{ text: "يتقبل الأمر ببرود شديد ويبدو سعيداً أو غير مبالٍ بإلغاء الموعد", score: 1 }, { text: "يظهر حزنه الشديد وشوقه للقائي، ويطمئن على ظرفي باهتمام كبير", score: 3 }, { text: "يغضب بطفولية أو يلومني بحدة دون تقدير لظرفي الطارئ", score: 2 }] },
+            { question: "هل يدافع عنكِ أو يقف بجانبكِ إذا تعرضتِ للنقد أو المضايقة أمام الآخرين؟", answers: [{ text: "يقف صامتاً متفرجاً أو قد يشاركهم السخرية والنقد أحياناً للأسف", score: 1 }, { text: "يتدخل بحزم وقوة ليدافع عني ويحميني ويحافظ على كرامتي أمام الجميع", score: 3 }, { text: "يلتزم الحياد التام ويفضل عدم التدخل في الخلافات ليريح نفسه", score: 2 }] },
+            { question: "عندما تطلبين منه نصيحة في أمر مصيري يخص مستقبلكِ المهني أو الأكاديمي؟", answers: [{ text: "يرد بلامبالاة مثل 'افعلي ما يريحكِ' دون تفكير أو اهتمام بالنتيجة", score: 1 }, { text: "يهتم جداً ويناقشني بعقلانية، ويبحث معي عن الأفضل لي بدعم حقيقي", score: 3 }, { text: "يبدي رأياً سطحياً وسريعاً لمجرد التخلص من السؤال والحديث", score: 2 }] },
+            { question: "هل يخبركِ بعبارات صريحة ومباشرة مثل 'اشتقت إليكِ' أو 'أحب وجودكِ في يومي'؟", answers: [{ text: "لا يكتب أو ينطق مثل هذه العبارات لي على الإطلاق", score: 1 }, { text: "نعم، يعبر عن شوقه وامتنانه لوجودي باستمرار وبشكل عفوي دافئ", score: 3 }, { text: "يقولها فقط رداً على قولي لها، كنوع من المجاملة الاجتماعية والمسايرة", score: 2 }] },
+            { question: "عندما يكون حزيناً أو يمر بظروف سيئة، هل يفضل اللجوء إليكِ تحديداً؟", answers: [{ text: "يبتعد تماماً ويلجأ لأشخاص آخرين ويتركني غارقة في الحيرة حيال حاله", score: 1 }, { text: "أكون أول من يلجأ إليه ليفرغ همومه ويجد الراحة والأمان في حضني", score: 3 }, { text: "يخبرني بما جرى معه كمعلومة عادية بعد انتهاء الأزمة تماماً وبساطة", score: 2 }] },
+            { question: "هل يشعر بالغيرة عليكِ عندما يتحدث معكِ شاب آخر بأسلوب لطيف؟", answers: [{ text: "لا تظهر عليه أي علامات غيرة إطلاقاً، ويبدو الأمر طبيعياً وبارداً لديه", score: 1 }, { text: "تظهر غيرته بوضوح في ملامحه ونبرة صوته ويحاول حمايتي بلطف وحزم", score: 3 }, { text: "يغضب بشكل مبالغ فيه وعدواني كنوع من حب السيطرة وحب التملك فقط", score: 2 }] },
+            { question: "هل يحافظ على وعوده الصغير والكبيرة التي يقطعها لكِ؟", answers: [{ text: "يخلف وعوده باستمرار ويتناساها وكأنها لم تكن دون تقديم اعتذار", score: 1 }, { text: "يحرص بشدة على الوفاء بكل كلمة يعدني بها مهما كانت بسيطة وصعبة", score: 3 }, { text: "يفي بها أحياناً عندما تخدم مصلحته أو تناسب ظروفه الشخصية فقط", score: 2 }] },
+            { question: "إذا تحدثتِ معه بنبرة حزينة ومختلفة عن المعتاد، هل يلاحظ ذلك فوراً؟", answers: [{ text: "لا يشعر بأي تغيير ويستمر في حديثه العادي دون أي انتباه لحزني", score: 1 }, { text: "يلاحظ من أول نبرة أو كلمة ويسألني بلهفة وقلق 'ما بكِ حبيبتي؟'", score: 3 }, { text: "يسألني ببرود 'هل أنتِ متعبة؟' ثم يواصل نقاش موضوعه الخاص", score: 2 }] },
+            { question: "هل يعاملكِ في العلن وأمام الناس بنفس اللطف والدفء الذي يعاملكِ به في السر؟", answers: [{ text: "لا، يصبح رسمياً وجافاً جداً في العلن ويتجاهلني وكأنه لا يعرفني", score: 1 }, { text: "نعم، يعاملني بتقدير وحب واحترام فخور بوجودي في كل مكان وأمام الجميع", score: 3 }, { text: "حسب وجود أشخاص معينين، قد يكون دافئاً أو رسمياً ومحايداً", score: 2 }] },
+            { question: "عندما تضحكين بمرح أو تطلقين نكتة طريفة، كيف تكون ردة فعله؟", answers: [{ text: "يتجاهلها أو يسخر من بساطة النكتة ويعكر مزاجي ببرود", score: 1 }, { text: "تتسع ابتسامته وتتعالى ضحكته بصدق ويبدي إعجابه بروحكِ المرحة", score: 3 }, { text: "يبتسم ابتسامة خفيفة ومجاملة جافة دون تفاعل حقيقي يذكر", score: 2 }] },
+            { question: "هل يحاول إبهاركِ أو القيام بأشياء مميزة للفت انتباهكِ ونيل إعجابكِ؟", answers: [{ text: "لا يكترث برأيي فيه إطلاقاً ولا يجهد نفسه بفعل أي شيء لإثارة إعجابي", score: 1 }, { text: "نعم، يبذل جهوداً واضحة ليكون في أفضل مظهر وصورة أمامي لينال ثنائي", score: 3 }, { text: "يفعل أشياء عادية كجزء من طبيعته الشخصية دون نية واضحة لإبهاري", score: 2 }] },
+            { question: "إذا نشرتِ صورة جديدة لكِ أو مظهر إنجاز شخصي، كيف يتفاعل معكِ؟", answers: [{ text: "يتجاهل تماماً ولا يتفاعل، وقد يشاهد القصة (الستوري) ويمر ببرود", score: 1 }, { text: "يبادر بإرسال رسالة خاصة مليئة بالثناء والمباركة العميقة والتشجيع", score: 3 }, { text: "يضع إعجاباً بسيطاً وسريعاً دون أي تعليق أو تفاعل نصي دافئ", score: 2 }] },
+            { question: "عندما تطلبين منه البقاء معكِ لبعض الوقت لأنكِ تشعرين بالضيق والخوف؟", answers: [{ text: "يتعلل بالنعاس أو انشغاله وينهي الحديث سريعاً تاركاً إياي بمفردي في حزني", score: 1 }, { text: "يلغي كل انشغالاته ويسهر معي ليخفف عني ويشعرني بالأمان والاهتمام", score: 3 }, { text: "يتحدث معي لبضع دقائق معدودة وبطريقة مستعجلة لينهي واجبه العاطفي", score: 2 }] }
+        ];
+
+        // هذه مصفوفة لحفظ الأسئلة المخصصة المختارة عشوائياً
+        let questions = [];
+
+        const welcomeScreen = document.getElementById('welcome-screen');
+        const questionScreen = document.getElementById('question-screen');
+        const resultScreen = document.getElementById('result-screen');
+        const progressBar = document.getElementById('progress-bar');
+
+        const startButton = document.getElementById('start-btn');
+        const restartButton = document.getElementById('restart-btn');
+        const questionText = document.getElementById('question-text');
+        const answerButtonsContainer = document.getElementById('answer-buttons');
+        const resultText = document.getElementById('result-text');
+
+        const shareFbResult = document.getElementById('share-fb-result');
+        const shareWaResult = document.getElementById('share-wa-result');
+        const shareTwResult = document.getElementById('share-tw-result');
+
+        let currentQuestionIndex = 0;
+        let totalScore = 0;
+
+        startButton.addEventListener('click', startQuiz);
+        restartButton.addEventListener('click', startQuiz);
+
+        // دالة لخلط بنك الأسئلة واختيار 15 سؤالاً عشوائياً
+        function getRandomQuestions() {
+            let shuffled = [...allQuestions];
+            for (let i = shuffled.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+            }
+            return shuffled.slice(0, 15);
+        }
+
+        function buildProgressBar() {
+            progressBar.innerHTML = '';
+            for (let i = 0; i < 15; i++) {
+                const segment = document.createElement('div');
+                segment.classList.add('progress-segment');
+                progressBar.appendChild(segment);
+            }
+        }
+
+        function updateProgressBar() {
+            const segments = progressBar.children;
+            for (let i = 0; i < segments.length; i++) {
+                if (i <= currentQuestionIndex) {
+                    segments[i].classList.add('active');
+                } else {
+                    segments[i].classList.remove('active');
+                }
+            }
+        }
+
+        function startQuiz() {
+            currentQuestionIndex = 0;
+            totalScore = 0;
+            questions = getRandomQuestions();
+            welcomeScreen.classList.add('hide');
+            resultScreen.classList.add('hide');
+            questionScreen.classList.remove('hide');
+            progressBar.classList.remove('hide');
+            buildProgressBar();
+            showQuestion();
+        }
+
+        function showQuestion() {
+            updateProgressBar();
+            const currentQuestion = questions[currentQuestionIndex];
+            questionText.textContent = `${currentQuestionIndex + 1}. ${currentQuestion.question}`;
+            answerButtonsContainer.innerHTML = '';
+
+            currentQuestion.answers.forEach(answer => {
+                const button = document.createElement('button');
+                button.textContent = answer.text;
+                button.classList.add('btn', 'btn-answer');
+                button.addEventListener('click', () => selectAnswer(answer.score));
+                answerButtonsContainer.appendChild(button);
+            });
+        }
+
+        function selectAnswer(score) {
+            totalScore += score;
+            currentQuestionIndex++;
+            if (currentQuestionIndex < 15) {
+                showQuestion();
+            } else {
+                showResult();
+            }
+        }
+
+        function showResult() {
+            questionScreen.classList.add('hide');
+            progressBar.classList.add('hide');
+            resultScreen.classList.remove('hide');
+
+            let interpretation = '';
+            let percentage = Math.round((totalScore / 45) * 100);
+
+            if (percentage >= 80) {
+                interpretation = `💖 <strong>حب متبادل ودافئ بنسبة (${percentage}%):</strong><br>ألف مبروك! علاقتكِ مبنية على أسس قوية ومتكافئة من الحب والاهتمام المتبادل. شريككِ يحبكِ بصدق، يبادركِ المشاعر والاهتمام، ويحرص تماماً على وجودكِ كأولوية قصوى في تفاصيل حياته ومستقبله. حافظي على هذا الكنز العاطفي الجميل!`;
+            } else if (percentage >= 50 && percentage < 80) {
+                interpretation = `⚖️ <strong>حيرة وتذبذب عاطفي بنسبة (${percentage}%):</strong><br>مشاعركِ حقيقية، ولكن مشاعره تبدو متأرجحة أو غير مستقرة بالكامل. قد تظهر منه علامات اهتمام وحب حقيقي في بعض الأوقات، ليعود بعدها وينشغل أو يظهر البرود والتباعد في أوقات أخرى. يُنصح بالتريث ومراقبة تصرفاته بوعي وهدوء لتحديد اتجاه العلاقة الحقيقي قبل الاندفاع العاطفي.`;
+            } else {
+                interpretation = `💔 <strong>حب من طرف واحد بنسبة (${percentage}%):</strong><br>للأسف، النتيجة تشير بوضوح إلى أنكِ تعيشين قصة حب غير متكافئة ومن طرفكِ أنتِ فقط. تبذلين طاقة، اهتماماً، ومشاعر جياشة دون الحصول على صدى حقيقي بالمقابل، بينما يضعكِ الطرف الآخر في دائرة الهامش أو الصداقة العادية. تذكري دائماً أن قلبكِ يستحق شخصاً يبادلكِ نفس الحب واللهفة ويقدر قيمتكِ الغالية!`;
+            }
+
+            resultText.innerHTML = interpretation;
+
+            // تحديث روابط المشاركة للنتيجة الجديدة بدقة
+            const siteUrl = "https://quiz.arabsdar.net/Unrequited-Love-Test.html";
+            const shareText = `حصلت على نسبة ${percentage}% في اختبار مقياس الحب من طرف واحد للبنات! اكتشفي حقيقة مشاعره تجاهكِ الآن مجاناً عبر هذا الرابط:`;
+            
+            shareFbResult.href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(siteUrl)}`;
+            shareWaResult.href = `https://api.whatsapp.com/send?text=${encodeURIComponent(shareText + " " + siteUrl)}`;
+            shareTwResult.href = `https://twitter.com/intent/tweet?url=${encodeURIComponent(siteUrl)}&text=${encodeURIComponent(shareText)}`;
+        }
+    </script>
+</body>
+
+</html>
